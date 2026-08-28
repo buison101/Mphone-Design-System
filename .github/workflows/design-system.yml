@@ -1,0 +1,27 @@
+name: Design System Quality
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  static-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: portal-worktree/app/portal/spa/package-lock.json
+      - name: Validate tokens, registry and locales
+        run: npm run release:check
+      - name: Install Portal dependencies
+        working-directory: portal-worktree/app/portal/spa
+        run: npm ci
+      - name: Lint and build Portal
+        working-directory: portal-worktree/app/portal/spa
+        run: npm run lint && npm run build
+      - name: Validate browser test discovery
+        working-directory: portal-worktree/app/portal/spa
+        run: npx playwright test --list

@@ -1,0 +1,41 @@
+# Local tools and workspace state
+.tools/
+.worktrees/
+_to_delete/
+analytics-preview/
+
+# Vendored visual reference and archived delivery packages
+mantis-free/
+*.tgz
+
+# The Portal copy contains historical server/PHP files. This repository tracks
+# only the local UI Lab guidance and SPA source.
+portal-worktree/**
+!portal-worktree/app/
+!portal-worktree/app/portal/
+!portal-worktree/app/portal/AGENTS.md
+!portal-worktree/app/portal/spa/
+!portal-worktree/app/portal/spa/**
+
+# JavaScript dependencies and generated output
+**/node_modules/
+**/playwright-report/
+**/test-results/
+**/coverage/
+**/.vite/
+portal-worktree/app/portal/spa/preview/.out/
+portal-worktree/app/portal/spa/preview/portal.html
+
+# Local configuration and credentials
+**/.env
+**/.env.*
+!**/.env.example
+**/*storage-state*.json
+**/playwright/.auth/
+
+# Logs and OS/editor files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

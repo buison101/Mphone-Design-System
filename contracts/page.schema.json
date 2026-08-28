@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mphone.vn/design-system/contracts/page.schema.json",
+  "title": "Mphone AI Page Contract",
+  "type": "object",
+  "required": ["name", "goal", "roles", "permissions", "data", "actions", "states", "responsive", "locales"],
+  "properties": {
+    "name": { "type": "string", "minLength": 3 },
+    "goal": { "type": "string", "minLength": 10 },
+    "roles": { "type": "array", "minItems": 1, "items": { "enum": ["superadmin", "admin", "user"] } },
+    "permissions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "data": {
+      "type": "object",
+      "required": ["source", "fields", "volume"],
+      "properties": {
+        "source": { "type": "string" },
+        "fields": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "volume": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "kind"],
+        "properties": {
+          "name": { "type": "string" },
+          "kind": { "enum": ["primary", "secondary", "destructive"] },
+          "permission": { "type": "string" },
+          "consequence": { "type": "string" }
+        }
+      }
+    },
+    "states": { "type": "array", "minItems": 4, "items": { "enum": ["loading", "empty", "error", "forbidden", "offline", "success"] } },
+    "responsive": { "type": "object", "required": ["mobilePriority", "wideLayout"] },
+    "locales": { "type": "array", "items": { "enum": ["vi", "en"] }, "minItems": 2, "uniqueItems": true },
+    "approvedComponents": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

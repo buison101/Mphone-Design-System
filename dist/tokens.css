@@ -1,0 +1,44 @@
+/* @mphone/design-system v2.5.0 — generated; do not edit */
+:root {
+  --mphone-color-brand-50: #e6f4ff;
+  --mphone-color-brand-100: #bae0ff;
+  --mphone-color-brand-300: #69b1ff;
+  --mphone-color-brand-500: #1677ff;
+  --mphone-color-brand-600: #0958d9;
+  --mphone-color-brand-700: #003eb3;
+  --mphone-color-neutral-0: #ffffff;
+  --mphone-color-neutral-50: #fafafa;
+  --mphone-color-neutral-100: #f5f5f5;
+  --mphone-color-neutral-200: #f0f0f0;
+  --mphone-color-neutral-300: #d9d9d9;
+  --mphone-color-neutral-500: #8c8c8c;
+  --mphone-color-neutral-600: #595959;
+  --mphone-color-neutral-700: #262626;
+  --mphone-color-neutral-800: #141414;
+  --mphone-color-neutral-900: #000000;
+  --mphone-color-status-success: #52c41a;
+  --mphone-color-status-warning: #faad14;
+  --mphone-color-status-critical: #ff4d4f;
+  --mphone-color-status-info: #13c2c2;
+  --mphone-space-0: 0px;
+  --mphone-space-1: 4px;
+  --mphone-space-2: 8px;
+  --mphone-space-3: 12px;
+  --mphone-space-4: 16px;
+  --mphone-space-5: 20px;
+  --mphone-space-6: 24px;
+  --mphone-space-8: 32px;
+  --mphone-space-10: 40px;
+  --mphone-space-12: 48px;
+  --mphone-radius-sm: 4px;
+  --mphone-radius-md: 8px;
+  --mphone-radius-lg: 12px;
+  --mphone-radius-round: 999px;
+  --mphone-motion-fast: 120ms;
+  --mphone-motion-normal: 180ms;
+  --mphone-motion-slow: 240ms;
+}
+[data-mphone-theme="light"] {
+}
+[data-mphone-theme="dark"] {
+}
