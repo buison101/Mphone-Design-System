@@ -1,0 +1,297 @@
+import { useRef, useState } from 'react';
+
+// third-party
+import { FormattedMessage, useIntl } from 'react-intl';
+import { Link } from 'react-router-dom';
+
+// material-ui
+import Button from '@mui/material/Button';
+import CardMedia from '@mui/material/CardMedia';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
+import Grid from '@mui/material/Grid';
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import ListSubheader from '@mui/material/ListSubheader';
+import Paper from '@mui/material/Paper';
+import Popper from '@mui/material/Popper';
+import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+// project imports
+import AnimateButton from 'components/@extended/AnimateButton';
+import Dot from 'components/@extended/Dot';
+import IconButton from 'components/@extended/IconButton';
+import MainCard from 'components/MainCard';
+import Transitions from 'components/@extended/Transitions';
+import { DRAWER_WIDTH } from 'config';
+
+// assets
+import ArrowRightOutlined from '@ant-design/icons/ArrowRightOutlined';
+import WindowsOutlined from '@ant-design/icons/WindowsOutlined';
+import backgroundVector from 'assets/images/mega-menu/back.svg';
+import imageChart from 'assets/images/mega-menu/chart.svg';
+
+// ==============================|| HEADER CONTENT - MEGA MENU SECTION ||============================== //
+
+export default function MegaMenuSection() {
+  const intl = useIntl();
+  const anchorRef = useRef(null);
+  const [open, setOpen] = useState(false);
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleClose = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+  };
+
+  return (
+    <Box sx={{ flexShrink: 0, ml: 0.75 }}>
+      <Tooltip title={intl.formatMessage({ id: 'megaMenu.title' })} disableInteractive>
+        <IconButton
+          color="secondary"
+          variant="light"
+          sx={(theme) => ({
+            color: 'text.primary',
+            bgcolor: open ? 'grey.100' : 'transparent',
+            ...theme.applyStyles('dark', { bgcolor: open ? 'background.default' : 'transparent' })
+          })}
+          aria-label={intl.formatMessage({ id: 'megaMenu.open' })}
+          ref={anchorRef}
+          aria-controls={open ? 'profile-grow' : undefined}
+          aria-haspopup="true"
+          onClick={handleToggle}
+        >
+          <WindowsOutlined />
+        </IconButton>
+      </Tooltip>
+      <Popper
+        placement="bottom"
+        open={open}
+        anchorEl={anchorRef.current}
+        role={undefined}
+        transition
+        disablePortal
+        popperOptions={{
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [-180, 9]
+              }
+            }
+          ]
+        }}
+      >
+        {({ TransitionProps }) => (
+          <Transitions type="grow" position="top" in={open} {...TransitionProps}>
+            <Paper
+              sx={(theme) => ({
+                boxShadow: theme.vars.customShadows.z1,
+                minWidth: 750,
+                width: {
+                  md: `calc(100vw - 100px)`,
+                  lg: `calc(100vw - ${DRAWER_WIDTH + 100}px)`,
+                  xl: `calc(100vw - ${DRAWER_WIDTH + 140}px)`
+                },
+                maxWidth: 1024
+              })}
+            >
+              <ClickAwayListener onClickAway={handleClose}>
+                <MainCard elevation={0} border={false} content={false}>
+                  <Grid container>
+                    <Grid
+                      sx={(theme) => ({
+                        background: `url(${backgroundVector}), linear-gradient(183.77deg, ${theme.vars.palette.primary.main} 11.46%, ${theme.vars.palette.primary[700]} 100.33%)`
+                      })}
+                      size={{ md: 4 }}
+                    >
+                      <Box sx={{ p: 4.5, pb: 3 }}>
+                        <Stack sx={(theme) => ({ color: 'background.paper', ...theme.applyStyles('dark', { color: 'text.primary' }) })}>
+                          <Typography variant="h2" sx={{ fontSize: '1.875rem', mb: 1 }}>
+                            <FormattedMessage id="megaMenu.promo.title" />
+                          </Typography>
+                          <Typography variant="h6">
+                            <FormattedMessage id="megaMenu.promo.body" />
+                          </Typography>
+                          <Stack direction="row" sx={{ alignItems: 'flex-end', justifyContent: 'space-between', mt: -1 }}>
+                            <AnimateButton>
+                              <Button
+                                variant="contained"
+                                color="secondary"
+                                sx={{
+                                  bgcolor: 'background.paper',
+                                  color: 'text.primary',
+                                  '&:hover': { bgcolor: 'background.paper', color: 'text.primary' }
+                                }}
+                                endIcon={<ArrowRightOutlined />}
+                                component={Link}
+                                to="/components-overview"
+                                target="_blank"
+                              >
+                                <FormattedMessage id="megaMenu.promo.action" />
+                              </Button>
+                            </AnimateButton>
+                            <CardMedia
+                              component="img"
+                              src={imageChart}
+                              alt={intl.formatMessage({ id: 'megaMenu.promo.imageAlt' })}
+                              sx={{ mr: -2.5, mb: -2.5, width: 124 }}
+                            />
+                          </Stack>
+                        </Stack>
+                      </Box>
+                    </Grid>
+                    <Grid size={{ md: 8 }}>
+                      <Box
+                        sx={{
+                          p: 4,
+                          '& .MuiList-root': { pb: 0 },
+                          '& .MuiListSubheader-root': { p: 0, pb: 1.5 },
+                          '& .MuiListItemButton-root': {
+                            p: 0.5,
+                            '&:hover': { bgcolor: 'transparent', '& .MuiTypography-root': { color: 'primary.main' } }
+                          }
+                        }}
+                      >
+                        <Grid container spacing={6}>
+                          <Grid size={4}>
+                            <List
+                              component="nav"
+                              aria-labelledby="nested-list-user"
+                              subheader={
+                                <ListSubheader id="nested-list-user">
+                                  <Typography variant="subtitle1" sx={{ color: 'text.primary' }}>
+                                    <FormattedMessage id="nav.pages.authentication" />
+                                  </Typography>
+                                </ListSubheader>
+                              }
+                            >
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/login">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.login" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/register">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.register" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/reset-password">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.resetPassword" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/forgot-password">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.forgotPassword" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/code-verification">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.codeVerification" />} />
+                              </ListItemButton>
+                            </List>
+                          </Grid>
+                          <Grid size={4}>
+                            <List
+                              component="nav"
+                              aria-labelledby="nested-list-user"
+                              subheader={
+                                <ListSubheader id="nested-list-user">
+                                  <Typography variant="subtitle1" sx={{ color: 'text.primary' }}>
+                                    <FormattedMessage id="megaMenu.group.other" />
+                                  </Typography>
+                                </ListSubheader>
+                              }
+                            >
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="megaMenu.aboutUs" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/contact-us">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.contactUs" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} to="/pricing">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.pricing" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} to="/apps/profiles/user/payment">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="megaMenu.payment" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/under-construction">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.underConstruction" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/coming-soon">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.comingSoon" />} />
+                              </ListItemButton>
+                            </List>
+                          </Grid>
+                          <Grid size={4}>
+                            <List
+                              component="nav"
+                              aria-labelledby="nested-list-user"
+                              subheader={
+                                <ListSubheader id="nested-list-user">
+                                  <Typography variant="subtitle1" sx={{ color: 'text.primary' }}>
+                                    <FormattedMessage id="megaMenu.group.service" />
+                                  </Typography>
+                                </ListSubheader>
+                              }
+                            >
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/404">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="nav.pages.error404" />} />
+                              </ListItemButton>
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/">
+                                <ListItemIcon>
+                                  <Dot size={7} color="secondary" variant="outlined" />
+                                </ListItemIcon>
+                                <ListItemText primary={<FormattedMessage id="megaMenu.landing" />} />
+                              </ListItemButton>
+                            </List>
+                          </Grid>
+                        </Grid>
+                      </Box>
+                    </Grid>
+                  </Grid>
+                </MainCard>
+              </ClickAwayListener>
+            </Paper>
+          </Transitions>
+        )}
+      </Popper>
+    </Box>
+  );
+}
