@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 // material-ui
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Alert from '@mui/material/Alert';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 // third-party
@@ -16,14 +12,17 @@ import { FormattedMessage } from 'react-intl';
 
 // project imports
 import Loader from 'components/Loader';
+import Login from 'pages/auth/Login';
+import Maintenance from 'pages/maintenance/Maintenance';
 import useSession from 'hooks/useSession';
+import { loginErrorMessage, RECOVERABLE_LOGIN_ERRORS } from 'sections/auth/loginErrors';
 import { ADMIN_URL } from 'config';
 
 // ==============================|| SESSION GATE ||============================== //
 //
-// Nothing is routed until the server has confirmed who is signed in. A missing
-// session redirects to the PHP login inside SessionContext, so only the refused
-// and unreachable cases are handled here.
+// Nothing is routed until the server has confirmed who is signed in. An
+// unauthorised session renders the sign-in screen in place of the application;
+// refused and unreachable are the other two ways in.
 
 function Message({ title, detail, action }) {
   return (
@@ -41,83 +40,33 @@ function Message({ title, detail, action }) {
 
 Message.propTypes = { title: PropTypes.node, detail: PropTypes.node, action: PropTypes.node };
 
+// The container: it owns the attempt, the screen owns none of it.
 function IdentityLogin() {
-  const { login } = useSession();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const { login, reload } = useSession();
   const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState(undefined);
 
-  const submit = async (event) => {
-    event.preventDefault();
-    if (submitting) return;
+  const submit = async (email, password) => {
     setSubmitting(true);
-    setError('');
+    setError(undefined);
     try {
       const result = await login(email, password);
-      if (!result.ok) setError(result.error);
+      if (result.ok) return;
+
+      setError(loginErrorMessage(result.error));
+
+      // A stale login token is the one failure the browser can clear by itself.
+      // Re-reading the session endpoint mints a fresh one, so by the time the
+      // reader has finished reading "please try again", trying again works.
+      if (RECOVERABLE_LOGIN_ERRORS.includes(result.error)) await reload();
     } catch {
-      setError('unavailable');
+      setError(loginErrorMessage('unavailable'));
     } finally {
       setSubmitting(false);
     }
   };
 
-  const errorMessageId =
-    error === 'rate_limited'
-      ? 'login.error.rateLimited'
-      : error === 'forbidden'
-        ? 'login.error.forbidden'
-        : error === 'unavailable' || error === 'service_unavailable'
-          ? 'login.error.unavailable'
-          : 'login.error.invalid';
-
-  return (
-    <Box sx={{ display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', p: 3, bgcolor: 'background.default' }}>
-      <Card sx={{ width: '100%', maxWidth: 420 }}>
-        <CardContent sx={{ p: { xs: 3, sm: 4 } }}>
-          <Stack component="form" onSubmit={submit} sx={{ gap: 2.25 }}>
-            <Stack sx={{ gap: 0.75 }}>
-              <Typography variant="h3">
-                <FormattedMessage id="login.title" />
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                <FormattedMessage id="login.subtitle" />
-              </Typography>
-            </Stack>
-            {error && (
-              <Alert severity="error">
-                <FormattedMessage id={errorMessageId} />
-              </Alert>
-            )}
-            <TextField
-              type="email"
-              name="email"
-              autoComplete="username"
-              label={<FormattedMessage id="login.email" />}
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-              fullWidth
-            />
-            <TextField
-              type="password"
-              name="password"
-              autoComplete="current-password"
-              label={<FormattedMessage id="login.password" />}
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              required
-              fullWidth
-            />
-            <Button type="submit" variant="contained" size="large" disabled={submitting}>
-              <FormattedMessage id={submitting ? 'login.submitting' : 'login.submit'} />
-            </Button>
-          </Stack>
-        </CardContent>
-      </Card>
-    </Box>
-  );
+  return <Login onSubmit={submit} error={error} submitting={submitting} />;
 }
 
 export default function SessionGate({ children }) {
@@ -126,6 +75,10 @@ export default function SessionGate({ children }) {
   if (loading) return <Loader />;
 
   if (error === 'unauthorized') return <IdentityLogin />;
+
+  // Planned downtime reads differently from an unreachable server, and the
+  // advice that follows from each is different too.
+  if (error === 'maintenance') return <Maintenance variant="underMaintenance" onRetry={reload} />;
 
   if (error === 'forbidden') {
     return (

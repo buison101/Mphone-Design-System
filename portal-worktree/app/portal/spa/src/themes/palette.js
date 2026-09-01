@@ -93,13 +93,12 @@ export function buildPalette(presetColor) {
       action: { disabled: dark.grey[300] },
       divider: 'rgba(255, 255, 255, 0.05)',
       background: {
-        // mantis-tokens.css lists paper #1e1e1e and default #121212, the reverse
-        // of what palette.js in the same reference computes. The computed pair is
-        // used here because MainCard draws its border with grey.A800 (#1e1e1e):
-        // against a #1e1e1e paper that border is invisible, against #121212 it is
-        // the line that separates a card from the page.
-        paper: dark.grey.A50,
-        default: dark.grey.A800
+        // Match the rendered Mantis Pro hierarchy: the canvas is the darkest
+        // layer and navigation, header and standard content surfaces rise above
+        // it. MainCard uses the low-opacity divider in dark mode, so paper and
+        // border no longer collapse into an invisible #1e1e1e-on-#1e1e1e edge.
+        paper: dark.grey.A800,
+        default: dark.grey.A50
       }
     }
   };

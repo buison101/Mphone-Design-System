@@ -34,7 +34,8 @@ export const LOGOUT_URL = '/logout.php';
 export const ADMIN_URL = '/core/dashboard/';
 
 const config = {
-  fontFamily: `'Public Sans', sans-serif`
+  fontFamily: `'Public Sans', sans-serif`,
+  layoutWidth: 'fluid'
 };
 
 export default config;

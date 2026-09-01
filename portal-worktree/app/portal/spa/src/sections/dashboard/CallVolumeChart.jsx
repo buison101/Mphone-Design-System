@@ -18,8 +18,10 @@ import { FormattedMessage, useIntl } from 'react-intl';
 // Three series, because answered and missed alone hide the calls that never
 // connected at all: on real data those outnumber both.
 //
-// Both palettes were checked against their own paper colour, #ffffff and
-// #121212. Green for answered reads as the obvious choice and fails colour
+// Both palettes were checked against their original paper colour, #ffffff and
+// #121212. Dark paper now uses #1e1e1e; the same marks are reviewed against the
+// raised surface as part of dark-mode visual verification. Green for answered
+// reads as the obvious choice and fails colour
 // vision deficiency separation against red. Orange fails beside red as well
 // (normal-vision ΔE 14). Purple passes cleanly in both modes.
 //
@@ -83,7 +85,10 @@ export default function CallVolumeChart({ hourly = [], hours = 24 }) {
         {
           tickLabelStyle: { fill: theme.vars.palette.text.secondary, fontSize: 12 },
           // whole calls only, a fractional tick would be meaningless
-          tickMinStep: 1
+          tickMinStep: 1,
+          // a call count cannot be negative; without this the auto domain pads
+          // below zero and draws an axis reading -10 on a quiet period
+          min: 0
         }
       ]}
       series={[

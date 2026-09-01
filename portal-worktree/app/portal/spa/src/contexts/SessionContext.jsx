@@ -59,6 +59,15 @@ export function SessionProvider({ children }) {
         return null;
       }
 
+      // A 503 is planned downtime or a PHP-FPM pool that is not answering, and
+      // nginx returns it without anyone adding an endpoint. Telling that reader
+      // to check their connection sends them to look at a router that is fine.
+      if (response.status === 503) {
+        setError('maintenance');
+        setLoading(false);
+        return null;
+      }
+
       if (!response.ok) {
         setError('unavailable');
         setLoading(false);

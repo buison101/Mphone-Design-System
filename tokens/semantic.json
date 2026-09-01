@@ -10,10 +10,9 @@
   "dark": {
     "color": {
       "text": { "primary": "rgba(255,255,255,0.87)", "secondary": "#8c8c8c", "disabled": "rgba(255,255,255,0.45)", "inverse": "#141414" },
-      "surface": { "canvas": "#1e1e1e", "default": "#121212", "subtle": "#1f1f1f", "raised": "#1f1f1f" },
+      "surface": { "canvas": "#121212", "default": "#1e1e1e", "subtle": "#141414", "raised": "#1f1f1f" },
       "border": { "subtle": "rgba(255,255,255,0.05)", "default": "#434343", "focus": "#4096ff" },
       "action": { "primary": "#1677ff", "primaryHover": "#4096ff", "primarySubtle": "#111d2c" }
     }
   }
 }
-

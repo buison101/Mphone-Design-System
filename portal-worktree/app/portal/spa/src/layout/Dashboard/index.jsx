@@ -11,6 +11,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Loader from 'components/Loader';
 import ScrollTop from 'components/ScrollTop';
+import useConfig from 'hooks/useConfig';
 
 import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
 
@@ -18,7 +19,9 @@ import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
 
 export default function DashboardLayout() {
   const { menuMasterLoading } = useGetMenuMaster();
+  const { state } = useConfig();
   const downXL = useMediaQuery((theme) => theme.breakpoints.down('xl'));
+  const containerLayout = state.layoutWidth === 'container';
 
   // set media wise responsive drawer
   useEffect(() => {
@@ -39,6 +42,9 @@ export default function DashboardLayout() {
           sx={{
             ...{ px: { xs: 0, sm: 2 } },
             position: 'relative',
+            width: '100%',
+            maxWidth: containerLayout ? 1440 : 'none',
+            mx: containerLayout ? 'auto' : 0,
             minHeight: 'calc(100vh - 110px)',
             display: 'flex',
             flexDirection: 'column'

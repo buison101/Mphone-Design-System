@@ -16,7 +16,10 @@ const openedMixin = (theme) => ({
   }),
 
   overflowX: 'hidden',
-  boxShadow: 'none'
+  // Mantis Pro keeps the expanded dark drawer one elevation step above the
+  // canvas. The light shell retains the quieter border-only treatment.
+  boxShadow: 'none',
+  ...theme.applyStyles('dark', { boxShadow: theme.vars.customShadows.z1 })
 });
 
 const closedMixin = (theme) => ({

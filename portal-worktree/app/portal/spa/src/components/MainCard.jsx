@@ -13,6 +13,7 @@ export default function MainCard({
   subheader,
   content = true,
   contentSX = {},
+  darkSX = {},
   divider = true,
   elevation,
   secondary,
@@ -25,6 +26,8 @@ export default function MainCard({
   ref,
   ...others
 }) {
+  const resolvedDarkSX = (theme) => (typeof darkSX === 'function' ? darkSX(theme) : darkSX || {});
+
   return (
     <Card
       elevation={elevation || 0}
@@ -45,7 +48,11 @@ export default function MainCard({
           width: { xs: `calc(100% - 50px)`, sm: 'auto' },
           maxWidth: 768
         }),
-        ...(typeof sx === 'function' ? sx(theme) : sx || {})
+        ...(typeof sx === 'function' ? sx(theme) : sx || {}),
+        ...theme.applyStyles('dark', {
+          ...(border && { border: `1px solid ${theme.vars.palette.divider}` }),
+          ...resolvedDarkSX(theme)
+        })
       })}
       ref={ref}
       {...others}
@@ -78,6 +85,7 @@ MainCard.propTypes = {
   subheader: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
   content: PropTypes.bool,
   contentSX: PropTypes.object,
+  darkSX: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
   divider: PropTypes.bool,
   elevation: PropTypes.number,
   secondary: PropTypes.any,

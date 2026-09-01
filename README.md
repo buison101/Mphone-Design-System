@@ -44,6 +44,7 @@ The system uses Mantis as the structural reference for enterprise web interfaces
 - `docs/`: foundations, components, patterns, templates, and governance.
 - `docs/07-component-catalog.md`: catalog triển khai và hợp đồng prompt cho AI.
 - `docs/08-living-design-system.md`: route, source and operating workflow for the visual catalog.
+- `docs/14-mantis-pro-visual-reference.md`: nguồn tham chiếu Mantis Pro, quy trình duyệt các mục sidebar và baseline dark mode cho AI.
 - `portal-worktree/app/portal/spa/`: source of truth for the local Portal UI Lab.
 
 ## Platform contract

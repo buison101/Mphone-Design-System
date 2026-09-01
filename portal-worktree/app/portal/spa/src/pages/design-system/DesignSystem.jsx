@@ -561,7 +561,7 @@ export default function DesignSystem() {
         actions={
           <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap' }}>
             <Chip color="success" variant="outlined" label="Portal v1.4" />
-            <Chip color="primary" variant="outlined" label="Design System v2.5" />
+            <Chip color="primary" variant="outlined" label="Design System v2.14" />
           </Stack>
         }
       />

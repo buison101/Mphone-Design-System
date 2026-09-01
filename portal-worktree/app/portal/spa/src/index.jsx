@@ -7,6 +7,7 @@ import '@fontsource/public-sans/400.css';
 import '@fontsource/public-sans/500.css';
 import '@fontsource/public-sans/600.css';
 import '@fontsource/public-sans/700.css';
+import 'assets/global.css';
 
 // project imports
 import App from './App';

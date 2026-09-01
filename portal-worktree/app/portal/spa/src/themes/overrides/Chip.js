@@ -21,8 +21,13 @@ function getColorStyle({ color, theme }) {
   const colors = getColors(theme, color);
   const { light, lighter, main, darker } = colors;
 
+  // The ink is the ramp's darkest step in *both* schemes. Dark mode already did
+  // this; light mode wrote `main` on `lighter`, which measures 1.83 on warning,
+  // 2.21 on success and 2.97 on error off the rendered page — the light and
+  // combined chips were unreadable in one scheme and fine in the other, from one
+  // line. No fill or border moves.
   return {
-    color: main,
+    color: darker,
     backgroundColor: lighter,
     borderColor: light,
     ...theme.applyStyles('dark', { color: darker }),

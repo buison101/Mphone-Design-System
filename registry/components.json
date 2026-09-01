@@ -1,43 +1,646 @@
 {
   "schemaVersion": 1,
-  "designSystemVersion": "2.5.0",
+  "designSystemVersion": "2.14.0",
   "components": [
-    { "name": "PageHeader", "category": "pattern", "status": "stable", "since": "1.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/PageHeader.jsx" },
-    { "name": "FilterBar", "category": "pattern", "status": "stable", "since": "1.4.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/FilterBar.jsx" },
-    { "name": "DataTableContainer", "category": "pattern", "status": "stable", "since": "1.4.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/DataTableContainer.jsx" },
-    { "name": "DataPagination", "category": "pattern", "status": "stable", "since": "1.4.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/DataPagination.jsx" },
-    { "name": "ConfirmActionDialog", "category": "pattern", "status": "stable", "since": "1.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/ConfirmActionDialog.jsx" },
-    { "name": "ContentState", "category": "state", "status": "stable", "since": "1.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/states/ContentState.jsx" },
-    { "name": "MainCard", "category": "component", "status": "stable", "since": "1.0.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/MainCard.jsx" },
-    { "name": "StatCard", "category": "component", "status": "stable", "since": "1.0.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/StatCard.jsx" },
-    { "name": "WelcomeBanner", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/WelcomeBanner.jsx" },
-    { "name": "SparkStatCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/SparkStatCard.jsx" },
-    { "name": "RankedListCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/RankedListCard.jsx" },
-    { "name": "ActivityListCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/ActivityListCard.jsx" },
-    { "name": "ProgressListCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/ProgressListCard.jsx" },
-    { "name": "SupportCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/SupportCard.jsx" },
-    { "name": "SetupProgressCard", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/SetupProgressCard.jsx" },
-    { "name": "CallTrendChart", "category": "component", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/CallTrendChart.jsx" },
-    { "name": "CallTrendCard", "category": "pattern", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/CallTrendCard.jsx" },
-    { "name": "RecentCallsTable", "category": "pattern", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/RecentCallsTable.jsx" },
-    { "name": "QualityReportCard", "category": "pattern", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/QualityReportCard.jsx" },
-    { "name": "CostReportCard", "category": "pattern", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/CostReportCard.jsx" },
-    { "name": "ChannelMixCard", "category": "pattern", "status": "experimental", "since": "2.1.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/sections/analytics/ChannelMixCard.jsx" },
-    { "name": "TabbedCard", "category": "pattern", "status": "experimental", "since": "2.2.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/TabbedCard.jsx" },
-    { "name": "DetailList", "category": "pattern", "status": "experimental", "since": "2.2.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/DetailList.jsx" },
-    { "name": "DangerAction", "category": "pattern", "status": "experimental", "since": "2.2.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/patterns/DangerAction.jsx" },
-    { "name": "ProfileSummaryCard", "category": "component", "status": "experimental", "since": "2.2.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/cards/ProfileSummaryCard.jsx" },
-    { "name": "PresenceBadge", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/@extended/PresenceBadge.jsx" },
-    { "name": "ConversationList", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/chat/ConversationList.jsx" },
-    { "name": "MessageThread", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/chat/MessageThread.jsx" },
-    { "name": "MessageComposer", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/chat/MessageComposer.jsx" },
-    { "name": "ContactPanel", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/chat/ContactPanel.jsx" },
-    { "name": "DialPad", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/webphone/DialPad.jsx" },
-    { "name": "CallPanel", "category": "component", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/webphone/CallPanel.jsx" },
-    { "name": "WebphonePanel", "category": "pattern", "status": "experimental", "since": "2.3.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/webphone/WebphonePanel.jsx" },
-    { "name": "IncomingCallDialog", "category": "component", "status": "experimental", "since": "2.4.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/webphone/IncomingCallDialog.jsx" },
-    { "name": "PhoneFrame", "category": "component", "status": "experimental", "since": "2.5.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/app-phone/PhoneFrame.jsx" },
-    { "name": "AppTopBar", "category": "component", "status": "experimental", "since": "2.5.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/app-phone/AppTopBar.jsx" },
-    { "name": "AppBottomNav", "category": "component", "status": "experimental", "since": "2.5.0", "owner": "Portal UI", "path": "portal-worktree/app/portal/spa/src/components/app-phone/AppBottomNav.jsx" }
+    {
+      "name": "PageHeader",
+      "category": "pattern",
+      "status": "stable",
+      "since": "1.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/PageHeader.jsx"
+    },
+    {
+      "name": "FilterBar",
+      "category": "pattern",
+      "status": "stable",
+      "since": "1.4.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/FilterBar.jsx"
+    },
+    {
+      "name": "DataTableContainer",
+      "category": "pattern",
+      "status": "stable",
+      "since": "1.4.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/DataTableContainer.jsx"
+    },
+    {
+      "name": "DataPagination",
+      "category": "pattern",
+      "status": "stable",
+      "since": "1.4.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/DataPagination.jsx"
+    },
+    {
+      "name": "ConfirmActionDialog",
+      "category": "pattern",
+      "status": "stable",
+      "since": "1.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/ConfirmActionDialog.jsx"
+    },
+    {
+      "name": "ContentState",
+      "category": "state",
+      "status": "stable",
+      "since": "1.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/states/ContentState.jsx"
+    },
+    {
+      "name": "MainCard",
+      "category": "component",
+      "status": "stable",
+      "since": "1.0.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/MainCard.jsx"
+    },
+    {
+      "name": "StatCard",
+      "category": "component",
+      "status": "stable",
+      "since": "1.0.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/StatCard.jsx"
+    },
+    {
+      "name": "WelcomeBanner",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/WelcomeBanner.jsx"
+    },
+    {
+      "name": "SparkStatCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/SparkStatCard.jsx"
+    },
+    {
+      "name": "RankedListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/RankedListCard.jsx"
+    },
+    {
+      "name": "ActivityListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/ActivityListCard.jsx"
+    },
+    {
+      "name": "ProgressListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/ProgressListCard.jsx"
+    },
+    {
+      "name": "SupportCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/SupportCard.jsx"
+    },
+    {
+      "name": "SetupProgressCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/SetupProgressCard.jsx"
+    },
+    {
+      "name": "CallTrendChart",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/CallTrendChart.jsx"
+    },
+    {
+      "name": "CallTrendCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/CallTrendCard.jsx"
+    },
+    {
+      "name": "RecentCallsTable",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/RecentCallsTable.jsx"
+    },
+    {
+      "name": "QualityReportCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/QualityReportCard.jsx"
+    },
+    {
+      "name": "CostReportCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/CostReportCard.jsx"
+    },
+    {
+      "name": "ChannelMixCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.1.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/analytics/ChannelMixCard.jsx"
+    },
+    {
+      "name": "TabbedCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.2.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/TabbedCard.jsx"
+    },
+    {
+      "name": "DetailList",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.2.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/DetailList.jsx"
+    },
+    {
+      "name": "DangerAction",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.2.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/DangerAction.jsx"
+    },
+    {
+      "name": "ProfileSummaryCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.2.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/ProfileSummaryCard.jsx"
+    },
+    {
+      "name": "PresenceBadge",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/@extended/PresenceBadge.jsx"
+    },
+    {
+      "name": "ConversationList",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/chat/ConversationList.jsx"
+    },
+    {
+      "name": "MessageThread",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/chat/MessageThread.jsx"
+    },
+    {
+      "name": "MessageComposer",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/chat/MessageComposer.jsx"
+    },
+    {
+      "name": "ContactPanel",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/chat/ContactPanel.jsx"
+    },
+    {
+      "name": "DialPad",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/webphone/DialPad.jsx"
+    },
+    {
+      "name": "CallPanel",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/webphone/CallPanel.jsx"
+    },
+    {
+      "name": "WebphonePanel",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.3.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/webphone/WebphonePanel.jsx"
+    },
+    {
+      "name": "IncomingCallDialog",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.4.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/webphone/IncomingCallDialog.jsx"
+    },
+    {
+      "name": "PhoneFrame",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.5.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/app-phone/PhoneFrame.jsx"
+    },
+    {
+      "name": "AppTopBar",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.5.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/app-phone/AppTopBar.jsx"
+    },
+    {
+      "name": "AppBottomNav",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.5.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/app-phone/AppBottomNav.jsx"
+    },
+    {
+      "name": "AnswerRateCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.6.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/dashboard/AnswerRateCard.jsx"
+    },
+    {
+      "name": "CallOutcomeCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.6.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/dashboard/CallOutcomeCard.jsx"
+    },
+    {
+      "name": "BilledTrendCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.7.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/billing/BilledTrendCard.jsx"
+    },
+    {
+      "name": "InvoiceFilterGrid",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.7.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/billing/InvoiceFilterGrid.jsx"
+    },
+    {
+      "name": "InvoiceListCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.7.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/billing/InvoiceListCard.jsx"
+    },
+    {
+      "name": "CostBreakdownCard",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.7.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/billing/CostBreakdownCard.jsx"
+    },
+    {
+      "name": "StandaloneLayout",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.8.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/StandaloneLayout.jsx"
+    },
+    {
+      "name": "LoginForm",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.8.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/auth/LoginForm.jsx"
+    },
+    {
+      "name": "PasswordField",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/auth/PasswordField.jsx"
+    },
+    {
+      "name": "PasswordStrengthMeter",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/auth/PasswordStrengthMeter.jsx"
+    },
+    {
+      "name": "PasswordRules",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/auth/PasswordRules.jsx"
+    },
+    {
+      "name": "CodeInput",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/auth/CodeInput.jsx"
+    },
+    {
+      "name": "ResultCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/patterns/ResultCard.jsx"
+    },
+    {
+      "name": "SetPasswordForm",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/auth/SetPasswordForm.jsx"
+    },
+    {
+      "name": "ForgotPasswordForm",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/auth/ForgotPasswordForm.jsx"
+    },
+    {
+      "name": "CodeVerificationForm",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.9.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/sections/auth/CodeVerificationForm.jsx"
+    },
+    {
+      "name": "NavCollapse",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.10.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/layout/Dashboard/Drawer/DrawerContent/Navigation/NavCollapse.jsx"
+    },
+    {
+      "name": "ErrorBoundary",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.10.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/ErrorBoundary.jsx"
+    },
+    {
+      "name": "Maintenance",
+      "category": "pattern",
+      "status": "experimental",
+      "since": "2.10.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/pages/maintenance/Maintenance.jsx"
+    },
+    {
+      "name": "HeroStatCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.11.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/HeroStatCard.jsx"
+    },
+    {
+      "name": "PeriodStatCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.11.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/PeriodStatCard.jsx"
+    },
+    {
+      "name": "StatusStatCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.11.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/statistics/StatusStatCard.jsx"
+    },
+    {
+      "name": "MetricTile",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.12.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/widgets/MetricTile.jsx"
+    },
+    {
+      "name": "FeatureMetricCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.12.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/widgets/FeatureMetricCard.jsx"
+    },
+    {
+      "name": "ChannelTile",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.12.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/widgets/ChannelTile.jsx"
+    },
+    {
+      "name": "IllustratedMetricCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.12.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/widgets/IllustratedMetricCard.jsx"
+    },
+    {
+      "name": "WidgetMotif",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.12.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/widgets/WidgetMotif.jsx"
+    },
+    {
+      "name": "ToneChip",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/ToneChip.jsx"
+    },
+    {
+      "name": "ChecklistCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/ChecklistCard.jsx"
+    },
+    {
+      "name": "PeopleListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/PeopleListCard.jsx"
+    },
+    {
+      "name": "NotificationListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/NotificationListCard.jsx"
+    },
+    {
+      "name": "FeedListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/FeedListCard.jsx"
+    },
+    {
+      "name": "TaskTimelineCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/TaskTimelineCard.jsx"
+    },
+    {
+      "name": "MediaListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/MediaListCard.jsx"
+    },
+    {
+      "name": "DeltaListCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/DeltaListCard.jsx"
+    },
+    {
+      "name": "AssignmentTable",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/AssignmentTable.jsx"
+    },
+    {
+      "name": "TicketQueueTable",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/TicketQueueTable.jsx"
+    },
+    {
+      "name": "SummaryTableCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/SummaryTableCard.jsx"
+    },
+    {
+      "name": "MetricTable",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/MetricTable.jsx"
+    },
+    {
+      "name": "OrderTable",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/OrderTable.jsx"
+    },
+    {
+      "name": "StatusTable",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.13.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/data/StatusTable.jsx"
+    },
+    {
+      "name": "ContactCard",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.14.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/contacts/ContactCard.jsx"
+    },
+    {
+      "name": "ContactPreviewDialog",
+      "category": "component",
+      "status": "experimental",
+      "since": "2.14.0",
+      "owner": "Portal UI",
+      "path": "portal-worktree/app/portal/spa/src/components/cards/contacts/ContactPreviewDialog.jsx"
+    }
   ]
 }

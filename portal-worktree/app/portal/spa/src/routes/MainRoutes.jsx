@@ -19,7 +19,11 @@ const AppPhone = Loadable(lazy(() => import('pages/app-phone/AppPhone')));
 const Contacts = Loadable(lazy(() => import('pages/contacts/Contacts')));
 const Settings = Loadable(lazy(() => import('pages/settings/Settings')));
 const Account = Loadable(lazy(() => import('pages/account/Account')));
+const Billing = Loadable(lazy(() => import('pages/billing/Billing')));
 const DesignSystem = Loadable(lazy(() => import('pages/design-system/DesignSystem')));
+const WidgetStatistics = Loadable(lazy(() => import('pages/widget/Statistics')));
+const WidgetData = Loadable(lazy(() => import('pages/widget/Data')));
+const CustomerCards = Loadable(lazy(() => import('pages/customer/Cards')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -68,8 +72,24 @@ const MainRoutes = {
       element: <Account />
     },
     {
+      path: 'billing',
+      element: <Billing />
+    },
+    {
       path: 'design-system',
       element: <DesignSystem />
+    },
+    {
+      path: 'widget/statistics',
+      element: <WidgetStatistics />
+    },
+    {
+      path: 'widget/data',
+      element: <WidgetData />
+    },
+    {
+      path: 'customer/cards',
+      element: <CustomerCards />
     },
     {
       path: 'dashboard',
@@ -91,10 +111,6 @@ const MainRoutes = {
           element: <CallHistory />
         }
       ]
-    },
-    {
-      path: '*',
-      element: <Navigate to={APP_DEFAULT_PATH} replace />
     }
   ]
 };

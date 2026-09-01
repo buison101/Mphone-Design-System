@@ -33,11 +33,10 @@
   --mp-color-text-primary: rgba(255, 255, 255, 0.87);
   --mp-color-text-secondary: #8c8c8c;
   --mp-color-text-disabled: rgba(255, 255, 255, 0.45);
-  --mp-color-surface-canvas: #1e1e1e;
-  --mp-color-surface-default: #121212;
-  --mp-color-surface-subtle: #1f1f1f;
+  --mp-color-surface-canvas: #121212;
+  --mp-color-surface-default: #1e1e1e;
+  --mp-color-surface-subtle: #141414;
   --mp-color-border-subtle: rgba(255, 255, 255, 0.05);
   --mp-color-border-default: #434343;
   --mp-color-focus: #4096ff;
 }
-

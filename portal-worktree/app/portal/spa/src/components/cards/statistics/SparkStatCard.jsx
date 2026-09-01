@@ -62,6 +62,10 @@ export default function SparkStatCard({
   }
 
   return (
+    // No dark-mode surface of its own. This card sat on grey[50] (#141414) so
+    // that a compact KPI would read as a lower layer than the content cards
+    // under it, and on the page it read as two kinds of card instead of one
+    // row of smaller ones. It takes background.paper like every other card.
     <MainCard contentSX={{ p: 2.25, pb: data.length ? 0 : 2.25 }}>
       <Stack sx={{ gap: 0.5 }}>
         <Typography variant="h6" sx={{ color: 'text.secondary' }}>

@@ -29,16 +29,28 @@ import { STATUS_COLOR } from 'utils/callStatus';
 // colour, which is exactly the failure the design system's data table rules
 // call out.
 
-const COLUMNS = [
+// The third column is the extension on the analytics page and the dialled
+// destination on the dashboard. Same column, different question, so the caller
+// names it rather than the component guessing.
+const columnsFor = (thirdLabel) => [
   { id: 'time', label: 'table.time', align: 'left' },
   { id: 'caller', label: 'table.caller', align: 'left' },
-  { id: 'extension', label: 'table.extension', align: 'left' },
+  { id: 'extension', label: thirdLabel, align: 'left' },
   { id: 'status', label: 'table.state', align: 'left' },
   { id: 'duration', label: 'table.duration', align: 'right' }
 ];
 
-export default function RecentCallsTable({ title, action, rows = [], state = 'ready', onRetry, formatDuration }) {
+export default function RecentCallsTable({
+  title,
+  action,
+  rows = [],
+  state = 'ready',
+  onRetry,
+  formatDuration,
+  thirdColumnLabelId = 'table.extension'
+}) {
   const intl = useIntl();
+  const COLUMNS = columnsFor(thirdColumnLabelId);
   const empty = !rows || rows.length === 0;
 
   return (
@@ -120,5 +132,6 @@ RecentCallsTable.propTypes = {
   ),
   state: PropTypes.oneOf(['loading', 'error', 'ready']),
   onRetry: PropTypes.func,
-  formatDuration: PropTypes.func
+  formatDuration: PropTypes.func,
+  thirdColumnLabelId: PropTypes.string
 };

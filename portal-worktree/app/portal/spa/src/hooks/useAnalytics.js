@@ -10,12 +10,16 @@ async function fetcher(url) {
   return response.json();
 }
 
-export default function useAnalytics(url, filters = {}) {
+// `enabled` exists for the one case a page knows in advance that the request
+// cannot succeed - a screen the identity has no permission for. SWR skips a null
+// key, so the page renders its forbidden state without also putting a 403 in the
+// server log every time somebody opens it.
+export default function useAnalytics(url, filters = {}, { enabled = true } = {}) {
   const parameters = new URLSearchParams();
   Object.entries(filters).forEach(([key, value]) => {
     if (value !== '' && value !== null && value !== undefined) parameters.set(key, String(value));
   });
-  const key = `${url}?${parameters}`;
+  const key = enabled ? `${url}?${parameters}` : null;
   const { data, error, isLoading, isValidating, mutate } = useSWR(key, fetcher, { keepPreviousData: true, revalidateOnFocus: false });
   return { data, error, isLoading, isValidating, refresh: mutate };
 }

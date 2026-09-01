@@ -72,19 +72,58 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
             pl: drawerOpen ? `${level * 28}px` : 1.5,
             py: !drawerOpen && level === 1 ? 1.25 : 1,
             ...(drawerOpen && {
-              '&:hover': { bgcolor: 'primary.lighter' },
+              '&:hover': {
+                bgcolor: 'primary.lighter',
+                color: 'primary.main',
+                '& .MuiListItemIcon-root, & .MuiTypography-root': { color: 'primary.main' }
+              },
               '&.Mui-selected': {
                 bgcolor: 'primary.lighter',
                 borderRight: '2px solid',
                 borderColor: 'primary.main',
                 color: iconSelectedColor,
-                '&:hover': { color: iconSelectedColor, bgcolor: 'primary.lighter' }
+                '&:hover': {
+                  color: iconSelectedColor,
+                  bgcolor: 'primary.lighter',
+                  '& .MuiListItemIcon-root, & .MuiTypography-root': { color: 'primary.main' }
+                }
               }
             }),
             ...(!drawerOpen && {
               '&:hover': { bgcolor: 'transparent' },
               '&.Mui-selected': { '&:hover': { bgcolor: 'transparent' }, bgcolor: 'transparent' }
-            })
+            }),
+            ...(drawerOpen &&
+              theme.applyStyles('dark', {
+                '& .MuiListItemIcon-root, & .MuiTypography-root': { color: theme.vars.palette.grey[600] },
+                '&:hover': {
+                  backgroundColor: theme.vars.palette.divider,
+                  color: theme.vars.palette.text.primary,
+                  '& .MuiTypography-root': { color: theme.vars.palette.text.primary },
+                  '& .MuiListItemIcon-root': { color: theme.vars.palette.primary.main }
+                },
+                '&.Mui-selected': {
+                  backgroundColor: theme.vars.palette.divider,
+                  color: theme.vars.palette.text.primary,
+                  borderColor: theme.vars.palette.primary.main,
+                  '& .MuiTypography-root': { color: theme.vars.palette.text.primary },
+                  '& .MuiListItemIcon-root': { color: theme.vars.palette.primary.main },
+                  '&:hover': {
+                    backgroundColor: theme.vars.palette.divider,
+                    color: theme.vars.palette.text.primary,
+                    '& .MuiTypography-root': { color: theme.vars.palette.text.primary },
+                    '& .MuiListItemIcon-root': { color: theme.vars.palette.primary.main }
+                  }
+                }
+              })),
+            ...(!drawerOpen &&
+              theme.applyStyles('dark', {
+                '& .MuiListItemIcon-root': { color: theme.vars.palette.grey[600] },
+                '&:hover .MuiListItemIcon-root, &.Mui-selected .MuiListItemIcon-root': {
+                  backgroundColor: theme.vars.palette.divider,
+                  color: theme.vars.palette.primary.main
+                }
+              }))
           })}
           onClick={() => itemHandler()}
         >
@@ -99,7 +138,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
                   height: 36,
                   alignItems: 'center',
                   justifyContent: 'center',
-                  '&:hover': { bgcolor: 'secondary.lighter' }
+                  '.MuiListItemButton-root:hover &': { bgcolor: 'primary.lighter', color: 'primary.main' }
                 }),
                 ...(!drawerOpen &&
                   isSelected && {

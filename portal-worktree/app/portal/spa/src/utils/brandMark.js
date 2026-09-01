@@ -18,7 +18,11 @@ export function isMaskable(source) {
 }
 
 export function maskSx(source, { height, width }) {
-  const url = `url("${encodeURI(source)}")`;
+  // Vite may inline small SVGs as an already encoded data URL. Encoding that
+  // value again turns `%3C` into `%253C`, leaving a correctly sized but empty
+  // mask. File URLs still need URI encoding for spaces and similar characters.
+  const maskSource = source.startsWith('data:') ? source : encodeURI(source);
+  const url = `url("${maskSource}")`;
 
   return {
     height,

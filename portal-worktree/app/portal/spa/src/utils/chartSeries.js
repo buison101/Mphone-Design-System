@@ -3,7 +3,9 @@
 // One place for the marks a chart is allowed to paint, so two charts on the same
 // page cannot disagree about what "missed" looks like.
 //
-// Both palettes were checked against their own paper colour, #ffffff and #121212.
+// Both palettes were checked against their original paper colour, #ffffff and
+// #121212. Dark paper now uses #1e1e1e; the same marks remain distinct and are
+// rechecked visually against that raised surface during dark-mode review.
 // Green for answered reads as the obvious choice and fails colour vision
 // deficiency separation against red. Orange fails beside red as well
 // (normal-vision ΔE 14). Purple passes cleanly in both modes.
@@ -41,4 +43,26 @@ export function resolveScheme(mode, systemMode) {
 
 export function seriesColors(mode, systemMode) {
   return SERIES_COLOR[resolveScheme(mode, systemMode)];
+}
+
+// ==============================|| BILLING CATEGORY COLOR ||============================== //
+//
+// The billing breakdown needs four marks that stay apart from each other in both
+// schemes. Rather than draw a second ramp, it borrows four already-checked marks
+// from the set above and gives them billing names, so the portal still has one
+// answer to "which colours may a chart paint".
+//
+// The billed total is deliberately absent. A total is not a fifth category, and
+// giving it a category colour invites the reader to look for its slice.
+
+const COST_SOURCE = {
+  usage: 'external',
+  extensions: 'internal',
+  numbers: 'mobile',
+  storage: 'unconnected'
+};
+
+export function costColors(mode, systemMode) {
+  const palette = SERIES_COLOR[resolveScheme(mode, systemMode)];
+  return Object.fromEntries(Object.entries(COST_SOURCE).map(([key, source]) => [key, palette[source]]));
 }

@@ -20,6 +20,7 @@ AI may generate a new page only after the request validates conceptually against
 3. Keep authorization and domain isolation on the server.
 4. Use the registered production patterns where their contracts apply.
 5. Include all data and action states in the first implementation.
-6. Do not copy Mantis Pro source or assets.
+6. Follow the required Mantis Pro inspection workflow in [`14-mantis-pro-visual-reference.md`](14-mantis-pro-visual-reference.md), beginning at the Analytics page and visiting the nearest relevant sidebar destinations.
+7. Do not copy Mantis Pro source or assets.
 
 Generated work becomes stable only after real-data use, bilingual review, responsive/accessibility checks, screenshot review, registry/catalog updates and an owner decision.

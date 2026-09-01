@@ -45,13 +45,14 @@ export default function MainDrawer({ window }) {
           sx={{ display: { xs: drawerOpen ? 'block' : 'none', lg: 'none' } }}
           slotProps={{
             paper: {
-              sx: {
+              sx: (theme) => ({
                 boxSizing: 'border-box',
                 width: DRAWER_WIDTH,
                 borderRight: '1px solid',
                 borderRightColor: 'divider',
-                boxShadow: 'inherit'
-              }
+                boxShadow: 'inherit',
+                ...theme.applyStyles('dark', { boxShadow: theme.vars.customShadows.z1 })
+              })
             }
           }}
         >

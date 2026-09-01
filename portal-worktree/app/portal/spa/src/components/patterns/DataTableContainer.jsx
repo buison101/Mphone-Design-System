@@ -27,7 +27,6 @@ export default function DataTableContainer({ children, ariaLabel, sx }) {
         sx={{
           overflowX: 'auto',
           WebkitOverflowScrolling: 'touch',
-          scrollbarGutter: 'stable',
           '&:focus-visible': {
             outline: `2px solid ${theme.palette.primary.main}`,
             outlineOffset: -2

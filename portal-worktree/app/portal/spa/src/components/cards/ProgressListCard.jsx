@@ -21,39 +21,75 @@ import ContentState from 'components/states/ContentState';
 // Every bar carries its own aria-label and its percentage in text beside it.
 // A progress bar with the number only in the fill is unreadable to anyone who
 // cannot see the fill.
+//
+// Two layouts, one component. `inline` puts the label, the bar and the figure on
+// one line, which is the denser of the two and the right one beside other rows
+// of text. `stacked` lifts the label and figure above a full-width bar, which is
+// what a card gives the bars when their labels are long enough that an inline
+// label would squeeze every bar into the last third of the card.
 
-export default function ProgressListCard({ title, action, items = [], footer, state, emptyTitle, emptyDetail }) {
+export default function ProgressListCard({
+  title,
+  action,
+  subheader,
+  layout = 'inline',
+  items = [],
+  footer,
+  state,
+  emptyTitle,
+  emptyDetail
+}) {
   const empty = !items || items.length === 0;
+  const stacked = layout === 'stacked';
 
   return (
-    <MainCard title={title} secondary={action}>
+    <MainCard title={title} secondary={action} subheader={subheader}>
       {state === 'loading' && <ContentState state="loading" title={emptyTitle} compact />}
 
       {state !== 'loading' && empty && <ContentState state="empty" title={emptyTitle} detail={emptyDetail} compact />}
 
       {state !== 'loading' && !empty && (
         <Stack sx={{ gap: 2.25 }}>
-          {items.map((item, index) => (
-            <Stack key={item.id ?? index} direction={{ xs: 'column', sm: 'row' }} sx={{ gap: { xs: 0.75, sm: 2 }, alignItems: 'center' }}>
-              <Typography variant="body2" sx={{ width: { sm: 180 }, flexShrink: 0, alignSelf: { xs: 'flex-start', sm: 'center' } }}>
-                {item.label}
-              </Typography>
-              <Box sx={{ flexGrow: 1, width: '100%' }}>
-                <LinearProgress
-                  variant="determinate"
-                  value={Math.max(0, Math.min(100, item.value ?? 0))}
-                  color={item.color || 'primary'}
-                  aria-label={item.ariaLabel || undefined}
-                />
-              </Box>
-              <Typography
-                variant="body2"
-                sx={{ color: 'text.secondary', width: 44, textAlign: 'right', flexShrink: 0, fontVariantNumeric: 'tabular-nums' }}
-              >
-                {item.display ?? `${item.value ?? 0}%`}
-              </Typography>
-            </Stack>
-          ))}
+          {items.map((item, index) => {
+            const bar = (
+              <LinearProgress
+                variant="determinate"
+                value={Math.max(0, Math.min(100, item.value ?? 0))}
+                color={item.color || 'primary'}
+                aria-label={item.ariaLabel || undefined}
+              />
+            );
+            const figure = item.display ?? `${item.value ?? 0}%`;
+
+            if (stacked) {
+              return (
+                <Stack key={item.id ?? index} sx={{ gap: 1 }}>
+                  <Stack direction="row" sx={{ gap: 1, alignItems: 'baseline', justifyContent: 'space-between' }}>
+                    <Typography variant="body2">{item.label}</Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary', fontVariantNumeric: 'tabular-nums' }}>
+                      {figure}
+                    </Typography>
+                  </Stack>
+                  <Box>{bar}</Box>
+                </Stack>
+              );
+            }
+
+            return (
+              <Stack key={item.id ?? index} direction={{ xs: 'column', sm: 'row' }} sx={{ gap: { xs: 0.75, sm: 2 }, alignItems: 'center' }}>
+                <Typography variant="body2" sx={{ width: { sm: 180 }, flexShrink: 0, alignSelf: { xs: 'flex-start', sm: 'center' } }}>
+                  {item.label}
+                </Typography>
+                <Box sx={{ flexGrow: 1, width: '100%' }}>{bar}</Box>
+                <Typography
+                  variant="body2"
+                  sx={{ color: 'text.secondary', width: 44, textAlign: 'right', flexShrink: 0, fontVariantNumeric: 'tabular-nums' }}
+                >
+                  {figure}
+                </Typography>
+              </Stack>
+            );
+          })}
 
           {footer && (
             <>
@@ -84,6 +120,8 @@ export default function ProgressListCard({ title, action, items = [], footer, st
 ProgressListCard.propTypes = {
   title: PropTypes.node,
   action: PropTypes.node,
+  subheader: PropTypes.node,
+  layout: PropTypes.oneOf(['inline', 'stacked']),
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
