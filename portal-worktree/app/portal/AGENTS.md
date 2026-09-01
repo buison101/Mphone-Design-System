@@ -4,9 +4,9 @@ Read this before changing anything under `app/portal/`.
 
 ## Active workspace mode — local UI Lab only
 
-The parent workspace now uses this Portal as the single canvas for interface experiments, served locally at `http://localhost:4321/`. These rules supersede legacy production and server workflow instructions below:
+The parent workspace now uses this Portal as the single canvas for interface experiments. MTO is the active implementation target, while the legacy preview at `http://localhost:4321/` remains available for comparison until cutover. These rules supersede legacy production and server workflow instructions below:
 
-- Make UI changes only in `app/portal/spa` and its local preview support files.
+- Make all new Portal migration changes in `app/portal/mto`. Treat `app/portal/spa` as a read-only product, behavior, localization, content, and accessibility reference unless the product owner explicitly requests a legacy fix.
 - Use sample data, stubbed sessions, and simulated interactions so the preview works without FusionPBX, PHP, a database, SIP/PBX, Android, or an external network.
 - Do not edit `app/portal/service`, `app/portal/resources`, PHP configuration, permissions, database files, themes, or generated `p/` output.
 - Do not connect to or deploy to a FusionPBX server, and do not change the external Android application.
@@ -16,7 +16,31 @@ The parent workspace now uses this Portal as the single canvas for interface exp
 
 ### Local completion path
 
-Run `npm run preview:build`, then `npm run preview:open`, and review at `http://localhost:4321/`. Also run Prettier, ESLint, the local build, and relevant local quality checks. Do not deploy afterward.
+MTO has its own local build and preview workflow at `http://127.0.0.1:4322/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, relevant quality checks, and visual inspection locally. Do not deploy afterward.
+
+## Active Portal migration
+
+| Path | Role |
+|---|---|
+| `app/portal/mto` | New Portal based on the licensed Mantis 4.2.0 Vite JavaScript full version |
+| `app/portal/spa` | Legacy Portal retained as a product, behavior, content, localization, and accessibility reference |
+
+The product owner confirms that an official licence for the new Mantis package has been purchased.
+
+The current priority is to preserve every Mantis 4.2.0 page and route, then clean unsafe vendor configuration, establish the local preview, make the complete application bilingual in Vietnamese and English, rewrite its content for Mphone products and services, and only afterward decide which pages to retain, merge, redesign, or remove.
+
+- Do not remove Mantis pages or routes during the bilingual-content stage without product-owner approval.
+- Every user-visible string must use shared localization and have complete Vietnamese and English messages in the same change.
+- New copy must be concise, natural, consistent, relevant to Mphone, and aligned with Calm, Clear, Certain, Efficient, and Human.
+- Preserve the UI state and interaction of pages involving external services, but replace live integrations with local fixtures, stubbed sessions, or simulated actions.
+- Do not run vendor APM or telemetry, use the embedded GitHub PAT, import vendor `.env` files, or connect MTO to external authentication, mock APIs, FusionPBX, SIP/PBX, production databases, or Android.
+- Do not import source files from `spa` into the `mto` build. Read and reimplement verified behavior using the new foundation.
+
+### Read-only product reference
+
+The live Portal at `https://call.mphone.vn/p/` may be inspected read-only for current Mphone terminology, bilingual copy, visible data structure, and product behavior. Use only a Chrome session or access details supplied by the product owner for the current work session. Never store or repeat usernames, passwords, cookies, tokens, or session data; never modify live data or configuration; and never copy real customer data into local fixtures.
+
+All detailed migration, security, archive-handling, localization, simulation, and acceptance rules in the parent `AGENTS.md` apply to MTO.
 
 ## What this is
 
@@ -31,7 +55,7 @@ the whole point of the architecture:
 | | Who | Where | Why |
 |---|---|---|---|
 | Admin | operators, resellers, superadmin | PHP, `themes/mantis` | 300+ pages, heavy write logic, 3.700+ permission checks |
-| Portal | **end customers** | React, `app/portal/spa` → `/p/` | few screens, read heavy, realtime, needs to feel modern |
+| Portal | **end customers** | React, `app/portal/mto` as the active target; `app/portal/spa` as the legacy reference | interactive customer experiences, rebuilt locally on the Mantis 4.2.0 foundation |
 
 **Never port an admin page into the portal because it would look nicer there.**
 A screen belongs in `/p/` only when all three hold:
@@ -47,19 +71,14 @@ users, groups and settings all stay in PHP.
 
 The portal follows the **Mantis** design system by CodedThemes.
 
-- **Local reference (MIT, vendored):** `/var/www/fusionpbx/uiux-demo/mantis-free`
-  — the free React template. `app/portal/spa` was scaffolded from its `vite/`
-  variant. Treat `uiux-demo/` as read only reference material; never import from
-  it at build time.
+- **Licensed primary foundation:** the supplied Mantis 4.2.0 Vite JavaScript full version, used to build `app/portal/mto`. The product owner confirms that an official licence has been purchased.
+- **Legacy free reference (MIT, vendored):** `mantis-free` — the free React template from which `app/portal/spa` was scaffolded. Keep it as historical reference and never import it into MTO at build time.
 - **Design system tokens:** `uiux-demo/mantis-free/mantis-free-react-admin-template/mantis-design-system/`
   — palette, typography, layout and shadow tokens for both schemes, matched
   against the Pro demo. `src/themes/palette.js` reproduces `mantis-tokens.json`
   exactly: feed `presetDarkPalettes` plus the inverted grey scale through the
   existing `ThemeOption`, do not hand-write a second palette builder.
-- **External reference (Pro demo):** <https://mantisdashboard.com/dashboard/default>
-  — the paid version. **We do not own a Pro licence.** Use the live demo only to
-  understand how a component looks and behaves, then rebuild it from scratch with
-  the free template's primitives. Do not copy Pro source.
+- **External reference:** <https://mantisdashboard.com/dashboard/default> may be inspected for comparison when useful, but the supplied licensed Mantis 4.2.0 package is the primary MTO foundation.
 
 The free template omits a lot the Pro demo shows. When a screen needs something
 missing, reconstruct it rather than inventing a new visual language: match the

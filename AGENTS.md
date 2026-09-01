@@ -6,8 +6,8 @@ This file is the source of truth for project scope, delivery stage, and rules fo
 
 This workspace is now a **local interface experimentation environment**, not a production deployment workspace.
 
-- The primary product surface is the Portal preview at `http://localhost:4321/`.
-- Build and demonstrate every new interface, interaction, page, mobile concept, and product experiment inside the existing Portal UI under `portal-worktree/app/portal/spa`.
+- The legacy Portal preview remains available at `http://localhost:4321/` for comparison until the product owner approves the MTO cutover. The MTO preview is served separately at `http://127.0.0.1:4322/`.
+- Build all new Portal migration work in `portal-worktree/app/portal/mto`. Keep `portal-worktree/app/portal/spa` as a read-only product, behavior, content, localization, and accessibility reference unless the product owner explicitly requests a legacy fix.
 - Use local sample data, stubbed sessions, simulated actions, and presentational adapters. A prototype must remain understandable when no FusionPBX server, SIP service, database, Android project, or external network is available.
 - **Do not connect to, deploy to, copy files to, or change the internal FusionPBX server.** Do not use SSH, SCP, rsync, remote shell commands, production builds, production databases, or server-side configuration from this workspace.
 - **Do not edit or build the external Android application** at `D:\Projects\FusionPBX\tham-chieu\linphone-android-master-copy` or any other application repository.
@@ -18,7 +18,7 @@ This workspace is now a **local interface experimentation environment**, not a p
 
 ### Local preview workflow
 
-From `portal-worktree/app/portal/spa`:
+For the legacy reference, from `portal-worktree/app/portal/spa`:
 
 1. Run `npm run preview:build` to refresh the self-contained preview.
 2. Run `npm run preview:open` to serve it at `http://localhost:4321/`.
@@ -30,10 +30,98 @@ From `portal-worktree/app/portal/spa`:
 - **Current release:** Portal UI Lab v2.5; Portal v1.4 and Design System v2.0 remain the last production-era baselines.
 - **Current stage:** Governed local product/interface experimentation after Gate 6.
 - **Primary target:** `http://localhost:4321/`.
-- **Portal UI source:** `portal-worktree/app/portal/spa`.
+- **Active Portal target:** `portal-worktree/app/portal/mto`.
+- **Legacy Portal reference:** `portal-worktree/app/portal/spa`.
 - **External server and Android app:** reference only; no writes, builds, deployments, or runtime integration.
 - **Shared system:** `D:\Projects\FusionPBX\design-system`.
-- **Last scope update:** 2026-08-29.
+- **Last scope update:** 2026-09-02.
+
+## Active migration — Mantis 4.2.0 Portal
+
+The Portal UI Lab is migrating to a new Mantis 4.2.0 foundation.
+
+- **New implementation target:** `portal-worktree/app/portal/mto`
+- **Legacy Portal reference:** `portal-worktree/app/portal/spa`
+- **Primary technical foundation:** the licensed Mantis 4.2.0 Vite JavaScript full version.
+- The product owner confirms that an official licence for the new Mantis package has been purchased.
+- `mto` is the source of truth for all new Portal implementation work.
+- Preserve `spa` for reference throughout the migration. Do not overwrite, rename, delete, or mechanically merge it into `mto`.
+- Do not switch the primary preview to MTO or retire the legacy Portal until the product owner explicitly approves the cutover.
+
+### First-stage objective
+
+The first objective is not to reduce or redesign Mantis. Preserve the complete Mantis 4.2.0 Vite JavaScript full version in `mto`, including all pages, routes, navigation, dashboards, widgets, applications, forms, tables, charts, authentication demonstrations, maintenance pages, component demonstrations, themes, responsive layouts, and interaction states.
+
+During this stage, change only display content, localization, Mphone branding, and the local simulation layer required for safe UI Lab operation. Do not remove a page merely because the legacy Portal has no equivalent feature.
+
+Create a complete bilingual Mantis experience in the Mphone product context before deciding which pages will later be retained, merged, redesigned, restricted to the UI Lab, or removed.
+
+### Bilingual Mphone content
+
+- Every user-visible string must use the shared localization system. Do not hardcode Vietnamese or English in components.
+- Every message key must have complete Vietnamese and English content in the same change. Neither language is secondary, temporary, or a TODO.
+- Preserve each Mantis page's structure and demonstration purpose during the first stage, but replace generic demo copy with content relevant to Mphone products and services.
+- New copy must follow the Design System principles: Calm, Clear, Certain, Efficient, and Human.
+- Copy must be concise, natural, consistent, and understandable to telecommunications customers. Do not translate word by word when that produces unnatural language.
+- Use consistent terminology for features, states, actions, validation, errors, and guidance across all pages.
+- English must be complete product copy, not an incomplete fallback for Vietnamese.
+- Do not retain Mantis company names, brands, customers, products, addresses, phone numbers, or commercial sample data.
+- Do not copy real customer data from the live Portal into local fixtures.
+
+When a Mantis page has no current Mphone equivalent, preserve its page and layout, reinterpret its content as a plausible Mphone scenario, use local sample data, label it clearly as sample, experimental, or unconnected where appropriate, and document the future integration boundary.
+
+### Read-only live Portal reference
+
+`https://call.mphone.vn/p/` may be inspected read-only to understand current Mphone terminology, route groupings, bilingual copy, visible data structure, call states, reports, recordings, contacts, account settings, and product behavior that MTO should preserve.
+
+- Use only a Chrome session or access details supplied directly by the product owner for the current work session.
+- Never store usernames, passwords, cookies, tokens, or sessions in `AGENTS.md`, source code, fixtures, tests, screenshots, logs, documentation, or committed files.
+- Never repeat credentials in progress reports or handoffs.
+- Do not change data, configuration, or state in the live Portal.
+- Do not deploy, upload, or synchronize anything from this workspace to the live Portal.
+- Inspect only what is necessary for the local implementation, and do not transfer real or sensitive customer data into MTO.
+
+The live Portal is a read-only product reference, not a test environment or deployment target.
+
+### Vendor-source security
+
+The supplied Mantis 4.2.0 packages contain a GitHub PAT in package scripts, together with APM, telemetry, vendor `.env` files, and external-service adapters.
+
+- Never run vendor `setup:apm:*` or `install:apm:*` scripts.
+- Never copy, use, validate, display, or commit the embedded PAT.
+- Never import vendor `.env` files or run vendor telemetry or scripts that download and execute remote content.
+- Before committing migrated code, inspect staged files for credentials, telemetry, vendor environment values, and unintended external URLs.
+
+Preserving all Mantis pages means preserving the UI experience, not retaining credentials, telemetry, or live external connections.
+
+### Integration and simulation policy
+
+Pages involving Auth0, Firebase, Supabase, Amazon Cognito, Google reCAPTCHA, mock APIs, e-commerce, customers, invoices, chat, or other external services must continue to render with enough state and interaction for visual evaluation, but must use local fixtures, stubbed sessions, or simulated actions. They must not require external accounts, transmit workspace data externally, or present a simulation as a live integration.
+
+Do not connect Webphone to real SIP/PBX services, use a production database, or connect MTO to the FusionPBX backend during the UI Lab stage.
+
+### Vendor archive handling
+
+- Treat the original Mantis ZIP and Figma files as local reference inputs.
+- Do not commit or redistribute them without explicit product-owner approval.
+- Never extract them over `spa`, `mto`, or the workspace root; use a dedicated staging directory.
+- Do not use broad ignore rules that could hide reviewed `mto` source.
+- Commit only the Mantis source incorporated into `mto` after embedded credentials, telemetry, and unsafe configuration have been removed.
+- Never place purchase information, licence keys, or access credentials in the repository.
+
+### Migration stages
+
+1. Create `mto` from the Mantis 4.2.0 Vite JavaScript full version, preserving all pages and routes while removing credentials, APM, and telemetry and replacing external runtime integrations with local adapters.
+2. Inventory every user-visible string and provide complete Vietnamese and English catalogs. Verify text expansion, wrapping, buttons, table headers, dialogs, and responsive navigation.
+3. Apply Mphone branding and rewrite all demo content for Mphone products and services using non-sensitive local sample data. Keep every Mantis page discoverable.
+4. After the full application is bilingual and Mphone-specific, classify pages to retain, merge, redesign, keep only in the UI Lab, or remove. Document shared foundations and future backend boundaries. Do not make major removals without product-owner approval.
+5. Reimplement verified Portal behavior from `spa` in `mto`, including dashboard, calls, contacts, recordings, reports, settings, account, analytics, Webphone, Chat, and App Phone. Do not import `spa` source files into the `mto` build.
+
+### Per-page acceptance
+
+Every MTO page must be verified in Vietnamese and English, light and dark themes, desktop and 390px layouts, without page-level horizontal overflow, clipped or overlapping text, unintended external requests, runtime errors, console errors, leaked credentials, or real customer data. Verify keyboard navigation, visible focus, loading, empty, error, disabled, and interactive states, plus local sample data and simulated actions.
+
+A change is complete only after formatting, lint, local build, relevant quality checks, and visual inspection of the local preview pass.
 
 ## Product vision
 
@@ -198,7 +286,7 @@ The catalog must use the same production components and theme. It must not be a 
 
 ## Working rules
 
-1. Treat `portal-worktree/app/portal/spa` as the source of truth for all new UI Lab work.
+1. Treat `portal-worktree/app/portal/mto` as the source of truth for all new Portal migration work. Keep `portal-worktree/app/portal/spa` as a read-only reference unless the product owner explicitly requests a legacy change.
 2. Keep all implementation and verification local to this workspace and `http://localhost:4321/`.
 3. Never deploy, upload, synchronize, or write to an internal/external server from this project.
 4. Never edit the external Android project or use ADB, emulator, device, SIP/PBX, or production services as part of UI Lab work.

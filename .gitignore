@@ -16,6 +16,14 @@ portal-worktree/**
 !portal-worktree/app/portal/AGENTS.md
 !portal-worktree/app/portal/spa/
 !portal-worktree/app/portal/spa/**
+!portal-worktree/app/portal/mto/
+!portal-worktree/app/portal/mto/**
+
+# Licensed Mantis source archives and design binaries stay local. Only the
+# reviewed MTO implementation is tracked.
+Mantis_Javascript_4.2.0-ptburz/
+Mantis_Typescript_4.2.0-pv7tmj/
+Mantis-v2.2.4-xl1gyc/
 
 # JavaScript dependencies and generated output
 **/node_modules/
