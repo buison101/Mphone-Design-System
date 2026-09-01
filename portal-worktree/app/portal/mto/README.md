@@ -2,6 +2,9 @@
 
 MTO is the local Mphone Portal migration target based on the licensed Mantis 4.2.0 Vite JavaScript full version.
 
+The sanitized vendor baseline and repeatable upgrade procedure are documented in
+[`docs/vendor-upgrade.md`](docs/vendor-upgrade.md).
+
 ## Local workflow
 
 ```text
