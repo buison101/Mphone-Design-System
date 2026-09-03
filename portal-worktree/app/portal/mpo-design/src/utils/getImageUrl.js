@@ -13,5 +13,6 @@ export let ImagePath;
 // ==============================|| NEW URL - GET IMAGE URL ||============================== //
 
 export function getImageUrl(name, path) {
-  return new URL(`/src/assets/images/${path}/${name}`, import.meta.url).href;
+  const resolvedName = name.replace('mphone1', 'default');
+  return new URL(`/src/assets/images/${path}/${resolvedName}`, import.meta.url).href;
 }

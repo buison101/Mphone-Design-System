@@ -4472,6 +4472,19 @@
       "role": "label"
     },
     {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Customization/ColorScheme.jsx",
+      "occurrence": "obj:label",
+      "source": "Mphone 1",
+      "key": "shell.settings.mphone1",
+      "kind": "message",
+      "origin": "mphone",
+      "context": "Tên bảng màu Mphone dựng sẵn",
+      "routes": [
+        "*"
+      ],
+      "role": "label"
+    },
+    {
       "file": "src/layout/Dashboard/Header/HeaderContent/Customization/ThemeFont.jsx",
       "occurrence": "obj:label",
       "source": "System",
