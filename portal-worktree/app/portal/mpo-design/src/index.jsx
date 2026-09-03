@@ -42,6 +42,9 @@ import App from './App';
 import { ConfigProvider } from 'contexts/ConfigContext';
 import reportWebVitals from './reportWebVitals';
 
+// Product-owner overrides must remain the final stylesheet import.
+import './styles/mphone-owner-overrides.css';
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 

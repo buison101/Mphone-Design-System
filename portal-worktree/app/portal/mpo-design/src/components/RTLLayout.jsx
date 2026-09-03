@@ -12,13 +12,17 @@ import rtlPlugin from 'stylis-plugin-rtl';
 import { ThemeDirection } from 'config';
 import useConfig from 'hooks/useConfig';
 
+const emotionInsertionPoint = document.querySelector('meta[name="emotion-insertion-point"]');
+
 const rtlCache = createCache({
   key: 'muirtl',
+  insertionPoint: emotionInsertionPoint,
   stylisPlugins: [rtlPlugin]
 });
 
 const ltrCache = createCache({
-  key: 'mui'
+  key: 'mui',
+  insertionPoint: emotionInsertionPoint
 });
 
 export default function RTLLayout({ children }) {

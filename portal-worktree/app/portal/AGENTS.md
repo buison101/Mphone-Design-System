@@ -19,6 +19,10 @@ The parent workspace now uses this Portal as the single canvas for interface exp
 
 MPO Design has its own local build and preview workflow at `http://127.0.0.1:4322/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, relevant quality checks, and visual inspection locally. Do not deploy afterward.
 
+### Product-owner visual override — read only for agents
+
+`app/portal/mpo-design/src/styles/mphone-owner-overrides.css` is owned exclusively by the product owner. Agents may read it to understand the intended global appearance, but must never edit, format, rename, delete, regenerate, replace, or overwrite it unless the product owner explicitly authorizes a change to that exact file. New agent-authored styling must live elsewhere. This restriction also applies when running automated formatting or cleanup tools.
+
 ## Active Portal migration
 
 | Path | Role |
