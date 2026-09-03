@@ -20,6 +20,10 @@ portal-worktree/**
 !portal-worktree/app/portal/mto/**
 !portal-worktree/app/portal/mpo-design/
 !portal-worktree/app/portal/mpo-design/**
+# One-off localization review outputs stay local and must never be pushed.
+portal-worktree/app/portal/mpo-design/i18n/c7-p.json
+portal-worktree/app/portal/mpo-design/i18n/c7-s.json
+portal-worktree/app/portal/mpo-design/idscan.mjs
 !portal-worktree/app/portal/mpo-design-2/
 !portal-worktree/app/portal/mpo-design-2/**
 portal-worktree/app/portal/.vendor-staging/
