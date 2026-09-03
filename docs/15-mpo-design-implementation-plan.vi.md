@@ -362,6 +362,46 @@ Bản dịch bám vào key chứ không bám vào file đã sửa, nên một l�
 - Plugin là hạng mục kỹ thuật thật, cần test riêng. Đổi lại nó tự động hóa 85–95% khối lượng và giữ diff ở mức một chữ số.
 - Nếu về sau việc debug trở nên khó chịu, phương án dự phòng là sinh hẳn cây đã thay thế ra thư mục build và không track nó, thay vì thay lúc compile. Cùng keymap, cùng kết quả.
 
+### 4.7b. Phạm vi Gate B2 — chốt 2026-09-03
+
+Product owner chốt: **chỉ dịch phần khung của Component Catalog**, và làm sau khi Gate B1 được nghiệm thu.
+
+### Đo được gì
+
+| | Vị trí | Chuỗi phải dịch tay |
+|---|---|---|
+| Toàn bộ Catalog | 1.649 | 821 |
+| **Chỉ phần khung** (`title`, `heading`, `caption`, `description`) | **381** | **239** |
+| Dùng lại được khóa từ các đợt trước | 414 | — |
+
+### Vì sao không dịch hết
+
+Catalog là trang trưng bày component, và người đọc nó là **designer và lập trình viên đang tra cứu**. Ba nhóm chuỗi trong đó không phải chữ giao diện theo nghĩa thông thường:
+
+- **Từ vựng API của MUI** — `outlined`, `contained`, `sm`/`md`/`lg`, `primary`/`secondary`: 159 vị trí. Đây đúng là tên giá trị prop trong tài liệu MUI. Dịch chúng làm trang tra cứu **khó dùng hơn**, vì người đọc mất đúng cái từ khóa họ cần đối chiếu.
+- **Nội dung độn của bản demo** — `Card Title`, `Card Subtitle`, `Weight: Regular`, lorem ipsum: 68 vị trí. Chúng tồn tại để lấp chỗ, không mang nghĩa.
+- **Tiêu đề thẻ demo lặp lại** — `Basic` xuất hiện 41 lần, `Default` 23 lần. Những cái này **thuộc phần khung** và được dịch.
+
+Phần khung là thứ người ta dùng để **điều hướng** trong catalog: tên trang, tên thẻ demo, câu mô tả. Dịch đúng phần đó là đủ để một người Việt tìm được component mình cần, mà không làm hỏng giá trị tra cứu kỹ thuật của phần còn lại.
+
+### Ghi để khỏi bàn lại
+
+Đây là quyết định **phạm vi**, không phải sự bỏ sót. Phần không dịch sẽ được ghi vào `i18n/keep-english.json` hoặc `i18n/data-files.json` kèm lý do như mọi ngoại lệ khác, để `i18n:scan` sau khi xong B2 vẫn về 0 và con số đó vẫn có nghĩa.
+
+### Đã thực thi — 2026-09-03
+
+**323 mục keymap, 259 chuỗi phân biệt**: 183 dịch sang tiếng Việt, 76 giữ tiếng Anh kèm lý do trong `i18n/keep-english.json`. Chi tiết bằng chứng ở `docs/18`, mục "Trạng thái L7 / Gate B2".
+
+Ba điều chốt thêm khi làm:
+
+**1. Ranh giới "giữ nguyên tiếng Anh".** Chỉ ba nhóm được giữ: tên component của MUI/Mantis, tên biến thể typography (`Body 1`, `Overline`), và tên hoặc giá trị thuộc tính trong API (`outlined`, `filled`, `dense`, `indeterminate`). Chuỗi ghép nửa API nửa mô tả thì **dịch cả câu, giữ nguyên phần là định danh** — `Circular Determinate With Path` → `Circular Determinate có đường nền`. Tiêu chí: người đọc luôn nhìn thấy đúng từ khóa cần tra trong tài liệu MUI, nhưng không phải đọc một trang toàn tiếng Anh để tìm thẻ demo mình cần.
+
+**2. Không dùng lại khóa xuyên miền.** Công cụ báo 20 chuỗi "dùng lại được khóa cũ"; rà tay thì 6 trong số đó sai ngữ cảnh (`Card` → `profile.payment.card` = "Thẻ" thanh toán; `Position` → `common.position` = "Chức vụ"). Đợt này đúc khóa `catalog.*` riêng cho cả 259 chuỗi. Quy tắc rút ra: **đề xuất dùng lại khóa của công cụ là gợi ý, không phải kết luận** — nó khớp theo từ tiếng Anh, còn §4.2 yêu cầu khóa theo ngữ nghĩa.
+
+**3. Ngoại lệ phải ghim theo số.** Phần đệm còn lại của Catalog (1.385 vị trí) được ghi vào **`i18n/catalog-exceptions.json`**. Mỗi cây khai báo `expected`; `i18n:scan` in dòng `DRIFT` nếu số thực tế lệch. Một danh sách ngoại lệ theo cây mà không ghim số sẽ nuốt mất khoảng trống mới xuất hiện sau này, và con số 0 của `i18n:scan` sẽ mất nghĩa.
+
+Sau đợt này `i18n:scan --scope src` cho **0 substitutable, 0 needs-decision, 0 array-elements** — lần đầu cả ba về 0.
+
 ### 4.8. Danh tính mẫu của vendor
 
 **Quyết định 2026-09-02:** thay danh tính mẫu của vendor bằng dữ liệu mẫu Mphone **ngay trong Pha B**, thay vì chờ Stage 6.

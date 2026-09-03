@@ -80,8 +80,9 @@ import TimeLineDark from 'assets/images/all-component/time-line-dark.png';
 import TreeViewLight from 'assets/images/all-component/tree-view-light.png';
 import TreeViewDark from 'assets/images/all-component/tree-view-dark.png';
 
-const categories = [
+const getCategories = () => [
   {
+    id: 'inputs',
     title: 'Inputs',
     items: [
       { href: 'autocomplete', label: 'Autocomplete', light: AutocompleteLight, dark: AutocompleteDark },
@@ -96,6 +97,7 @@ const categories = [
     ]
   },
   {
+    id: 'dataDisplay',
     title: 'Data Display',
     items: [
       { href: 'avatars', label: 'Avatar', light: AvatarLight, dark: AvatarDark },
@@ -107,6 +109,7 @@ const categories = [
     ]
   },
   {
+    id: 'feedback',
     title: 'Feedback',
     items: [
       { href: 'alert', label: 'Alert', light: AlertLight, dark: AlertDark },
@@ -116,6 +119,7 @@ const categories = [
     ]
   },
   {
+    id: 'navigation',
     title: 'Navigation',
     items: [
       { href: 'breadcrumbs', label: 'Breadcrumbs', light: BreadcrumbsLight, dark: BreadcrumbsDark },
@@ -126,6 +130,7 @@ const categories = [
     ]
   },
   {
+    id: 'surfaces',
     title: 'Surfaces',
     items: [
       { href: 'accordion', label: 'Accordion', light: AccordionLight, dark: AccordionDark },
@@ -133,6 +138,7 @@ const categories = [
     ]
   },
   {
+    id: 'utils',
     title: 'Utils',
     items: [
       { href: 'color', label: 'Color', light: ColorLight, dark: ColorDark },
@@ -169,8 +175,8 @@ export default function Components() {
 
   return (
     <Stack sx={{ gap: { xs: 3, sm: 5 } }}>
-      {categories.map((category) => (
-        <Stack key={category.title} sx={{ gap: { xs: 2.75, sm: 3.75 } }}>
+      {getCategories().map((category) => (
+        <Stack key={category.id} sx={{ gap: { xs: 2.75, sm: 3.75 } }}>
           <Typography variant="h3">{category.title}</Typography>
           <Grid container spacing={{ xs: 1.25, sm: 3 }}>
             {category.items.map((item) => (

@@ -31,6 +31,116 @@ Còn lại của L1: **lượt ảnh chụp có mạng**, và **ngoại lệ §2
 
 Lưu ý môi trường: `vite build` không chạy được trong VM Linux trên máy (rolldown thiếu binding Linux). Build và render được thực hiện trong cloud container theo đúng quy trình đã ghi.
 
+## Trạng thái L7 / Gate B2 — phần khung Component Catalog, 2026-09-03
+
+Phạm vi đã duyệt: **chỉ phần khung** — tiêu đề trang, câu mô tả trang, tiêu đề thẻ demo (§4.7b của `docs/15`).
+
+### Đã làm
+
+| | Số |
+|---|---|
+| Mục keymap thêm mới, namespace `catalog.*` | 323 |
+| Chuỗi phân biệt | 259 |
+| Trong đó **dịch sang tiếng Việt** | 183 |
+| Trong đó **giữ nguyên tiếng Anh có lý do** (`i18n/keep-english.json`) | 76 |
+| Vị trí phần đệm của Catalog ghi thành ngoại lệ có lý do | 1.385 |
+
+Bảy mươi sáu chuỗi giữ tiếng Anh chia ba nhóm, mỗi nhóm một lý do trong `keep-english.json`: **46 tên component** của MUI/Mantis (`Accordion`, `Speed Dial`, `Text Field`), **6 tên biến thể typography** (`Body 1`, `Subtitle 2`, `Overline`), **24 tên hoặc giá trị thuộc tính API** (`outlined`, `filled`, `dense`, `indeterminate`, `landscape`). Đây đúng là những từ khóa người đọc catalog cần đối chiếu với tài liệu MUI.
+
+### Một điều chỉnh so với con số đã trình
+
+Bản trình phạm vi ghi **239 chuỗi phải dịch tay**, tức 259 trừ 20 chuỗi mà công cụ báo là **dùng lại được khóa từ các đợt trước**. Khi rà từng khóa một thì **6 trong 20 lần dùng lại là sai ngữ cảnh**:
+
+| Chuỗi | Khóa cũ | Tiếng Việt của khóa cũ | Nghĩa trong Catalog |
+|---|---|---|---|
+| `Card` | `profile.payment.card` | Thẻ (thẻ thanh toán) | component Card |
+| `Position` | `common.position` | Chức vụ | vị trí hiển thị |
+| `Avatar` | `common.avatarAlt` | Ảnh đại diện | component Avatar |
+| `Light` | `shell.settings.modeLight` | Sáng (chế độ sáng) | biến thể màu nhạt |
+| `Outlined` | `apps.reused.outlined` | Viền | `variant="outlined"` |
+| `Feedback` | `shell.profile.feedback` | Phản hồi (menu hồ sơ) | nhóm component |
+
+Vì vậy đợt này **đúc khóa `catalog.*` riêng cho cả 259 chuỗi**, không dùng lại khóa xuyên miền. Đây chính là luật "khóa ngữ nghĩa, không phải khóa theo từ tiếng Anh" ở §4.2: cùng một từ tiếng Anh ở hai ngữ cảnh là hai khóa. Giá phải trả là 20 khóa thừa; cái tránh được là 6 chỗ dịch sai hiển thị ngay trên màn hình.
+
+### Sửa mã nguồn
+
+Một file vendor, `src/sections/components-overview/Components.jsx`:
+
+- `const categories = [...]` ở tầm module → `const getCategories = () => [...]`, gọi trong component. Plugin từ chối thay thế vị trí tầm module vì chúng đóng băng locale nạp đầu tiên (§4.7).
+- Thêm `id` ổn định cho từng nhóm và `key={category.id}` thay cho `key={category.title}`. `title` giờ là chuỗi được dịch; dùng nó làm React key là đúng lớp lỗi "chuỗi hiển thị làm khóa tra cứu" đã xảy ra bốn lần trước đó.
+
+Đã ghi vào `docs/vendor-patches.md`.
+
+### Phần còn lại của Catalog: ngoại lệ có số ghim
+
+Phần không thuộc khung — nhãn nút, chữ trong tooltip, dữ liệu mẫu Autocomplete (tên phim, nhãn GitHub), Lorem ipsum, chuỗi mã nguồn hiển thị kèm, mốc thang trượt — được ghi vào **`i18n/catalog-exceptions.json`**, một cơ chế mới cho `i18n:scan`.
+
+Ngoại lệ này **ghim theo số**: mỗi cây khai báo `expected`, và nếu số vị trí thực tế lệch đi, `i18n:scan` in dòng `DRIFT` kèm cây và hai con số. Nếu chỉ liệt kê cây mà không ghim số thì ngoại lệ sẽ âm thầm nuốt mất một khoảng trống mới xuất hiện — đúng cái mà `array-exceptions.json` đã cảnh báo là "danh sách để rà, không phải để bịt miệng".
+
+Sau khi ghi, `i18n:scan --scope src` cho:
+
+```
+substitutable   0 positions, 0 distinct
+needs decision  0 positions in module-scope object properties
+array elements  0 positions in bare string arrays
+array excepted  119   catalog payload 1385   skipped files 21
+```
+
+Ba con số đầu về 0 lần đầu tiên trong dự án. Mọi vị trí còn lại đều trỏ tới một quyết định đã ghi.
+
+### Bằng chứng
+
+| Kiểm tra | Kết quả |
+|---|---|
+| `i18n:check` | 0 lỗi, 0 cảnh báo |
+| `i18n:diff` với cây vendor nguyên bản | 3.883 matched, 0 reworded/moved/vanished |
+| `i18n:scan --scope src` | 0 substitutable, 0 needs-decision, 0 array-elements |
+| `vite build` (cloud container) | thành công, không phát sinh cảnh báo tầm module mới |
+| Render 33 route Catalog × 2 locale (DEV) | 66 lượt, 0 error boundary, 0 raw message id, 0 lỗi runtime |
+| Đối chiếu từng khóa với chữ đã render | **259/259** khóa xuất hiện đúng ngôn ngữ trên route của nó |
+| Chuyển ngôn ngữ thật, hai vòng vi ↔ en | trang Catalog đổi trọn vẹn, không lẫn hai ngôn ngữ, không lỗi |
+| Quét "chuỗi dịch bị dùng làm định danh" trên toàn `src` | 1 kết quả, đã truy: `Actions` trong `EditRow.jsx` so sánh với `column.id` (`'actions'` viết thường), không liên quan tới `header` được dịch |
+| ESLint + Prettier trên file đã sửa | sạch |
+
+Ba khóa `catalog.modal.basicModal`, `catalog.modal.childModal`, `catalog.modal.parentModal` không đọc được ở lượt quét trang vì nằm trong modal phải bấm mới mở. Đã mở bằng thao tác thật và đọc: `Modal cơ bản`, `Modal cha`, `Modal con`.
+
+### Giới hạn kiểm chứng
+
+- Render thực hiện trong cloud container, **không có mạng tới mock API của vendor**. Các trang Catalog không phụ thuộc API nên giới hạn này không ảnh hưởng tới đợt này.
+- Chưa kiểm tra bàn phím, focus và trạng thái rỗng của các demo tương tác; đây là phần chung còn nợ từ các đợt trước, không phát sinh mới ở B2.
+- Chưa đo tràn chữ ở 390px cho 33 route Catalog. Phần khung là tiêu đề ngắn nên rủi ro thấp, nhưng chưa có số.
+
+## Trạng thái Gate B1 — lượt bằng chứng, 2026-09-03
+
+Product owner chốt: **xong B1 trước, rồi mới làm B2**, và phạm vi B2 là **chỉ phần khung của Component Catalog** (§4.7b của `docs/15`).
+
+### Dọn nốt trước khi chụp
+
+Lượt đọc màn hình đầu tiên phát hiện **bốn nhóm còn sót**, tất cả đều thuộc cùng một cơ chế: `DISPLAY_OBJECT_PROPS` là một danh sách cho phép, nên **mỗi tên thuộc tính mới do vendor đặt ra là một điểm mù mới**.
+
+- `obj:address` — địa chỉ mẫu trên biểu mẫu hóa đơn và hộp thoại địa chỉ, 8 chuỗi
+- `obj:review` / `obj:client` — toàn bộ khối nhận xét khách hàng ở trang giới thiệu, 9 nhận xét và 9 tên
+- `obj:time` — mốc thời gian tương đối trong widget (`2h ago`, `4d ago`), 6 chuỗi
+- `obj:freePrompts`, `obj:detail`, `obj:aria-label` và **`prop:label` một từ viết thường** — `day`, `hour`, `min`, `sec` trên trang đếm ngược
+
+Đã thêm mười tên thuộc tính, và nới luật một-từ-viết-thường cho **những prop mà bản chất là nhãn** (`label`, `title`, `placeholder`, `primary`, `secondary`, `caption`, `heading`, `description`, `helperText`, `msg`, `emptyText`).
+
+Hai thứ **cố ý không thêm**, đo rồi mới quyết:
+
+- **Tên thuộc tính hình dạng CSS** — `border`, `transform`, `height`, `width`, `padding`: 549 ứng viên nếu đảo luật thành danh sách chặn, phần lớn là giá trị CSS. Giữ nguyên cơ chế danh sách cho phép.
+- **`value`** — nó mang token enum (`errorDark`, `dayGridMonth`) nhiều hơn chữ, và hai nhãn thật nó giữ không đáng với phần nhiễu.
+- **Đối số của hàm dựng dữ liệu** không được nới luật một-từ: chúng là tham số theo vị trí và trộn chữ hiển thị với giá trị kỹ thuật (`error`, `primary`, `success` là màu chip, không phải chữ trên màn hình).
+
+Thêm 55 entry. Keymap **3.562**.
+
+### Lượt chụp bằng chứng
+
+468 lượt render — 78 route × 2 ngôn ngữ × 3 tổ hợp. Kết quả đầy đủ ở **`docs/21-gate-b1-evidence.vi.md`**. Tóm tắt: **0 raw message id**, 3 route rơi error boundary (cả ba là route phụ thuộc mock API, hỏng **y hệt ở cả hai ngôn ngữ**), 4 route tràn ngang ở 390px (ba trong số đó đang ở trạng thái lỗi nên số đo vô nghĩa; route thứ tư đã tràn 20px từ ảnh chụp L1). `/apps/e-commerce/products` — route duy nhất rơi error boundary ở L1 — nay render bình thường.
+
+Quét đảo tiếng Anh: 481 đoạn không dấu, sau khi trừ bản dịch không dấu và nhiễu dữ liệu còn 67, và **cả 67 đều thuộc một quyết định đã ghi**. Không còn chuỗi chưa dịch nào mà chưa có quyết định.
+
+Còn lại của Gate B1: **lượt chụp có mạng trên máy product owner** cho ba route phụ thuộc dữ liệu, và **chữ ký chấp nhận**.
+
 ## Trạng thái L8 — bước 2: dịch xong toàn bộ mặt sản phẩm, 2026-09-03
 
 **Mọi vị trí thay thế được ngoài Component Catalog đã vào keymap: 0 còn lại.** Keymap **3.507 entry**, 2.060 key dự án. `i18n:check` 0 lỗi 0 cảnh báo, `i18n:diff` 3.489 matched / 0 reworded / 0 moved / 0 vanished, `vite build` 15,1s, ESLint và Prettier sạch.

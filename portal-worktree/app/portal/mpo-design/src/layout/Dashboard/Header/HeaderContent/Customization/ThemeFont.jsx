@@ -21,6 +21,11 @@ export default function ThemeFont() {
 
   const fonts = [
     {
+      id: 'system',
+      value: `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif`,
+      label: 'System'
+    },
+    {
       id: 'inter',
       value: `'Inter', sans-serif`,
       label: 'Inter'
@@ -41,11 +46,12 @@ export default function ThemeFont() {
       label: 'Public Sans'
     }
   ];
+  const visibleFonts = fonts.filter(({ id }) => id !== 'public-sans');
 
   return (
     <RadioGroup row aria-label="theme-font" name="theme-font" value={state.fontFamily} onChange={handleFontChange}>
       <Grid container rowSpacing={2} columnSpacing={2.5}>
-        {fonts.map((item, index) => (
+        {visibleFonts.map((item, index) => (
           <Grid key={index}>
             <FormControlLabel
               control={<Radio value={item.value} sx={{ display: 'none' }} />}

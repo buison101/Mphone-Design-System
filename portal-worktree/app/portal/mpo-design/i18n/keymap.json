@@ -1022,54 +1022,6 @@
       "role": "text"
     },
     {
-      "file": "src/layout/Dashboard/Header/HeaderContent/Localization.jsx",
-      "occurrence": "text",
-      "source": "(French)",
-      "key": "shell.locale.frenchRegion",
-      "kind": "message",
-      "context": "Ghi chú vùng bên cạnh tên ngôn ngữ",
-      "routes": [
-        "*"
-      ],
-      "role": "text"
-    },
-    {
-      "file": "src/layout/Dashboard/Header/HeaderContent/Localization.jsx",
-      "occurrence": "text",
-      "source": "Română",
-      "key": "shell.locale.romanian",
-      "kind": "message",
-      "context": "Tên ngôn ngữ Rumani viết bằng chính tiếng Rumani; giữ nguyên",
-      "routes": [
-        "*"
-      ],
-      "role": "text"
-    },
-    {
-      "file": "src/layout/Dashboard/Header/HeaderContent/Localization.jsx",
-      "occurrence": "text",
-      "source": "(Romanian)",
-      "key": "shell.locale.romanianRegion",
-      "kind": "message",
-      "context": "Ghi chú vùng bên cạnh tên ngôn ngữ",
-      "routes": [
-        "*"
-      ],
-      "role": "text"
-    },
-    {
-      "file": "src/layout/Dashboard/Header/HeaderContent/Localization.jsx",
-      "occurrence": "text",
-      "source": "(Chinese)",
-      "key": "shell.locale.chineseRegion",
-      "kind": "message",
-      "context": "Ghi chú vùng bên cạnh tên ngôn ngữ",
-      "routes": [
-        "*"
-      ],
-      "role": "text"
-    },
-    {
       "file": "src/layout/Dashboard/Header/HeaderContent/MegaMenuSection.jsx",
       "occurrence": "prop:title",
       "source": "Explore Pages",
@@ -4514,6 +4466,19 @@
       "key": "shell.settings.theme8",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
+      "routes": [
+        "*"
+      ],
+      "role": "label"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Customization/ThemeFont.jsx",
+      "occurrence": "obj:label",
+      "source": "System",
+      "key": "shell.settings.fontSystem",
+      "kind": "message",
+      "origin": "mphone",
+      "context": "Lựa chọn dùng chuỗi phông mặc định của hệ điều hành",
       "routes": [
         "*"
       ],
@@ -35572,6 +35537,4432 @@
       "context": "Câu hỏi trong trang câu hỏi thường gặp",
       "routes": [],
       "role": "question"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "12 min ago",
+      "key": "widget.time.m12",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "2h ago",
+      "key": "widget.time.h2",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "5h ago",
+      "key": "widget.time.h5",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "1d ago",
+      "key": "widget.time.d1",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "2d ago",
+      "key": "widget.time.d2",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/layout/Dashboard/Header/HeaderContent/Notification/data.jsx",
+      "occurrence": "obj:time",
+      "source": "4d ago",
+      "key": "widget.time.d4",
+      "kind": "message",
+      "context": "Mốc thời gian tương đối trong widget",
+      "routes": [],
+      "role": "time"
+    },
+    {
+      "file": "src/pages/apps/customer/card.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Without label",
+      "key": "components.a11y.withoutLabel",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn không có nhãn hiển thị",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/pages/apps/invoice/create.jsx",
+      "occurrence": "obj:address",
+      "source": "1300 Cooks Mine, NM 87829",
+      "key": "sample.address.inv1",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/pages/maintenance/coming-soon.jsx",
+      "occurrence": "prop:label",
+      "source": "day",
+      "key": "maintenance.countdown.day",
+      "kind": "message",
+      "context": "Nhãn đơn vị dưới ô đếm ngược trên trang sắp ra mắt",
+      "routes": [],
+      "role": "label"
+    },
+    {
+      "file": "src/pages/maintenance/coming-soon.jsx",
+      "occurrence": "prop:label",
+      "source": "hour",
+      "key": "maintenance.countdown.hour",
+      "kind": "message",
+      "context": "Nhãn đơn vị dưới ô đếm ngược trên trang sắp ra mắt",
+      "routes": [],
+      "role": "label"
+    },
+    {
+      "file": "src/pages/maintenance/coming-soon.jsx",
+      "occurrence": "prop:label",
+      "source": "min",
+      "key": "maintenance.countdown.min",
+      "kind": "message",
+      "context": "Nhãn đơn vị dưới ô đếm ngược trên trang sắp ra mắt",
+      "routes": [],
+      "role": "label"
+    },
+    {
+      "file": "src/pages/maintenance/coming-soon.jsx",
+      "occurrence": "prop:label",
+      "source": "sec",
+      "key": "maintenance.countdown.sec",
+      "kind": "message",
+      "context": "Nhãn đơn vị dưới ô đếm ngược trên trang sắp ra mắt",
+      "routes": [],
+      "role": "label"
+    },
+    {
+      "file": "src/pages/tables/mui-table/datatable.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "select all desserts",
+      "key": "tables.a11y.selectAll",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn tất cả trong bảng",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/pages/tables/mui-table/enhanced.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "select all desserts",
+      "key": "tables.a11y.selectAll",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn tất cả trong bảng",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/pages/tables/react-table/umbrella.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Status Filter",
+      "key": "customer.a11y.statusFilter",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô lọc trạng thái khách hàng",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/ai/Pricing.jsx",
+      "occurrence": "obj:freePrompts",
+      "source": "2 Free Prompts",
+      "key": "ai.pricing.free2",
+      "kind": "message",
+      "context": "Số prompt miễn phí của một nhóm",
+      "routes": [],
+      "role": "freePrompts"
+    },
+    {
+      "file": "src/sections/ai/Pricing.jsx",
+      "occurrence": "obj:freePrompts",
+      "source": "1 Free Prompt",
+      "key": "ai.pricing.free1",
+      "kind": "message",
+      "context": "Số prompt miễn phí của một nhóm",
+      "routes": [],
+      "role": "freePrompts"
+    },
+    {
+      "file": "src/sections/ai/Pricing.jsx",
+      "occurrence": "obj:freePrompts",
+      "source": "3 Free Prompts",
+      "key": "ai.pricing.free3",
+      "kind": "message",
+      "context": "Số prompt miễn phí của một nhóm",
+      "routes": [],
+      "role": "freePrompts"
+    },
+    {
+      "file": "src/sections/apps/customer/CustomerTable.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Status Filter",
+      "key": "customer.a11y.statusFilter",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô lọc trạng thái khách hàng",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "1754 Ureate, RhodSA5 5BO",
+      "key": "sample.address.addr2",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "1300 Mine RoadQuemado, NM 87829",
+      "key": "sample.address.addr1",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "3488 Arbutus DriveMiami, FL",
+      "key": "sample.address.addr3",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "3488 Arbutus DriveMiami, FL 33012",
+      "key": "sample.address.addr3full",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "4388 House DriveWesrville, OH",
+      "key": "sample.address.addr4",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/invoice/AddressModal.jsx",
+      "occurrence": "obj:address",
+      "source": "4388 House DriveWestville, OH +91",
+      "key": "sample.address.addr4full",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/apps/kanban/Backlogs/AddItem.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Without label",
+      "key": "components.a11y.withoutLabel",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn không có nhãn hiển thị",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/apps/kanban/Backlogs/AddStory.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Without label",
+      "key": "components.a11y.withoutLabel",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn không có nhãn hiển thị",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/apps/kanban/Backlogs/EditStory.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Without label",
+      "key": "components.a11y.withoutLabel",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn không có nhãn hiển thị",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/apps/kanban/Board/EditItem.jsx",
+      "occurrence": "obj:aria-label",
+      "source": "Without label",
+      "key": "components.a11y.withoutLabel",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho ô chọn không có nhãn hiển thị",
+      "routes": [],
+      "role": "aria-label"
+    },
+    {
+      "file": "src/sections/apps/profiles/user/TabPersonal.jsx",
+      "occurrence": "obj:address",
+      "source": "3801 Chalk Butte Rd, Cut Bank, MT 59427, United States",
+      "key": "sample.address.profile",
+      "kind": "sampleIdentity",
+      "context": "Địa chỉ mẫu (§4.8); dùng địa chỉ hư cấu tại Việt Nam",
+      "routes": [],
+      "role": "address"
+    },
+    {
+      "file": "src/sections/forms/wizard/basic-wizard/Review.jsx",
+      "occurrence": "obj:detail",
+      "source": "Visa",
+      "key": "shop.payment.visa",
+      "kind": "sampleIdentity",
+      "context": "Tên thương hiệu thẻ, giữ nguyên",
+      "routes": [],
+      "role": "detail"
+    },
+    {
+      "file": "src/sections/forms/wizard/basic-wizard/Review.jsx",
+      "occurrence": "obj:detail",
+      "source": "Mr John Smith",
+      "key": "shop.sample.reviewer",
+      "kind": "sampleIdentity",
+      "context": "Tên người mẫu trong bước xem lại đơn hàng",
+      "routes": [],
+      "role": "detail"
+    },
+    {
+      "file": "src/sections/forms/wizard/validation-wizard/Review.jsx",
+      "occurrence": "obj:detail",
+      "source": "Visa",
+      "key": "shop.payment.visa",
+      "kind": "sampleIdentity",
+      "context": "Tên thương hiệu thẻ, giữ nguyên",
+      "routes": [],
+      "role": "detail"
+    },
+    {
+      "file": "src/sections/forms/wizard/validation-wizard/Review.jsx",
+      "occurrence": "obj:detail",
+      "source": "Mr John Smith",
+      "key": "shop.sample.reviewer",
+      "kind": "sampleIdentity",
+      "context": "Tên người mẫu trong bước xem lại đơn hàng",
+      "routes": [],
+      "role": "detail"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "Mantis dashboard template is the best! Its clean design shortened the app development time. It provides various components so I could easily implement the UI I wanted, and the community is active so I could solve problems quickly. I highly recommend it!!",
+      "key": "landing.testimonial.r8",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "TAEJIN J.",
+      "key": "landing.testimonial.c7",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "I am very grateful for this template both code and design as well as customer service. It has really helped de-mystify and accelerate the process immensely. Thank you!",
+      "key": "landing.testimonial.r5",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Emma M.",
+      "key": "landing.testimonial.c5",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "A beautiful template and amazing, fast support team to go with it!",
+      "key": "landing.testimonial.r1",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Brandon S.",
+      "key": "landing.testimonial.c3",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "I strongly recommend mantis react theme, that is very usefully, can help more and more productivity for our internal project, BTW my license have expired, my computer break, i lost my mantis code, i contact the mantis team, it send my a new download link, Thank you very much to them for their professional service",
+      "key": "landing.testimonial.r7",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "yingchun t.",
+      "key": "landing.testimonial.c9",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "I have been using the mantis for almost 2 years now and I have to say the support has been excellent. whenever i’ve had questions or ran into issues, the developer has always responded with the right resolution. It's rare to find such reliable and ongoing support over time - really appreciate it.",
+      "key": "landing.testimonial.r6",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Abbey S.",
+      "key": "landing.testimonial.c1",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "Very satisfied so far! Great team work",
+      "key": "landing.testimonial.r9",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Prajwal S.",
+      "key": "landing.testimonial.c6",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "Excellent work. Project and code are clean. I bought Standard Plus to get figma file. However, the design system like list of basic components like button, input, colors, text not present so it difficult to create another design.",
+      "key": "landing.testimonial.r4",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Chansothea K.",
+      "key": "landing.testimonial.c4",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "A really nice to have theme, It checks all the boxes of the perfect react theme built on top of material UI",
+      "key": "landing.testimonial.r2",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Atishay J.",
+      "key": "landing.testimonial.c2",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:review",
+      "source": "Excellent theme guys. Loving simplicity and code structure so far. Keep it up.",
+      "key": "landing.testimonial.r3",
+      "kind": "message",
+      "context": "Nội dung nhận xét mẫu của khách hàng trên trang giới thiệu",
+      "routes": [],
+      "role": "review"
+    },
+    {
+      "file": "src/sections/landing/TestimonialBlock.jsx",
+      "occurrence": "obj:client",
+      "source": "Tash M.",
+      "key": "landing.testimonial.c8",
+      "kind": "sampleIdentity",
+      "context": "Tên người nhận xét mẫu trên trang giới thiệu (§4.8)",
+      "routes": [],
+      "role": "client"
+    },
+    {
+      "file": "src/sections/widget/data/LatestCustomers.jsx",
+      "occurrence": "prop:title",
+      "source": "image",
+      "key": "widget.a11y.image",
+      "kind": "message",
+      "context": "Chú thích ảnh đại diện trong widget khách hàng mới",
+      "routes": [],
+      "role": "title"
+    },
+    {
+      "file": "src/sections/widget/data/LatestOrder.jsx",
+      "occurrence": "prop:title",
+      "source": "image",
+      "key": "widget.a11y.image",
+      "kind": "message",
+      "context": "Chú thích ảnh đại diện trong widget khách hàng mới",
+      "routes": [],
+      "role": "title"
+    },
+    {
+      "file": "src/sections/widget/data/LatestPosts.jsx",
+      "occurrence": "prop:title",
+      "source": "image",
+      "key": "widget.a11y.image",
+      "kind": "message",
+      "context": "Chú thích ảnh đại diện trong widget khách hàng mới",
+      "routes": [],
+      "role": "title"
+    },
+    {
+      "file": "src/pages/components-overview/accordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Accordion",
+      "key": "catalog.accordion.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang accordion trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/accordion.jsx",
+      "occurrence": "prop:caption",
+      "source": "Lists are continuous, vertical indexes of text or images.",
+      "key": "catalog.reused.listsCaption",
+      "kind": "message",
+      "context": "Mô tả trang reused trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Alert",
+      "key": "catalog.reused.alert",
+      "kind": "message",
+      "context": "Tiêu đề trang reused trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:caption",
+      "source": "An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.",
+      "key": "catalog.alert.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang alert trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Actions",
+      "key": "catalog.alert.actions",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Filled",
+      "key": "catalog.alert.filled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Description",
+      "key": "catalog.alert.description",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/alert.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined",
+      "key": "catalog.reused.outlined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/alert"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/all-component.jsx",
+      "occurrence": "prop:title",
+      "source": "All Component",
+      "key": "catalog.index.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang tổng hợp trong Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/all-component.jsx",
+      "occurrence": "prop:caption",
+      "source": "With huge resource pack making deployment easy and expanding more effectively",
+      "key": "catalog.index.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang tổng hợp trong Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/autocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Autocomplete",
+      "key": "catalog.autocomplete.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang autocomplete trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/autocomplete.jsx",
+      "occurrence": "prop:caption",
+      "source": "The autocomplete is a normal text input enhanced by a panel of suggested options.",
+      "key": "catalog.autocomplete.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang autocomplete trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Avatar",
+      "key": "catalog.avatars.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang avatars trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:caption",
+      "source": "Avatars are found throughout material design with uses in everything from tables to dialog menus.",
+      "key": "catalog.avatars.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang avatars trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Vector",
+      "key": "catalog.avatars.vector",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Variants",
+      "key": "catalog.reused.variants",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Icon",
+      "key": "catalog.avatars.icon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "With Badge",
+      "key": "catalog.avatars.withBadge",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Image",
+      "key": "catalog.avatars.image",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Letter",
+      "key": "catalog.avatars.letter",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined",
+      "key": "catalog.reused.outlined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Avatar Group",
+      "key": "catalog.avatars.avatarGroup",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/avatars.jsx",
+      "occurrence": "prop:title",
+      "source": "Fallbacks",
+      "key": "catalog.avatars.fallbacks",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/avatars"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Badge",
+      "key": "catalog.badges.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang badges trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:caption",
+      "source": "Badge generates a small badge to the top-right of its child(ren).",
+      "key": "catalog.badges.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang badges trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Light",
+      "key": "catalog.badges.light",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Maximum Value",
+      "key": "catalog.badges.maximumValue",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Dot Badges",
+      "key": "catalog.badges.dotBadges",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Alignment",
+      "key": "catalog.reused.alignment",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Overlap",
+      "key": "catalog.badges.overlap",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/badges.jsx",
+      "occurrence": "prop:title",
+      "source": "Visibility",
+      "key": "catalog.badges.visibility",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/badges"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Breadcrumbs",
+      "key": "catalog.breadcrumbs.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang breadcrumbs trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:caption",
+      "source": "Breadcrumbs allow users to make selections from a range of values.",
+      "key": "catalog.breadcrumbs.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang breadcrumbs trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Custom Separator",
+      "key": "catalog.breadcrumbs.customSeparator",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "With Title",
+      "key": "catalog.breadcrumbs.withTitle",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Title Bottom",
+      "key": "catalog.breadcrumbs.titleBottom",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "With Icons",
+      "key": "catalog.reused.withIcons",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Only Dashboard Icons",
+      "key": "catalog.breadcrumbs.onlyDashboardIcons",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "Collapsed Breadcrumbs",
+      "key": "catalog.breadcrumbs.collapsedBreadcrumbs",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "No Card with Divider",
+      "key": "catalog.breadcrumbs.noCardWithDivider",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/breadcrumbs.jsx",
+      "occurrence": "prop:title",
+      "source": "No Card & No Divider",
+      "key": "catalog.breadcrumbs.noCardNoDivider",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/breadcrumbs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Buttons",
+      "key": "catalog.reused.buttons",
+      "kind": "message",
+      "context": "Tiêu đề trang reused trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:caption",
+      "source": "Buttons allow users to take actions, and make choices, with a single tap.",
+      "key": "catalog.buttons.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang buttons trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic Button",
+      "key": "catalog.buttons.basicButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined Button",
+      "key": "catalog.buttons.outlinedButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Dashed Button",
+      "key": "catalog.buttons.dashedButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Text Button",
+      "key": "catalog.buttons.textButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Shadow Button",
+      "key": "catalog.buttons.shadowButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "With Icon",
+      "key": "catalog.reused.withIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Button Size",
+      "key": "catalog.buttons.buttonSize",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Upload Button",
+      "key": "catalog.buttons.uploadButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled Button",
+      "key": "catalog.buttons.disabledButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Block Level",
+      "key": "catalog.buttons.blockLevel",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Fab ",
+      "key": "catalog.buttons.fab",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Icon Button",
+      "key": "catalog.buttons.iconButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Loading Button",
+      "key": "catalog.buttons.loadingButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/buttons.jsx",
+      "occurrence": "prop:title",
+      "source": "Animation",
+      "key": "catalog.reused.animation",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Card",
+      "key": "catalog.cards.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang cards trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:caption",
+      "source": "Cards contain content and actions about a single subject.",
+      "key": "catalog.cards.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang cards trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Card Title",
+      "key": "catalog.cards.cardTitle",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined",
+      "key": "catalog.reused.outlined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Action",
+      "key": "catalog.cards.action",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Complex Interaction",
+      "key": "catalog.cards.complexInteraction",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Media",
+      "key": "catalog.cards.media",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Animation Card",
+      "key": "catalog.cards.animationCard",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Fade",
+      "key": "catalog.cards.fade",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/cards.jsx",
+      "occurrence": "prop:title",
+      "source": "Slide",
+      "key": "catalog.cards.slide",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/cards"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Checkbox",
+      "key": "catalog.checkbox.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang checkbox trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:caption",
+      "source": "Checkboxes allow the user to select one or more items from a set.",
+      "key": "catalog.checkbox.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang checkbox trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Size",
+      "key": "catalog.reused.size",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Label Placement",
+      "key": "catalog.reused.labelPlacement",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/checkbox.jsx",
+      "occurrence": "prop:title",
+      "source": "Indeterminate",
+      "key": "catalog.checkbox.indeterminate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/checkbox"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Chips",
+      "key": "catalog.chips.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang chips trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:caption",
+      "source": "Chips are compact elements that represent an input, attribute, or action.",
+      "key": "catalog.chips.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang chips trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined",
+      "key": "catalog.reused.outlined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Lighter",
+      "key": "catalog.chips.lighter",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Combined",
+      "key": "catalog.chips.combined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Deletable Icon",
+      "key": "catalog.chips.deletableIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Avatar & Icon",
+      "key": "catalog.chips.avatarIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Size",
+      "key": "catalog.reused.size",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Array",
+      "key": "catalog.chips.array",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/chips.jsx",
+      "occurrence": "prop:title",
+      "source": "Color",
+      "key": "catalog.reused.color",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/chips"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Color",
+      "key": "catalog.reused.color",
+      "kind": "message",
+      "context": "Tiêu đề trang reused trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:caption",
+      "source": "Convey meaning through color. Out of the box you get access to all colors in the Material Design guidelines.",
+      "key": "catalog.color.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang color trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Primary Color",
+      "key": "catalog.color.primaryColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Secondary Color",
+      "key": "catalog.color.secondaryColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Other Color",
+      "key": "catalog.color.otherColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Success Color",
+      "key": "catalog.color.successColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Error Color",
+      "key": "catalog.color.errorColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Warning Color",
+      "key": "catalog.color.warningColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/color.jsx",
+      "occurrence": "prop:title",
+      "source": "Info Color",
+      "key": "catalog.color.infoColor",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/color"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/date-time-picker.jsx",
+      "occurrence": "prop:title",
+      "source": "Date / Time Picker",
+      "key": "catalog.datetimepicker.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang datetimepicker trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/date-time-picker.jsx",
+      "occurrence": "prop:caption",
+      "source": "Date pickers let the user select a date.",
+      "key": "catalog.datetimepicker.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang datetimepicker trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Dialog",
+      "key": "catalog.dialogs.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang dialogs trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:caption",
+      "source": "Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.",
+      "key": "catalog.dialogs.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang dialogs trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Alert",
+      "key": "catalog.reused.alert",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Form",
+      "key": "catalog.dialogs.form",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Transitions",
+      "key": "catalog.reused.transitions",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Full Screen",
+      "key": "catalog.dialogs.fullScreen",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Responsive",
+      "key": "catalog.dialogs.responsive",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Draggable",
+      "key": "catalog.dialogs.draggable",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Scrolling",
+      "key": "catalog.dialogs.scrolling",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/dialogs.jsx",
+      "occurrence": "prop:title",
+      "source": "Confirmation",
+      "key": "catalog.dialogs.confirmation",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/dialogs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/lists.jsx",
+      "occurrence": "prop:title",
+      "source": "Lists",
+      "key": "catalog.lists.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang lists trong Component Catalog",
+      "routes": [
+        "/components-overview/lists"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/lists.jsx",
+      "occurrence": "prop:caption",
+      "source": "Lists are continuous, vertical indexes of text or images.",
+      "key": "catalog.reused.listsCaption",
+      "kind": "message",
+      "context": "Mô tả trang reused trong Component Catalog",
+      "routes": [
+        "/components-overview/lists"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/modal.jsx",
+      "occurrence": "prop:title",
+      "source": "Modal",
+      "key": "catalog.modal.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang modal trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/modal.jsx",
+      "occurrence": "prop:caption",
+      "source": "The modal component provides a solid foundation for creating dialogs, popovers, lightboxes, or whatever else.",
+      "key": "catalog.modal.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang modal trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Pagination",
+      "key": "catalog.pagination.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang pagination trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:caption",
+      "source": "The Pagination component enables the user to select a specific page from a range of pages.",
+      "key": "catalog.pagination.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang pagination trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Size",
+      "key": "catalog.reused.size",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Ranges",
+      "key": "catalog.pagination.ranges",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Tables",
+      "key": "catalog.pagination.tables",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Variants",
+      "key": "catalog.reused.variants",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular",
+      "key": "catalog.pagination.circular",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Buttons",
+      "key": "catalog.reused.buttons",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/pagination.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/pagination"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Progress",
+      "key": "catalog.progress.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang progress trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:caption",
+      "source": "Progress indicators commonly known as spinners, express an unspecified wait time or display the length of a process.",
+      "key": "catalog.progress.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang progress trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular Indeterminate",
+      "key": "catalog.progress.circularIndeterminate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular Indeterminate with path",
+      "key": "catalog.progress.circularIndeterminateWithP",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular Determinate",
+      "key": "catalog.progress.circularDeterminate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular Determinate With Path",
+      "key": "catalog.progress.circularDeterminateWithPat",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular With Label",
+      "key": "catalog.progress.circularWithLabel",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular With Label and Path",
+      "key": "catalog.progress.circularWithLabelAndPath",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Linear Indeterminate",
+      "key": "catalog.progress.linearIndeterminate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Linear Determinate",
+      "key": "catalog.progress.linearDeterminate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Linear With Label / Icon",
+      "key": "catalog.progress.linearWithLabelIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Linear Color With Height",
+      "key": "catalog.progress.linearColorWithHeight",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Linear Buffer",
+      "key": "catalog.progress.linearBuffer",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/progress.jsx",
+      "occurrence": "prop:title",
+      "source": "Circular Progress Size",
+      "key": "catalog.progress.circularProgressSize",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/progress"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:title",
+      "source": "Radio",
+      "key": "catalog.radio.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang radio trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:caption",
+      "source": "Radio buttons allow the user to select one option from a set.",
+      "key": "catalog.radio.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang radio trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:title",
+      "source": "Size",
+      "key": "catalog.reused.size",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/radio.jsx",
+      "occurrence": "prop:title",
+      "source": "Label Placement",
+      "key": "catalog.reused.labelPlacement",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/radio"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Rating",
+      "key": "catalog.rating.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang rating trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:caption",
+      "source": "Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.",
+      "key": "catalog.rating.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang rating trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Precision",
+      "key": "catalog.rating.precision",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Hover Feedback",
+      "key": "catalog.rating.hoverFeedback",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Customization",
+      "key": "catalog.rating.customization",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/rating.jsx",
+      "occurrence": "prop:title",
+      "source": "Half",
+      "key": "catalog.rating.half",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/rating"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/select.jsx",
+      "occurrence": "prop:title",
+      "source": "Select",
+      "key": "catalog.select.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang select trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/select.jsx",
+      "occurrence": "prop:caption",
+      "source": "Select components are used for collecting user provided information from a list of options.",
+      "key": "catalog.select.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang select trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/shadows.jsx",
+      "occurrence": "prop:title",
+      "source": "Shadows",
+      "key": "catalog.shadows.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang shadows trong Component Catalog",
+      "routes": [
+        "/components-overview/shadows"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/shadows.jsx",
+      "occurrence": "prop:caption",
+      "source": "Add or remove shadows to elements with box-shadow utilities.",
+      "key": "catalog.shadows.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang shadows trong Component Catalog",
+      "routes": [
+        "/components-overview/shadows"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/shadows.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic Shadow",
+      "key": "catalog.shadows.basicShadow",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/shadows"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/shadows.jsx",
+      "occurrence": "prop:title",
+      "source": "Custom Shadow",
+      "key": "catalog.shadows.customShadow",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/shadows"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/shadows.jsx",
+      "occurrence": "prop:title",
+      "source": "Color Shadow",
+      "key": "catalog.shadows.colorShadow",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/shadows"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Slider",
+      "key": "catalog.slider.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang slider trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:caption",
+      "source": "Sliders allow users to make selections from a range of values.",
+      "key": "catalog.slider.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang slider trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "With Icons",
+      "key": "catalog.reused.withIcons",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Range",
+      "key": "catalog.slider.range",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "With Label",
+      "key": "catalog.slider.withLabel",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Vertical",
+      "key": "catalog.reused.vertical",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled",
+      "key": "catalog.reused.disabled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Discrete",
+      "key": "catalog.slider.discrete",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Restricted values",
+      "key": "catalog.slider.restrictedValues",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Minimum distance",
+      "key": "catalog.slider.minimumDistance",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/slider.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/slider"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Snackbar",
+      "key": "catalog.snackbar.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang snackbar trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:caption",
+      "source": "Snackbars provide brief notifications. The component is also known as a toast.",
+      "key": "catalog.snackbar.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang snackbar trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Outlined",
+      "key": "catalog.reused.outlined",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "With Close",
+      "key": "catalog.snackbar.withClose",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "With Close + Action",
+      "key": "catalog.snackbar.withCloseAction",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Position",
+      "key": "catalog.snackbar.position",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/snackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Transitions",
+      "key": "catalog.reused.transitions",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/speeddial.jsx",
+      "occurrence": "prop:title",
+      "source": "Speed Dial",
+      "key": "catalog.speeddial.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang speeddial trong Component Catalog",
+      "routes": [
+        "/components-overview/speeddial"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/speeddial.jsx",
+      "occurrence": "prop:caption",
+      "source": "When pressed, a floating action button can display three to six related actions in the form of a speed dial.",
+      "key": "catalog.speeddial.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang speeddial trong Component Catalog",
+      "routes": [
+        "/components-overview/speeddial"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/stepper.jsx",
+      "occurrence": "prop:title",
+      "source": "Stepper",
+      "key": "catalog.stepper.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang stepper trong Component Catalog",
+      "routes": [
+        "/components-overview/stepper"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/stepper.jsx",
+      "occurrence": "prop:caption",
+      "source": "Steppers convey progress through numbered steps. It provides a wizard-like workflow.",
+      "key": "catalog.stepper.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang stepper trong Component Catalog",
+      "routes": [
+        "/components-overview/stepper"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "Switch",
+      "key": "catalog.switch.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang switch trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:caption",
+      "source": "Switches toggle the state of a single setting on or off.",
+      "key": "catalog.switch.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang switch trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "Color",
+      "key": "catalog.reused.color",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "With Form Group",
+      "key": "catalog.switch.withFormGroup",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/switch.jsx",
+      "occurrence": "prop:title",
+      "source": "Label Placement",
+      "key": "catalog.reused.labelPlacement",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tabs.jsx",
+      "occurrence": "prop:title",
+      "source": "Tabs",
+      "key": "catalog.tabs.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang tabs trong Component Catalog",
+      "routes": [
+        "/components-overview/tabs"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tabs.jsx",
+      "occurrence": "prop:caption",
+      "source": "Tabs make it easy to explore and switch between different views.",
+      "key": "catalog.tabs.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang tabs trong Component Catalog",
+      "routes": [
+        "/components-overview/tabs"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Text Field",
+      "key": "catalog.textfield.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang textfield trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:caption",
+      "source": "Text fields let users enter and edit text.",
+      "key": "catalog.textfield.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang textfield trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Form Props",
+      "key": "catalog.textfield.formProps",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "With Icon",
+      "key": "catalog.reused.withIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Event",
+      "key": "catalog.textfield.event",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Validation",
+      "key": "catalog.textfield.validation",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Multiline",
+      "key": "catalog.textfield.multiline",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Input Adornments",
+      "key": "catalog.textfield.inputAdornments",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/textfield.jsx",
+      "occurrence": "prop:title",
+      "source": "Full Width",
+      "key": "catalog.textfield.fullWidth",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/textfield"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/timeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Timeline",
+      "key": "catalog.timeline.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang timeline trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/timeline.jsx",
+      "occurrence": "prop:caption",
+      "source": "The timeline displays a list of events in chronological order.",
+      "key": "catalog.timeline.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang timeline trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Tooltip",
+      "key": "catalog.tooltip.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang tooltip trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:caption",
+      "source": "Tooltips display informative text when users hover over, focus on, or tap an element.",
+      "key": "catalog.tooltip.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang tooltip trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Simple Tooltips",
+      "key": "catalog.tooltip.simpleTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized Tooltip",
+      "key": "catalog.tooltip.customizedTooltip",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Arrow Tooltips",
+      "key": "catalog.tooltip.arrowTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Delay Tooltips",
+      "key": "catalog.tooltip.delayTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled Tooltips",
+      "key": "catalog.tooltip.disabledTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Disable Interactive Tooltips",
+      "key": "catalog.tooltip.disableInteractiveTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Triggers/Controlled Tooltips",
+      "key": "catalog.tooltip.triggersControlledTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Transitions Tooltips",
+      "key": "catalog.tooltip.transitionsTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Variable Width Tooltips",
+      "key": "catalog.tooltip.variableWidthTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Positioned Tooltips",
+      "key": "catalog.tooltip.positionedTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Color Variant Tooltips",
+      "key": "catalog.tooltip.colorVariantTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/tooltip.jsx",
+      "occurrence": "prop:title",
+      "source": "Custom Color Tooltips",
+      "key": "catalog.tooltip.customColorTooltips",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/tooltip"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/treeview.jsx",
+      "occurrence": "prop:title",
+      "source": "Tree View",
+      "key": "catalog.treeview.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang treeview trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/treeview.jsx",
+      "occurrence": "prop:caption",
+      "source": "A tree view widget presents a hierarchical list.",
+      "key": "catalog.treeview.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang treeview trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Typography",
+      "key": "catalog.typography.pageTitle",
+      "kind": "message",
+      "context": "Tiêu đề trang typography trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:caption",
+      "source": "Use typography to present your design and content as clearly and efficiently as possible.",
+      "key": "catalog.typography.pageCaption",
+      "kind": "message",
+      "context": "Mô tả trang typography trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "description"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Heading",
+      "key": "catalog.typography.heading",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Body 1",
+      "key": "catalog.typography.body1",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Body 2",
+      "key": "catalog.typography.body2",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Subtitle 1",
+      "key": "catalog.typography.subtitle1",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Subtitle 2",
+      "key": "catalog.typography.subtitle2",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Caption",
+      "key": "catalog.typography.caption",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Alignment",
+      "key": "catalog.reused.alignment",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Gutter Bottom",
+      "key": "catalog.typography.gutterBottom",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Overline",
+      "key": "catalog.typography.overline",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Link",
+      "key": "catalog.typography.link",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Paragraph",
+      "key": "catalog.typography.paragraph",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/pages/components-overview/typography.jsx",
+      "occurrence": "prop:title",
+      "source": "Font Style",
+      "key": "catalog.typography.fontStyle",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/typography"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Inputs",
+      "key": "catalog.index.inputs",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Data Display",
+      "key": "catalog.index.dataDisplay",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Feedback",
+      "key": "catalog.index.feedback",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Navigation",
+      "key": "catalog.index.navigation",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Surfaces",
+      "key": "catalog.index.surfaces",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/Components.jsx",
+      "occurrence": "obj:title",
+      "source": "Utils",
+      "key": "catalog.index.utils",
+      "kind": "message",
+      "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
+      "routes": [
+        "/components-overview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/BasicAccordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/ControlledAccordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Controlled",
+      "key": "catalog.reused.controlled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/CustomizedAccordian2.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized 2",
+      "key": "catalog.accordion.customized2",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/CustomizedAccordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/DisabledAccordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled",
+      "key": "catalog.reused.disabled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/accordion/FixedAccordion.jsx",
+      "occurrence": "prop:title",
+      "source": "Fixed",
+      "key": "catalog.accordion.fixed",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/accordion"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/AsynchronousAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Asynchronous",
+      "key": "catalog.autocomplete.asynchronous",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/BasicAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/CheckboxesAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Checkboxes",
+      "key": "catalog.autocomplete.checkboxes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/CountryAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "With Image",
+      "key": "catalog.autocomplete.withImage",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/CreatableAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Creatable",
+      "key": "catalog.autocomplete.creatable",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/CustomizedAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/DisabledAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled Options",
+      "key": "catalog.autocomplete.disabledOptions",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/FixedTagsAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Fixed Options",
+      "key": "catalog.autocomplete.fixedOptions",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/GitHubAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "GitHub's Picker",
+      "key": "catalog.autocomplete.githubSPicker",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/GroupedAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Grouped",
+      "key": "catalog.autocomplete.grouped",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/LimitAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Limit Tags",
+      "key": "catalog.autocomplete.limitTags",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/MultipleAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Multiple Tags",
+      "key": "catalog.autocomplete.multipleTags",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/autocomplete/SizesAutocomplete.jsx",
+      "occurrence": "prop:title",
+      "source": "Sizes",
+      "key": "catalog.reused.sizes",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/autocomplete"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/buttons/ButtonGroups.jsx",
+      "occurrence": "prop:title",
+      "source": "Button Group",
+      "key": "catalog.buttons.buttonGroup",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/buttons/ToggleButtons/index.jsx",
+      "occurrence": "prop:title",
+      "source": "Toggle Button",
+      "key": "catalog.buttons.toggleButton",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/buttons"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/BasicPickers.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic Picker",
+      "key": "catalog.datetimepicker.basicPicker",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/DisabledPickers.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled Pickers",
+      "key": "catalog.datetimepicker.disabledPickers",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/HelperText.jsx",
+      "occurrence": "prop:title",
+      "source": "Helper Text",
+      "key": "catalog.datetimepicker.helperText",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/LandscapeDatePicker.jsx",
+      "occurrence": "prop:title",
+      "source": "Landscape",
+      "key": "catalog.datetimepicker.landscape",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/LocalizedPicker.jsx",
+      "occurrence": "prop:title",
+      "source": "Localization Picker",
+      "key": "catalog.datetimepicker.localizationPicker",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/NativePickers.jsx",
+      "occurrence": "prop:title",
+      "source": "Native Picker",
+      "key": "catalog.datetimepicker.nativePicker",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/StaticDatePicker.jsx",
+      "occurrence": "prop:title",
+      "source": "Static Mode",
+      "key": "catalog.datetimepicker.staticMode",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/date-time-picker/SubComponentsPickers.jsx",
+      "occurrence": "prop:title",
+      "source": "Sub Component",
+      "key": "catalog.datetimepicker.subComponent",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/date-time-picker"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/BasicModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/BasicModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic Modal",
+      "key": "catalog.modal.basicModal",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/NestedModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Child Modal",
+      "key": "catalog.modal.childModal",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/NestedModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Nested",
+      "key": "catalog.modal.nested",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/NestedModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Parent Modal",
+      "key": "catalog.modal.parentModal",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/ServerModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Server Side Modal",
+      "key": "catalog.modal.serverSideModal",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/modal/TransitionsModal.jsx",
+      "occurrence": "prop:title",
+      "source": "Transitions Modal",
+      "key": "catalog.modal.transitionsModal",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/modal"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/ColorVariants.jsx",
+      "occurrence": "prop:title",
+      "source": "Color Variants",
+      "key": "catalog.snackbar.colorVariants",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/CustomComponent.jsx",
+      "occurrence": "prop:title",
+      "source": "Custom Component",
+      "key": "catalog.snackbar.customComponent",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/Dense.jsx",
+      "occurrence": "prop:title",
+      "source": "Dense",
+      "key": "catalog.snackbar.dense",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/DismissSnackBar.jsx",
+      "occurrence": "prop:title",
+      "source": "Dismiss Programmatically",
+      "key": "catalog.snackbar.dismissProgrammatically",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/HideDuration.jsx",
+      "occurrence": "prop:title",
+      "source": "Hide Duration",
+      "key": "catalog.snackbar.hideDuration",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/IconVariants.jsx",
+      "occurrence": "prop:title",
+      "source": "With Icons",
+      "key": "catalog.reused.withIcons",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/MaxSnackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Maximum snackbars",
+      "key": "catalog.snackbar.maximumSnackbars",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/PositioningSnackbar.jsx",
+      "occurrence": "prop:title",
+      "source": "Positioning",
+      "key": "catalog.snackbar.positioning",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/PreventDuplicate.jsx",
+      "occurrence": "prop:title",
+      "source": "Prevent Duplicate",
+      "key": "catalog.snackbar.preventDuplicate",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/SnackBarAction.jsx",
+      "occurrence": "prop:title",
+      "source": "With Action",
+      "key": "catalog.snackbar.withAction",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/notistack/TransitionBar.jsx",
+      "occurrence": "prop:title",
+      "source": "Animation",
+      "key": "catalog.reused.animation",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/snackbar"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/AutoWidthSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "Auto Width",
+      "key": "catalog.select.autoWidth",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/BasicSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/CheckmarksSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "With Checkmarks",
+      "key": "catalog.select.withCheckmarks",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/ChipSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "With Chip",
+      "key": "catalog.select.withChip",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/HelperTextSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "With Helper Text",
+      "key": "catalog.select.withHelperText",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/select/MultipleSelect.jsx",
+      "occurrence": "prop:title",
+      "source": "Multiple",
+      "key": "catalog.select.multiple",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/select"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/speeddial/OpenIconSpeedDial.jsx",
+      "occurrence": "prop:title",
+      "source": "Custom Close Icon",
+      "key": "catalog.speeddial.customCloseIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/speeddial"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/speeddial/SimpleSpeedDials.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/speeddial"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/speeddial/SpeedDialTooltipOpen.jsx",
+      "occurrence": "prop:title",
+      "source": "Persistent Icon",
+      "key": "catalog.speeddial.persistentIcon",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/speeddial"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/stepper/HorizontalLinearStepper.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic - Linear",
+      "key": "catalog.stepper.basicLinear",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/stepper"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/stepper/HorizontalNonLinearStepper.jsx",
+      "occurrence": "prop:title",
+      "source": "Non - Linear",
+      "key": "catalog.stepper.nonLinear",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/stepper"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/stepper/VerticalLinearStepper.jsx",
+      "occurrence": "prop:title",
+      "source": "Vertical",
+      "key": "catalog.reused.vertical",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/stepper"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/switch/CustomizedSwitches.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/switch"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/AlternateTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Alternating Positioned",
+      "key": "catalog.timeline.alternatingPositioned",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/BasicTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/ColorsTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Colors",
+      "key": "catalog.reused.colors",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/CustomizedTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/LeftPositionedTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Left Positioned",
+      "key": "catalog.timeline.leftPositioned",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/timeline/OppositeContentTimeline.jsx",
+      "occurrence": "prop:title",
+      "source": "Opposite Content",
+      "key": "catalog.timeline.oppositeContent",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/timeline"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/BasicTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Basic",
+      "key": "catalog.reused.basic",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/ControlledTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Controlled",
+      "key": "catalog.reused.controlled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/CustomizedTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Customized",
+      "key": "catalog.reused.customized",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/DisabledTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Disabled",
+      "key": "catalog.reused.disabled",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/GmailTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Gmail Clone",
+      "key": "catalog.treeview.gmailClone",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/MultiSelectTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Multi-Select",
+      "key": "catalog.treeview.multiSelect",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
+    },
+    {
+      "file": "src/sections/components-overview/tree-view/RichObjectTreeView.jsx",
+      "occurrence": "prop:title",
+      "source": "Rich Object",
+      "key": "catalog.treeview.richObject",
+      "kind": "message",
+      "context": "Tiêu đề thẻ demo trong Component Catalog",
+      "routes": [
+        "/components-overview/treeview"
+      ],
+      "role": "heading"
     }
   ]
 }

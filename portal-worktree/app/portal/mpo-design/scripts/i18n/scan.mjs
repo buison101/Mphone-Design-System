@@ -32,6 +32,17 @@ const exPath = path.join(ROOT, 'i18n', 'array-exceptions.json');
 const arrayExceptions = fs.existsSync(exPath) ? (JSON.parse(fs.readFileSync(exPath, 'utf8')).arrays ?? {}) : {};
 const frozenList = [];
 
+// Component Catalog demo payload: positions inside the catalog trees that are
+// NOT chrome (card titles, page titles, captions). Gate B2 translated the
+// chrome and deliberately left the payload in English so a developer can match
+// it against the MUI documentation (docs/15 §4.7b). The exception is pinned to
+// a reviewed count per tree: if the real number drifts away from `expected`,
+// scan says so, so the exception cannot quietly swallow a new gap.
+const catPath = path.join(ROOT, 'i18n', 'catalog-exceptions.json');
+const catalogTrees = fs.existsSync(catPath) ? (JSON.parse(fs.readFileSync(catPath, 'utf8')).trees ?? {}) : {};
+const catalogSeen = new Map();
+let catalogExcepted = 0;
+
 let idOnlyFiles = 0;
 
 for (const file of walkFiles(path.join(ROOT, scope))) {
@@ -52,6 +63,12 @@ for (const file of walkFiles(path.join(ROOT, scope))) {
     );
     if (covered) continue;
     uncovered += 1;
+    const tree = Object.keys(catalogTrees).find((t) => relFile === t || relFile.startsWith(t + '/'));
+    if (tree) {
+      catalogExcepted += 1;
+      catalogSeen.set(tree, (catalogSeen.get(tree) ?? 0) + 1);
+      continue;
+    }
     if (c.occurrence === 'arr') {
       if (arrayExceptions[relFile]) {
         arrayExcepted += 1;
@@ -75,10 +92,25 @@ console.log('scope            ' + scope);
 console.log('display strings  ' + total + ' positions');
 console.log('in keymap        ' + (total - uncovered));
 console.log('NOT in keymap    ' + uncovered + ' positions');
-console.log('  substitutable  ' + (uncovered - frozen - arrayEls - arrayExcepted) + ' positions, ' + distinct.size + ' distinct');
+console.log(
+  '  substitutable  ' + (uncovered - frozen - arrayEls - arrayExcepted - catalogExcepted) + ' positions, ' + distinct.size + ' distinct'
+);
 console.log('  needs decision ' + frozen + ' positions in module-scope object properties (cannot be substituted at build)');
 console.log('  array elements ' + arrayEls + ' positions in bare string arrays (opt in per array, often technical)');
 if (arrayExcepted) console.log('  array excepted ' + arrayExcepted + ' positions in arrays reviewed and deliberately not translated');
+if (catalogExcepted)
+  console.log(
+    '  catalog payload ' +
+      catalogExcepted +
+      ' positions of Component Catalog demo payload, reviewed and deliberately kept in English (i18n/catalog-exceptions.json)'
+  );
+for (const [tree, cfg] of Object.entries(catalogTrees)) {
+  const seen = catalogSeen.get(tree) ?? 0;
+  if (seen !== cfg.expected)
+    console.log(
+      '  DRIFT          ' + tree + ': ' + seen + ' positions, the reviewed decision recorded ' + cfg.expected + '. Re-review §4.7b.'
+    );
+}
 if (idOnlyFiles)
   console.log(
     '  skipped files  ' +

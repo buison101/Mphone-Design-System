@@ -1,0 +1,13 @@
+{
+  "_comment": "Component Catalog: các vị trí KHÔNG thuộc phần khung (chrome). Gate B2 chỉ dịch phần khung — tiêu đề trang, mô tả trang, tiêu đề thẻ demo — vì đó là phần người dùng đọc để điều hướng. Phần còn lại là nội dung minh hoạ của bản thân demo: nhãn nút, chữ trong tooltip, dữ liệu mẫu (tên phim, nhãn GitHub), đoạn văn Lorem ipsum, chuỗi mã nguồn hiển thị kèm. Chúng được giữ nguyên tiếng Anh có chủ đích, để lập trình viên đối chiếu trực tiếp với tài liệu MUI. Mỗi cây được ghim theo một con số đã duyệt: nếu số thực tế lệch khỏi `expected`, i18n:scan báo DRIFT — ngoại lệ này không được phép âm thầm nuốt mất một khoảng trống mới. Xem docs/15 §4.7b.",
+  "trees": {
+    "src/pages/components-overview": {
+      "expected": 673,
+      "reason": "Nội dung minh hoạ trên trang demo: nhãn nút, chuỗi trong ô nhập, văn bản Lorem ipsum, tên biến thể trong API của MUI, mốc thang trượt (0°C, 20°C…). Bao gồm cả các vị trí module-scope và phần tử mảng — chúng cũng là nội dung minh hoạ, không phải chữ điều hướng. Phần khung của các trang này đã nằm trong keymap (namespace catalog.*)."
+    },
+    "src/sections/components-overview": {
+      "expected": 712,
+      "reason": "Nội dung minh hoạ trong các section demo: chữ trong tooltip, dữ liệu mẫu của Autocomplete (tên phim, nhãn GitHub), nhãn và mô tả bước của Stepper, nội dung thẻ, chuỗi mã nguồn hiển thị kèm. Bao gồm cả các vị trí module-scope và phần tử mảng. Phần khung (tiêu đề MainCard) đã nằm trong keymap."
+    }
+  }
+}

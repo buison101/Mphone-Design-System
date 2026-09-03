@@ -93,6 +93,7 @@ export default function ColorScheme() {
       shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#058478' : '#009688', 0.2)}`
     }
   ];
+  const visibleColorOptions = colorOptions.filter(({ id }) => ['default', 'theme1', 'theme4'].includes(id));
 
   const handlePresetColorChange = (event) => {
     setField('presetColor', event.target.value);
@@ -101,7 +102,7 @@ export default function ColorScheme() {
   return (
     <RadioGroup row aria-label="color-scheme" name="color-scheme" value={state.presetColor} onChange={handlePresetColorChange}>
       <Grid container rowSpacing={2} columnSpacing={2.5}>
-        {colorOptions.map((color, index) => (
+        {visibleColorOptions.map((color, index) => (
           <Grid key={index}>
             <FormControlLabel
               control={<Radio value={color.id} sx={{ display: 'none' }} />}

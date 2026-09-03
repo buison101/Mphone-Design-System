@@ -60,6 +60,10 @@ export const DISPLAY_PROPS = new Set([
 // at build time: such arrays are usually evaluated once at module scope, so a
 // substituted call would freeze the first language it saw and never react to a
 // locale change. Each needs a per-case decision — see docs/15 §4.7.
+// Props whose whole purpose is to carry a label, so a lone lowercase word in
+// them is display text rather than an identifier.
+export const LABEL_PROPS = new Set(['label', 'title', 'placeholder', 'primary', 'secondary', 'caption', 'heading', 'description', 'helperText', 'msg', 'emptyText']);
+
 export const DISPLAY_OBJECT_PROPS = new Set([
   'label',
   'title',
@@ -81,6 +85,23 @@ export const DISPLAY_OBJECT_PROPS = new Set([
   // invisible to every rule until these two lines existed.
   'question',
   'answer',
+  // The long tail of prop names the vendor invented for display text. Each one
+  // was found by reading a rendered page, not by reading a report: an address
+  // on the invoice form, a testimonial and its author, a relative timestamp, a
+  // a free-prompt count. CSS-shaped keys — border, transform, height — are
+  // deliberately NOT here; their values are not sentences. Neither is `value`:
+  // it carries enum tokens (`errorDark`, `dayGridMonth`) far more often than
+  // words, and the two real labels it held were not worth the noise.
+  'address',
+  'review',
+  'client',
+  'time',
+  'freePrompts',
+  'subheader',
+  'hint',
+  'detail',
+  'aria-label',
+  'ariaLabel',
   // Job titles in the organisation-chart dataset. ARIA values like
   // role: 'button' are all-lowercase and already filtered out by
   // looksLikeDisplayString.
@@ -101,10 +122,11 @@ export function looksLikeDisplayString(value, opts = {}) {
   // below would throw it away: no capital, no space, all lowercase.
   if (/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(v)) return true;
   // A single all-lowercase word is normally an identifier, a css value or a
-  // file name — except in JSX text, which is rendered prose by definition.
-  // `browse` inside `click <span>browse</span> through your machine` is a word
-  // a reader sees, and dropping it leaves an English island mid-sentence.
-  if (opts.jsxText && /^[a-z]+$/.test(v)) return true;
+  // file name — except where the position itself guarantees display text: JSX
+  // text, a prop whose whole purpose is a label, or an argument of a factory a
+  // person opted into. `browse`, `day`, `hour`, `min`, `sec` and `hours` were
+  // all lost to this rule while sitting in plain sight on a page.
+  if (opts.displayPosition && /^[a-z]+$/.test(v)) return true;
   if (/^[a-z0-9._-]+$/.test(v)) return false;
   return /[A-Z]/.test(v) || /\s/.test(v);
 }
@@ -268,7 +290,7 @@ export function collectCandidates(code) {
       // source span. Offsets must come from the raw slice, or a text like
       // `Don&apos;t have an account?` gets truncated mid-word on substitution.
       const trimmed = p.node.value.trim();
-      if (!looksLikeDisplayString(trimmed, { jsxText: true })) return;
+      if (!looksLikeDisplayString(trimmed, { displayPosition: true })) return;
       // `&nbsp;` decodes to whitespace, so node.value.trim() drops it while a
       // plain trimStart/trimEnd on the raw slice keeps its six literal
       // characters inside the span. The replacement then eats the space:
@@ -285,7 +307,7 @@ export function collectCandidates(code) {
       if (!name || !value) return;
       if (!DISPLAY_PROPS.has(name)) return;
       if (value.type === 'StringLiteral') {
-        if (!looksLikeDisplayString(value.value)) return;
+        if (!looksLikeDisplayString(value.value, { displayPosition: LABEL_PROPS.has(name) })) return;
         push('prop:' + name, value.value, value.start, value.end, p.node.loc?.start.line ?? 0);
         return;
       }
@@ -341,6 +363,9 @@ export function collectCandidates(code) {
       const inFunction = p.getFunctionParent() != null;
       for (const arg of p.node.arguments ?? []) {
         if (arg?.type !== 'StringLiteral') continue;
+        // No lowercase-word relaxation here: these are positional arguments and
+        // mix display text with technical values — `error`, `primary`, `success`
+        // are chip colours, not words on the screen.
         if (!looksLikeDisplayString(arg.value)) continue;
         push('call:' + callee.name, arg.value, arg.start, arg.end, arg.loc?.start.line ?? 0, {
           moduleScope: !inFunction

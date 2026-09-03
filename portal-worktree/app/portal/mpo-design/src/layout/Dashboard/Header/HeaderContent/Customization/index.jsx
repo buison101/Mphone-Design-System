@@ -123,7 +123,7 @@ export default function Customization() {
                   </AccordionSummary>
                   <AccordionDetails>{themeLayout}</AccordionDetails>
                 </Accordion>
-                <Accordion defaultExpanded>
+                <Accordion hidden defaultExpanded>
                   <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                     <Stack direction="row" sx={{ gap: 1.5, alignItems: 'center' }}>
                       <Avatar alt="settings toggler" variant="rounded">

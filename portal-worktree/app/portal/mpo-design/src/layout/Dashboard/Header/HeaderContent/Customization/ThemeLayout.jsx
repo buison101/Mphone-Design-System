@@ -30,6 +30,7 @@ const getLayouts = () => [
 
 export default function ThemeLayout() {
   const { state, setField } = useConfig();
+  const visibleLayouts = getLayouts().filter(({ value }) => value !== MenuOrientation.MINI_VERTICAL);
 
   const handleRadioChange = (event) => {
     const newValue = event.target.value;
@@ -73,7 +74,7 @@ export default function ThemeLayout() {
   return (
     <RadioGroup row aria-label="theme-layout" name="theme-layout" value={state.menuOrientation} onChange={handleRadioChange}>
       <Grid container spacing={2.5}>
-        {getLayouts().map((layout) => renderLayoutCard(layout))}
+        {visibleLayouts.map((layout) => renderLayoutCard(layout))}
       </Grid>
     </RadioGroup>
   );
