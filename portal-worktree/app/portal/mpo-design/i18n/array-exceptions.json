@@ -1,0 +1,17 @@
+{
+  "_comment": "Bare string arrays reviewed and deliberately NOT translated. i18n:scan subtracts them so the remaining count means work, not noise. Each entry needs a reason; this list is reviewed, not a silencer.",
+  "arrays": {
+    "src/sections/apps/e-commerce/checkout/CartDiscount.jsx": "Mã khuyến mại (MANTIS50, FLAT05, SUB150, UPTO200) là mã định danh người dùng gõ vào, không phải chữ hiển thị cần dịch. MANTIS50 chứa thương hiệu vendor và sẽ được xử lý ở Stage 6 cùng phần branding.",
+    "src/sections/charts/apexchart/ApexAreaChart.jsx": "Chuỗi mốc thời gian ISO 8601 dùng làm trục x, là dữ liệu kỹ thuật do thư viện biểu đồ phân tích, không phải chữ hiển thị.",
+    "src/sections/charts/apexchart/ApexColumnChart.jsx": "Nhãn tháng viết tắt (Feb…Oct) trên trục x. Giữ nguyên tiếng Anh cho thống nhất với các biểu đồ ở trang tổng quan đã chốt từ đợt trước; nếu đổi thì phải đổi đồng loạt trong một quyết định riêng.",
+    "src/sections/charts/apexchart/ApexLineChart.jsx": "Nhãn tháng viết tắt (Jan…Sep) trên trục x. Cùng lý do với ApexColumnChart.",
+    "src/sections/charts/apexchart/ApexRadialChart.jsx": "Vimeo, Messenger, Facebook, LinkedIn là tên thương hiệu, không dịch.",
+    "src/sections/dashboard/SalesChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/dashboard/analytics/IncomeChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/dashboard/analytics/ReportChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/dashboard/default/IncomeAreaChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/dashboard/default/MonthlyBarChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/dashboard/default/ReportAreaChart.jsx": "Nhãn tháng hoặc thứ trên trục biểu đồ trang tổng quan. Giữ tiếng Anh theo quyết định đã chốt ở đợt trước; nếu đổi thì phải đổi đồng loạt mọi biểu đồ trong một quyết định riêng, không đổi lẻ từng tệp.",
+    "src/sections/forms/validation/AutoCompleteForm.jsx": "Danh sách kỹ năng (Java, HTML, Bootstrap, JavaScript, NodeJS, React, Angular, CI) là tên công nghệ, giữ nguyên. Mảng roles trong cùng tệp đã được bóc và dịch."
+  }
+}

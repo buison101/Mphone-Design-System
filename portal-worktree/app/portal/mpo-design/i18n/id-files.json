@@ -1,0 +1,6 @@
+{
+  "_comment": "Files whose display-looking strings are MESSAGE IDS, not display text. `title: 'level 1'` in a menu definition is the argument of <FormattedMessage id={...} />, so translating it in source does not translate anything — it breaks the lookup and puts a raw id on screen. The scanner and the extractor skip these paths entirely. Add a path here only after reading how the strings are consumed, and write down what consumes them.",
+  "paths": {
+    "src/menu-items": "Mọi `title` ở đây là message id, được Breadcrumbs và Navigation truyền thẳng vào <FormattedMessage id={...} />. Bản dịch của chúng nằm trong catalog theo đúng id, không nằm trong keymap."
+  }
+}

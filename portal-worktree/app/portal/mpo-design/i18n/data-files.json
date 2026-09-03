@@ -1,0 +1,15 @@
+{
+  "_comment": "Files that hold reference or sample DATA rather than interface text. Their strings look translatable and are not: a country list, a film catalogue, a set of coordinates. Translating them is a data decision for the product stage, not a Phase B string decision, and getting one wrong is a data error rather than a wording error. The scanner and the extractor skip these paths so the remaining count means interface work. Each entry states what the data is and who consumes it.",
+  "paths": {
+    "src/api/invoice.js": "Danh mục tiền tệ (mã ISO, tên, ký hiệu) nuôi state khởi tạo của store hóa đơn.  là khóa; state khởi tạo chỉ dựng một lần nên hoist không cứu được. Việt hóa danh mục tiền tệ là quyết định dữ liệu ở giai đoạn sản phẩm.",
+    "src/api/snackbar.js": "Giá trị khởi tạo của store thông báo. `message` ở đây luôn bị ghi đè bởi lời gọi mở thông báo trước khi hiển thị, và nó nằm trong state khởi tạo nên hoist cũng không cứu được.",
+    "src/contexts/JWTContext.jsx": "Phiên xem thử cục bộ: tên và chức danh người dùng giả. Là nội dung của chính dự án, đã viết thẳng bằng tiếng Việt kèm chú thích trong tệp, vì object này nuôi state khởi tạo của useReducer nên không ràng buộc qua keymap được.",
+    "src/data/countries.js": "Danh mục 229 quốc gia (tên, mã ISO, mã điện thoại) dùng cho ô chọn quốc gia. Là dữ liệu tham chiếu; `code` mới là khóa. Việt hóa danh mục này là quyết định dữ liệu ở giai đoạn sản phẩm, không phải việc của Pha B.",
+    "src/data/location.js": "Tên quốc gia, thủ đô và thành phố kèm tọa độ, dùng cho minh họa bản đồ. Dữ liệu địa lý, danh từ riêng.",
+    "src/data/movies.js": "99 tên phim, dữ liệu mẫu cho minh họa autocomplete. Tên riêng, không dịch.",
+    "src/data/prompt-categories.js": "Danh mục thư viện prompt AI: tên nhóm, tên prompt và mô tả. Hai lý do để ngoài phạm vi dịch. Một, nội dung thật của thư viện là các tệp .prompt.md trên đĩa — prompt viết cho tác nhân lập trình, làm việc bằng tiếng Anh — nên dịch phần mô tả trong khi phần nội dung vẫn tiếng Anh là làm dở dang. Hai, `name` đang được dùng làm khóa tra cứu ở năm nơi; muốn dịch được thì phải tái cấu trúc trình duyệt prompt sang khóa `slug`, và đó là một hạng mục riêng chứ không phải việc của một đợt dịch.",
+    "src/utils/mock-data.js": "Bộ sinh dữ liệu giả (tên người, từ ngẫu nhiên, ảnh) cho các trang minh họa. Không phải chữ giao diện.",
+    "src/utils/prompts-file-reader.js": "Bộ đọc tệp prompt, bản trùng tên khác kiểu viết. Cùng lý do.",
+    "src/utils/promptsFileReader.js": "Bộ đọc tệp prompt: tên tệp và nội dung .prompt.md trên đĩa. Cùng lý do với data/prompt-categories.js."
+  }
+}

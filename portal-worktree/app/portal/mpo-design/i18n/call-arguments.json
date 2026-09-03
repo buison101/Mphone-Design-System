@@ -1,0 +1,6 @@
+{
+  "_comment": "Sample-data rows are built by small local factory functions — createData('Camera Lens', 40, 2). Those string arguments are display text but sit in no JSX, object or array position, so nothing else in the pipeline sees them. A function is opted in here, by name, with a reason; the scanner and the extractor then treat its string arguments as candidates. Opt in a function only after checking that none of its string arguments is used as a lookup key.",
+  "functions": {
+    "createData": "Hàm dựng dòng dữ liệu mẫu trong các bảng minh họa; đối số chuỗi là tên sản phẩm, tên món, tên quốc gia — đều là chữ hiển thị, không dùng làm khóa tra cứu."
+  }
+}

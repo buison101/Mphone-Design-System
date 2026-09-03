@@ -6,8 +6,9 @@ This file is the source of truth for project scope, delivery stage, and rules fo
 
 This workspace is now a **local interface experimentation environment**, not a production deployment workspace.
 
-- The legacy Portal preview remains available at `http://localhost:4321/` for comparison until the product owner approves the MTO cutover. The MTO preview is served separately at `http://127.0.0.1:4322/`.
-- Build all new Portal migration work in `portal-worktree/app/portal/mto`. Keep `portal-worktree/app/portal/spa` as a read-only product, behavior, content, localization, and accessibility reference unless the product owner explicitly requests a legacy fix.
+- The legacy Portal preview remains available at `http://localhost:4321/` for comparison until the product owner approves the MPO Design cutover. The MPO Design preview is served separately at `http://127.0.0.1:4323/`.
+- Build all new Portal migration work in `portal-worktree/app/portal/mpo-design`. Keep `portal-worktree/app/portal/spa` as a read-only product, behavior, content, localization, and accessibility reference unless the product owner explicitly requests a legacy fix.
+- `portal-worktree/app/portal/mto` is an abandoned, faulty implementation. Do not inspect, read, copy, import, compare against, repair, build, test, or cite it. It is not a product, design, content, localization, behavior, architecture, or migration reference.
 - Use local sample data, stubbed sessions, simulated actions, and presentational adapters. A prototype must remain understandable when no FusionPBX server, SIP service, database, Android project, or external network is available.
 - **Do not connect to, deploy to, copy files to, or change the internal FusionPBX server.** Do not use SSH, SCP, rsync, remote shell commands, production builds, production databases, or server-side configuration from this workspace.
 - **Do not edit or build the external Android application** at `D:\Projects\FusionPBX\tham-chieu\linphone-android-master-copy` or any other application repository.
@@ -28,9 +29,9 @@ For the legacy reference, from `portal-worktree/app/portal/spa`:
 ## Current position
 
 - **Current release:** Portal UI Lab v2.5; Portal v1.4 and Design System v2.0 remain the last production-era baselines.
-- **Current stage:** Governed local product/interface experimentation after Gate 6.
+- **Current stage:** Gate B1 accepted; Phase C route classification and Mphone UI Lab product experimentation may begin. Gate B2 remains open for the Component Catalog.
 - **Primary target:** `http://localhost:4321/`.
-- **Active Portal target:** `portal-worktree/app/portal/mto`.
+- **Active Portal target:** `portal-worktree/app/portal/mpo-design`.
 - **Legacy Portal reference:** `portal-worktree/app/portal/spa`.
 - **External server and Android app:** reference only; no writes, builds, deployments, or runtime integration.
 - **Shared system:** `D:\Projects\FusionPBX\design-system`.
@@ -40,46 +41,70 @@ For the legacy reference, from `portal-worktree/app/portal/spa`:
 
 The Portal UI Lab is migrating to a new Mantis 4.2.0 foundation.
 
-- **New implementation target:** `portal-worktree/app/portal/mto`
+- **New implementation target:** `portal-worktree/app/portal/mpo-design`
 - **Legacy Portal reference:** `portal-worktree/app/portal/spa`
 - **Primary technical foundation:** the licensed Mantis 4.2.0 Vite JavaScript full version.
 - The product owner confirms that an official licence for the new Mantis package has been purchased.
-- `mto` is the source of truth for all new Portal implementation work.
-- Preserve `spa` for reference throughout the migration. Do not overwrite, rename, delete, or mechanically merge it into `mto`.
-- Do not switch the primary preview to MTO or retire the legacy Portal until the product owner explicitly approves the cutover.
+- `mpo-design` is the sole source of truth for all new Portal implementation work.
+- Restart the migration from Stage 1 in `mpo-design`. No implementation decision, completion claim, inventory, test result, or documentation from the abandoned implementation carries forward.
+- Preserve `spa` for reference throughout the migration. Do not overwrite, rename, delete, or mechanically merge it into `mpo-design`.
+- Do not switch the primary preview to MPO Design or retire the legacy Portal until the product owner explicitly approves the cutover.
 
 ### First-stage objective
 
-The first objective is not to reduce or redesign Mantis. Preserve the complete Mantis 4.2.0 Vite JavaScript full version in `mto`, including all pages, routes, navigation, dashboards, widgets, applications, forms, tables, charts, authentication demonstrations, maintenance pages, component demonstrations, themes, responsive layouts, and interaction states.
+The first objective is to establish a clean, complete Mantis 4.2.0 baseline in `mpo-design`. Preserve all pages, routes, navigation, dashboards, widgets, applications, forms, tables, charts, authentication demonstrations, maintenance pages, component demonstrations, themes, responsive layouts, and interaction states.
 
-During this stage, change only display content, localization, Mphone branding, and the local simulation layer required for safe UI Lab operation. Do not remove a page merely because the legacy Portal has no equivalent feature.
+During Stage 1, change only vendor security/configuration and the local simulation layer required for safe UI Lab operation. Do not translate, rebrand, add Mphone pages, remove pages, merge pages, or redesign the Mantis experience.
 
-Create a complete bilingual Mantis experience in the Mphone product context before deciding which pages will later be retained, merged, redesigned, restricted to the UI Lab, or removed.
+**Gate A was retired on 2026-09-02 and is not a precondition for anything.** It specified construction work — replacing external runtime dependencies with local adapters, building fixtures, removing every runtime external host — and that whole body of work belongs to the abandoned `mpo-design-off` tree. The chosen tree deliberately does not take that route: it reads the vendor mock API precisely so that no one hand-builds data that drifts from real Mantis. Requiring Gate A would be demanding back the thing that was rejected. Treat its criteria and its evidence as history of `-off`, never as outstanding debt against the current tree. What remained useful in it — a record of how every route renders, the console, lint and build, and 390px light/dark — became the baseline snapshot taken during wave L1 (`docs/15` §4.9): a one-time record for attributing later breakage, not a bar to clear and not something to sign off.
+
+**Gate B1 was accepted by the product owner on 2026-09-03 after manual verification.** Phase C may now classify routes and introduce approved Mphone branding, content, products, new pages, and UI Lab experiments in project-owned paths. The Component Catalog remains covered by Gate B2, which does not block product work; until B2 runs it stays in English, labelled a UI Lab surface.
+
+The canonical detailed roadmap is `docs/15-mpo-design-implementation-plan.vi.md`. Do not create a second migration plan; update that file and this controlling summary together.
 
 ### Bilingual Mphone content
 
-- Every user-visible string must use the shared localization system. Do not hardcode Vietnamese or English in components.
+- Every user-visible string must resolve through the shared localization system at runtime. Do not add new hardcoded Vietnamese or English to components. Vendor English left in vendor files is bound to a key through the keymap rather than edited out — see Localization architecture below.
 - Every message key must have complete Vietnamese and English content in the same change. Neither language is secondary, temporary, or a TODO.
 - Preserve each Mantis page's structure and demonstration purpose during the first stage, but replace generic demo copy with content relevant to Mphone products and services.
 - New copy must follow the Design System principles: Calm, Clear, Certain, Efficient, and Human.
 - Copy must be concise, natural, consistent, and understandable to telecommunications customers. Do not translate word by word when that produces unnatural language.
 - Use consistent terminology for features, states, actions, validation, errors, and guidance across all pages.
 - English must be complete product copy, not an incomplete fallback for Vietnamese.
-- Do not retain Mantis company names, brands, customers, products, addresses, phone numbers, or commercial sample data.
+- Do not retain Mantis company names, brands, customers, products, addresses, phone numbers, or commercial sample data. These vendor sample identities are replaced during the bilingual phase rather than waiting for Stage 6 — a bounded exception, decided 2026-09-02 and specified in `docs/15` §4.8. Replacement is name-for-name from one shared set of invented, non-sensitive sample identities, carrying a single value across every locale because a name is not a translation. It does not authorize changing a page's purpose, its layout, or introducing Mphone product semantics.
 - Do not copy real customer data from the live Portal into local fixtures.
 
 When a Mantis page has no current Mphone equivalent, preserve its page and layout, reinterpret its content as a plausible Mphone scenario, use local sample data, label it clearly as sample, experimental, or unconnected where appropriate, and document the future integration boundary.
 
+### Localization architecture
+
+Localization does not edit vendor source. As of wave L6, `mpo-design` differs from the pristine Mantis 4.2.0 extract by 86 modified files, one rename and four additions out of 1,113 in `src` — mostly hoists, each listed in `docs/vendor-patches.md`; keeping that number small is what makes the next Mantis version an upgrade rather than a rewrite. `docs/15-mpo-design-implementation-plan.vi.md` §4.7 holds the full design.
+
+- **`i18n/keymap.json` is the contract.** Each entry binds one string position in vendor source — file, occurrence, source text — to one semantic message key, plus the context, routes, role and length budget a translator needs.
+- **Keys are semantic, never the English sentence.** The same English word in two contexts gets two keys, so it can have two Vietnamese translations. This is the reason for the keymap rather than a global dictionary.
+- **Substitution happens at build.** A Vite plugin replaces only the positions listed in the keymap. It never guesses: a string with no keymap entry is left untouched. This keeps the transform deterministic and auditable.
+- **Machines propose, people decide.** `i18n:extract` proposes candidates with their surrounding context; a person assigns the key, writes the context note, and translates. Translation quality lives in that review step.
+- **Project catalogs live at `src/locales-mphone/{en,vi}.json`**, merged with the vendor catalog at load. Never add keys to `src/utils/locales/` — the vendor owns that path and the next Mantis will overwrite it.
+- **Never reformat vendor files.** One Prettier or `eslint --fix` pass over vendor paths destroys every comparison against the vendor tree. The guard is not an ignore file — ignoring `src/` would blind the linter on our own patched files too. It is that **the commands that write are scoped and the commands that check are not**: `npm run prettier` and `npm run lint:fix` cover only project-owned paths and the files in `docs/vendor-patches.md`, while `npm run lint` and `npm run prettier:check` still cover all of `src`. Never run `prettier --write` or `eslint --fix` with a broad `src/**` glob.
+- **Every vendor file that must be edited goes in `docs/vendor-patches.md`** with its reason and how to reapply it. Before editing one, ask whether the change can be made a level higher — a MUI theme override instead of nineteen inline edits, for example.
+- **A locale switch must be one synchronous render, and it must remount.** The catalogs are imported statically and the runtime singleton and date-fns defaults are set during render, not in an effect — otherwise React commits a frame where the locale has flipped but the text has not, and the interface visibly mixes the two languages. `IntlProvider` is keyed on the locale so the subtree remounts, because a component that copied a translated string into state keeps the old language until it unmounts. Do not "optimise" either of these back.
+- **Date, month, weekday and day-period wording is not in the keymap.** Libraries generate it from a locale code, so the decision lives in `src/locales-mphone/date-locale-vi.js` and the table is in `docs/19`. Three consumers, three separate wirings: direct `format()` calls, MUI pickers, and FullCalendar — fixing one does not fix the others.
+- **Verify by reading the rendered text, in DEV mode.** Not by the coverage number, not by `pageerror`, not by a production build alone. Every occurrence kind the extractor knows about was added because the tools reported full coverage while the screen still showed English. §4.7 lists the kinds and the two opt-in files that gate the risky ones, `i18n/array-exceptions.json` and `i18n/call-arguments.json`.
+- **Not every translatable-looking string is a string.** Some are message ids handed to `<FormattedMessage id={...} />` — a menu `title`, a breadcrumb slug — and translating those in source breaks the lookup and puts a raw id on screen. Others are reference or sample data — a country list, a film catalogue, coordinates — where a wrong translation is a data error, not a wording error. Both are listed with reasons in `i18n/id-files.json` and `i18n/data-files.json`, and the scanner skips them. Read how a string is consumed before translating it.
+- **A display string must never double as a lookup key.** Sorting that compares `sortBy === 'Customer Name'`, or a chart series keyed by its label, breaks the moment that text is translated — sometimes loudly, usually silently. `i18n:check` warns when a string is used both ways; confirm the two uses are independent, or give the lookup a stable key of its own.
+- **The dev server caches the keymap at startup** and reloads it on a watcher event. A keymap replaced wholesale, rather than edited in place, can leave the server serving the old one while every page looks convincingly translated. After a bulk keymap change that did not come from an in-place edit, restart the dev server before believing what you see.
+- **Keep the pristine vendor tree of every version.** `.tools/mto-stage-20260902/full-version` is the untouched 4.2.0 extract and must not be deleted; it is what makes vendor-to-vendor diffs possible.
+
 ### Read-only live Portal reference
 
-`https://call.mphone.vn/p/` may be inspected read-only to understand current Mphone terminology, route groupings, bilingual copy, visible data structure, call states, reports, recordings, contacts, account settings, and product behavior that MTO should preserve.
+`https://call.mphone.vn/p/` may be inspected read-only to understand current Mphone terminology, route groupings, bilingual copy, visible data structure, call states, reports, recordings, contacts, account settings, and product behavior that MPO Design should preserve.
 
 - Use only a Chrome session or access details supplied directly by the product owner for the current work session.
 - Never store usernames, passwords, cookies, tokens, or sessions in `AGENTS.md`, source code, fixtures, tests, screenshots, logs, documentation, or committed files.
 - Never repeat credentials in progress reports or handoffs.
 - Do not change data, configuration, or state in the live Portal.
 - Do not deploy, upload, or synchronize anything from this workspace to the live Portal.
-- Inspect only what is necessary for the local implementation, and do not transfer real or sensitive customer data into MTO.
+- Inspect only what is necessary for the local implementation, and do not transfer real or sensitive customer data into MPO Design.
 
 The live Portal is a read-only product reference, not a test environment or deployment target.
 
@@ -98,28 +123,32 @@ Preserving all Mantis pages means preserving the UI experience, not retaining cr
 
 Pages involving Auth0, Firebase, Supabase, Amazon Cognito, Google reCAPTCHA, mock APIs, e-commerce, customers, invoices, chat, or other external services must continue to render with enough state and interaction for visual evaluation, but must use local fixtures, stubbed sessions, or simulated actions. They must not require external accounts, transmit workspace data externally, or present a simulation as a live integration.
 
-Do not connect Webphone to real SIP/PBX services, use a production database, or connect MTO to the FusionPBX backend during the UI Lab stage.
+**Recorded exception, decided by the product owner 2026-09-02.** `mpo-design` reads the Mantis vendor mock API rather than a hand-reconstructed local data layer, because rebuilding fixtures by hand is what made earlier trees drift from the vendor and lose pages silently. It therefore does load some vendor-side hosts at runtime — the mock API, flag and map-tile services, and web fonts. The boundary is strict: vendor demonstration data only, read-only requests, no writes, no Mphone or customer data leaving the browser, and no presenting any of it as a live Mphone integration. An offline cache keeps the UI Lab usable when those hosts are unreachable. This exception covers the vendor demo layer and nothing else; it does not relax any other rule in this section.
+
+Do not connect Webphone to real SIP/PBX services, use a production database, or connect MPO Design to the FusionPBX backend during the UI Lab stage.
 
 ### Vendor archive handling
 
 - Treat the original Mantis ZIP and Figma files as local reference inputs.
 - Do not commit or redistribute them without explicit product-owner approval.
-- Never extract them over `spa`, `mto`, or the workspace root; use a dedicated staging directory.
-- Do not use broad ignore rules that could hide reviewed `mto` source.
-- Commit only the Mantis source incorporated into `mto` after embedded credentials, telemetry, and unsafe configuration have been removed.
+- Never extract them over `spa`, `mpo-design`, or the workspace root; use a dedicated staging directory.
+- Do not use broad ignore rules that could hide reviewed `mpo-design` source.
+- Commit only the Mantis source incorporated into `mpo-design` after embedded credentials, telemetry, and unsafe configuration have been removed.
 - Never place purchase information, licence keys, or access credentials in the repository.
 
 ### Migration stages
 
-1. Create `mto` from the Mantis 4.2.0 Vite JavaScript full version, preserving all pages and routes while removing credentials, APM, and telemetry and replacing external runtime integrations with local adapters.
-2. Inventory every user-visible string and provide complete Vietnamese and English catalogs. Verify text expansion, wrapping, buttons, table headers, dialogs, and responsive navigation.
-3. Apply Mphone branding and rewrite all demo content for Mphone products and services using non-sensitive local sample data. Keep every Mantis page discoverable.
-4. After the full application is bilingual and Mphone-specific, classify pages to retain, merge, redesign, keep only in the UI Lab, or remove. Document shared foundations and future backend boundaries. Do not make major removals without product-owner approval.
-5. Reimplement verified Portal behavior from `spa` in `mto`, including dashboard, calls, contacts, recordings, reports, settings, account, analytics, Webphone, Chat, and App Phone. Do not import `spa` source files into the `mto` build.
+1. **Stage 1 — clean baseline (closed; the local-adapter half describes the abandoned `-off` tree):** Create `mpo-design` from clean licensed Mantis 4.2.0 source, preserve every page and route, and remove unsafe vendor configuration. The chosen tree stops there and keeps the vendor mock API rather than replacing external runtime dependencies with local adapters — see `docs/16-mpo-design-stage-1-status.md` for what it actually contains.
+2. **Stage 2 — localization foundation:** Inventory every user-visible string, bring it into shared localization through the keymap described below, and maintain complete matching English and Vietnamese catalogs.
+3. **Stage 3 — Vietnamese content:** Write natural Vietnamese that preserves the exact meaning and purpose of the Mantis English experience. Change text only; do not introduce Mphone product semantics yet.
+4. **Stage 4 — bilingual verification:** Verify every page in Vietnamese and English, light and dark themes, desktop and 390px layouts, including accessibility and interaction states. Gate B1 must pass before product work begins; Gate B2 covers the Component Catalog and runs later.
+5. **Stage 5 — route classification:** Classify each Mantis route to retain, adjust, merge, redesign, keep only in the UI Lab, or propose for removal. Do not remove or merge routes without product-owner approval.
+6. **Stage 6 — Mphone branding and content:** Apply Mphone identity and rewrite approved demo scenarios with non-sensitive bilingual sample data while keeping experimental and unconnected behavior honest.
+7. **Stage 7 — Mphone product surfaces:** Reimplement verified Portal behavior from `spa` and add approved Mphone experiences in prioritized vertical slices. Do not import `spa` source files into the `mpo-design` build.
 
 ### Per-page acceptance
 
-Every MTO page must be verified in Vietnamese and English, light and dark themes, desktop and 390px layouts, without page-level horizontal overflow, clipped or overlapping text, unintended external requests, runtime errors, console errors, leaked credentials, or real customer data. Verify keyboard navigation, visible focus, loading, empty, error, disabled, and interactive states, plus local sample data and simulated actions.
+Every MPO Design page must be verified in Vietnamese and English, light and dark themes, desktop and 390px layouts, without page-level horizontal overflow, clipped or overlapping text, unintended external requests, runtime errors, console errors, leaked credentials, or real customer data. Verify keyboard navigation, visible focus, loading, empty, error, disabled, and interactive states, plus local sample data and simulated actions.
 
 A change is complete only after formatting, lint, local build, relevant quality checks, and visual inspection of the local preview pass.
 
@@ -286,7 +315,7 @@ The catalog must use the same production components and theme. It must not be a 
 
 ## Working rules
 
-1. Treat `portal-worktree/app/portal/mto` as the source of truth for all new Portal migration work. Keep `portal-worktree/app/portal/spa` as a read-only reference unless the product owner explicitly requests a legacy change.
+1. Treat `portal-worktree/app/portal/mpo-design` as the source of truth for all new Portal migration work. Keep `portal-worktree/app/portal/spa` as a read-only reference unless the product owner explicitly requests a legacy change.
 2. Keep all implementation and verification local to this workspace and `http://localhost:4321/`.
 3. Never deploy, upload, synchronize, or write to an internal/external server from this project.
 4. Never edit the external Android project or use ADB, emulator, device, SIP/PBX, or production services as part of UI Lab work.

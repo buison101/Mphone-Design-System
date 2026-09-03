@@ -4,9 +4,10 @@ Read this before changing anything under `app/portal/`.
 
 ## Active workspace mode — local UI Lab only
 
-The parent workspace now uses this Portal as the single canvas for interface experiments. MTO is the active implementation target, while the legacy preview at `http://localhost:4321/` remains available for comparison until cutover. These rules supersede legacy production and server workflow instructions below:
+The parent workspace now uses this Portal as the single canvas for interface experiments. MPO Design is the active implementation target, while the legacy preview at `http://localhost:4321/` remains available for comparison until cutover. These rules supersede legacy production and server workflow instructions below:
 
-- Make all new Portal migration changes in `app/portal/mto`. Treat `app/portal/spa` as a read-only product, behavior, localization, content, and accessibility reference unless the product owner explicitly requests a legacy fix.
+- Make all new Portal migration changes in `app/portal/mpo-design`. Treat `app/portal/spa` as a read-only product, behavior, localization, content, and accessibility reference unless the product owner explicitly requests a legacy fix.
+- `app/portal/mto` is an abandoned, faulty implementation. Do not inspect, read, copy, import, compare against, repair, build, test, or cite it. No decision or completion claim from it carries into MPO Design.
 - Use sample data, stubbed sessions, and simulated interactions so the preview works without FusionPBX, PHP, a database, SIP/PBX, Android, or an external network.
 - Do not edit `app/portal/service`, `app/portal/resources`, PHP configuration, permissions, database files, themes, or generated `p/` output.
 - Do not connect to or deploy to a FusionPBX server, and do not change the external Android application.
@@ -16,31 +17,33 @@ The parent workspace now uses this Portal as the single canvas for interface exp
 
 ### Local completion path
 
-MTO has its own local build and preview workflow at `http://127.0.0.1:4322/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, relevant quality checks, and visual inspection locally. Do not deploy afterward.
+MPO Design has its own local build and preview workflow at `http://127.0.0.1:4322/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, relevant quality checks, and visual inspection locally. Do not deploy afterward.
 
 ## Active Portal migration
 
 | Path | Role |
 |---|---|
-| `app/portal/mto` | New Portal based on the licensed Mantis 4.2.0 Vite JavaScript full version |
+| `app/portal/mpo-design` | New Portal based on the licensed Mantis 4.2.0 Vite JavaScript full version |
 | `app/portal/spa` | Legacy Portal retained as a product, behavior, content, localization, and accessibility reference |
 
 The product owner confirms that an official licence for the new Mantis package has been purchased.
 
-The current priority is to preserve every Mantis 4.2.0 page and route, then clean unsafe vendor configuration, establish the local preview, make the complete application bilingual in Vietnamese and English, rewrite its content for Mphone products and services, and only afterward decide which pages to retain, merge, redesign, or remove.
+The current priority is sequential: first preserve every Mantis 4.2.0 page and route in a clean safe baseline; then make the complete application bilingual in Vietnamese and English while preserving Mantis meaning and experience; only after that baseline is accepted may the team classify routes and implement Mphone branding, content, products, or new pages.
+
+The single detailed roadmap is `../../../docs/15-mpo-design-implementation-plan.vi.md`. Do not create or follow a parallel migration plan.
 
 - Do not remove Mantis pages or routes during the bilingual-content stage without product-owner approval.
 - Every user-visible string must use shared localization and have complete Vietnamese and English messages in the same change.
 - New copy must be concise, natural, consistent, relevant to Mphone, and aligned with Calm, Clear, Certain, Efficient, and Human.
 - Preserve the UI state and interaction of pages involving external services, but replace live integrations with local fixtures, stubbed sessions, or simulated actions.
-- Do not run vendor APM or telemetry, use the embedded GitHub PAT, import vendor `.env` files, or connect MTO to external authentication, mock APIs, FusionPBX, SIP/PBX, production databases, or Android.
-- Do not import source files from `spa` into the `mto` build. Read and reimplement verified behavior using the new foundation.
+- Do not run vendor APM or telemetry, use the embedded GitHub PAT, import vendor `.env` files, or connect MPO Design to external authentication, mock APIs, FusionPBX, SIP/PBX, production databases, or Android.
+- Do not import source files from `spa` into the `mpo-design` build. Read and reimplement verified behavior using the new foundation.
 
 ### Read-only product reference
 
 The live Portal at `https://call.mphone.vn/p/` may be inspected read-only for current Mphone terminology, bilingual copy, visible data structure, and product behavior. Use only a Chrome session or access details supplied by the product owner for the current work session. Never store or repeat usernames, passwords, cookies, tokens, or session data; never modify live data or configuration; and never copy real customer data into local fixtures.
 
-All detailed migration, security, archive-handling, localization, simulation, and acceptance rules in the parent `AGENTS.md` apply to MTO.
+All detailed migration, security, archive-handling, localization, simulation, and acceptance rules in the parent `AGENTS.md` apply to MPO Design.
 
 ## What this is
 
@@ -55,7 +58,7 @@ the whole point of the architecture:
 | | Who | Where | Why |
 |---|---|---|---|
 | Admin | operators, resellers, superadmin | PHP, `themes/mantis` | 300+ pages, heavy write logic, 3.700+ permission checks |
-| Portal | **end customers** | React, `app/portal/mto` as the active target; `app/portal/spa` as the legacy reference | interactive customer experiences, rebuilt locally on the Mantis 4.2.0 foundation |
+| Portal | **end customers** | React, `app/portal/mpo-design` as the active target; `app/portal/spa` as the legacy reference | interactive customer experiences, rebuilt locally on the Mantis 4.2.0 foundation |
 
 **Never port an admin page into the portal because it would look nicer there.**
 A screen belongs in `/p/` only when all three hold:
@@ -71,14 +74,14 @@ users, groups and settings all stay in PHP.
 
 The portal follows the **Mantis** design system by CodedThemes.
 
-- **Licensed primary foundation:** the supplied Mantis 4.2.0 Vite JavaScript full version, used to build `app/portal/mto`. The product owner confirms that an official licence has been purchased.
-- **Legacy free reference (MIT, vendored):** `mantis-free` — the free React template from which `app/portal/spa` was scaffolded. Keep it as historical reference and never import it into MTO at build time.
+- **Licensed primary foundation:** the supplied Mantis 4.2.0 Vite JavaScript full version, used to build `app/portal/mpo-design`. The product owner confirms that an official licence has been purchased.
+- **Legacy free reference (MIT, vendored):** `mantis-free` — the free React template from which `app/portal/spa` was scaffolded. Keep it as historical reference and never import it into MPO Design at build time.
 - **Design system tokens:** `uiux-demo/mantis-free/mantis-free-react-admin-template/mantis-design-system/`
   — palette, typography, layout and shadow tokens for both schemes, matched
   against the Pro demo. `src/themes/palette.js` reproduces `mantis-tokens.json`
   exactly: feed `presetDarkPalettes` plus the inverted grey scale through the
   existing `ThemeOption`, do not hand-write a second palette builder.
-- **External reference:** <https://mantisdashboard.com/dashboard/default> may be inspected for comparison when useful, but the supplied licensed Mantis 4.2.0 package is the primary MTO foundation.
+- **External reference:** <https://mantisdashboard.com/dashboard/default> may be inspected for comparison when useful, but the supplied licensed Mantis 4.2.0 package is the primary MPO Design foundation.
 
 The free template omits a lot the Pro demo shows. When a screen needs something
 missing, reconstruct it rather than inventing a new visual language: match the
