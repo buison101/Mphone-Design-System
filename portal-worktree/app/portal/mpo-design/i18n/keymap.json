@@ -39976,6 +39976,292 @@
         "/components-overview/treeview"
       ],
       "role": "heading"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Overview",
+      "key": "mphoneLab.surface.overview.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên trang tổng quan và mục điều hướng của Mphone Lab",
+      "routes": [
+        "/mphone"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "A separate workspace for upcoming Mphone product experiences, kept apart from the current Mantis interface library.",
+      "key": "mphoneLab.surface.overview.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả mục đích của không gian Mphone Lab",
+      "routes": [
+        "/mphone"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Calls",
+      "key": "mphoneLab.surface.calls.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên bề mặt cuộc gọi sắp tới của Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/calls"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Shape the future call overview and call-management experience.",
+      "key": "mphoneLab.surface.calls.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả bề mặt cuộc gọi sắp tới",
+      "routes": [
+        "/mphone",
+        "/mphone/calls"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Contacts",
+      "key": "mphoneLab.surface.contacts.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên bề mặt danh bạ sắp tới của Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/contacts"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Shape the future customer and business contact experience.",
+      "key": "mphoneLab.surface.contacts.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả bề mặt danh bạ sắp tới",
+      "routes": [
+        "/mphone",
+        "/mphone/contacts"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Webphone",
+      "key": "mphoneLab.surface.webphone.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên bề mặt Webphone mô phỏng",
+      "routes": [
+        "/mphone",
+        "/mphone/webphone"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Explore a simulated browser calling experience without connecting to a real PBX.",
+      "key": "mphoneLab.surface.webphone.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả và ranh giới mô phỏng của Webphone",
+      "routes": [
+        "/mphone",
+        "/mphone/webphone"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "App Phone",
+      "key": "mphoneLab.surface.appPhone.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên mẫu thử trải nghiệm ứng dụng Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/app-phone"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Explore the future Mphone mobile experience inside a simulated device frame.",
+      "key": "mphoneLab.surface.appPhone.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả và ranh giới mô phỏng của App Phone",
+      "routes": [
+        "/mphone",
+        "/mphone/app-phone"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Analytics",
+      "key": "mphoneLab.surface.analytics.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên bề mặt phân tích dữ liệu mẫu Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/analytics"
+      ],
+      "role": "heading",
+      "maxLength": 24
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Explore call trends, service quality, queues, channels, and cost with sample data.",
+      "key": "mphoneLab.surface.analytics.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả bề mặt phân tích dữ liệu mẫu Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/analytics"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Design System",
+      "key": "mphoneLab.surface.designSystem.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên bề mặt hệ thống thiết kế Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/design-system"
+      ],
+      "role": "heading",
+      "maxLength": 28
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:description",
+      "source": "Review the shared foundations, components, patterns, and product guidance.",
+      "key": "mphoneLab.surface.designSystem.description",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Mô tả bề mặt hệ thống thiết kế Mphone",
+      "routes": [
+        "/mphone",
+        "/mphone/design-system"
+      ],
+      "role": "text"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "obj:title",
+      "source": "Mphone Lab",
+      "key": "mphoneLab.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Tên không gian thử nghiệm sản phẩm Mphone trong breadcrumb và sidebar",
+      "routes": [
+        "/mphone",
+        "/mphone/*"
+      ],
+      "role": "navigation",
+      "maxLength": 20
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "text",
+      "source": "UI Lab prototype using local sample data only. No live Mphone, PBX, or customer-data connection is active.",
+      "key": "mphoneLab.boundary",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Thông báo ranh giới tích hợp trên mọi trang Mphone Lab",
+      "routes": [
+        "/mphone",
+        "/mphone/*"
+      ],
+      "role": "alert"
+    },
+    {
+      "file": "src/mphone-lab/MphoneLabPage.jsx",
+      "occurrence": "prop:label",
+      "source": "Upcoming",
+      "key": "mphoneLab.status",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Nhãn trạng thái cho các bề mặt Mphone chưa triển khai",
+      "routes": [
+        "/mphone",
+        "/mphone/*"
+      ],
+      "role": "status",
+      "maxLength": 16
+    },
+    {
+      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
+      "occurrence": "text",
+      "source": "Mantis UI",
+      "key": "mphoneLab.switcher.mantis",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Nhãn link chuyển sang thư viện giao diện Mantis",
+      "routes": [
+        "/*"
+      ],
+      "role": "navigation",
+      "maxLength": 16
+    },
+    {
+      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
+      "occurrence": "text",
+      "source": "Mphone Lab",
+      "key": "mphoneLab.title",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Nhãn link chuyển sang không gian Mphone Lab",
+      "routes": [
+        "/*"
+      ],
+      "role": "navigation",
+      "maxLength": 20
+    },
+    {
+      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
+      "occurrence": "prop:aria-label",
+      "source": "Switch between Mantis UI and Mphone Lab",
+      "key": "mphoneLab.switcher.aria",
+      "origin": "mphone",
+      "kind": "message",
+      "context": "Nhãn trợ năng cho bộ chuyển hai không gian ở header",
+      "routes": [
+        "/*"
+      ],
+      "role": "a11y"
     }
   ]
 }

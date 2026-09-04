@@ -87,7 +87,7 @@ export default function ProductReviews({ product }) {
   if (reviews && !isPending) {
     productReview = reviews.map((review, index) => (
       <Grid key={index} size={12}>
-        <MainCard sx={{ bgcolor: 'grey.A50' }}>
+        <MainCard sx={{ bgcolor: 'background.default' }}>
           <ProductReview
             avatar={review.profile.avatar}
             date={format(new Date(review.date), 'dd/MM, yyyy h:dd:ss a')}

@@ -100,6 +100,7 @@ export default function Landing() {
       { id: 'theme4', primary: isDark ? '#5d7dcb' : '#3c64d0' },
       { id: 'default', primary: blue[5] },
       { id: 'mphone1', primary: isDark ? '#0A84FF' : '#0071E3' },
+      { id: 'mphone2', primary: isDark ? '#305bdd' : '#3366FF' },
       { id: 'theme5', primary: isDark ? '#d26415' : '#f27013' },
       { id: 'theme6', primary: isDark ? '#288d99' : '#2aa1af' },
       { id: 'theme7', primary: isDark ? '#05934c' : '#00a854' },

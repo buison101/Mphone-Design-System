@@ -1,11 +1,12 @@
 import { lazy } from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 // project imports
 import MainRoutes from './MainRoutes';
 import LoginRoutes from './LoginRoutes';
 import ComponentsRoutes from './ComponentsRoutes';
 import PromptsRoutes from './PromptsRoutes';
+import MphoneRoutes from './MphoneRoutes';
 import Loadable from 'components/Loadable';
 
 import { SimpleLayoutType } from 'config';
@@ -24,6 +25,10 @@ const router = createBrowserRouter(
       children: [
         {
           index: true,
+          element: <Navigate to="/dashboard/analytics" replace />
+        },
+        {
+          path: 'landing',
           element: <PagesLanding />
         }
       ]
@@ -31,6 +36,7 @@ const router = createBrowserRouter(
     LoginRoutes,
     ComponentsRoutes,
     PromptsRoutes,
+    MphoneRoutes,
     MainRoutes
   ],
   { basename: import.meta.env.VITE_APP_BASE_NAME }

@@ -19,7 +19,7 @@ export default function PaymentCard({ type, paymentType, cardHandler }) {
       sx={(theme) => ({
         overflow: 'hidden',
         opacity: paymentType === 'cod' ? 0.5 : 1,
-        bgcolor: 'grey.A50',
+        bgcolor: 'background.default',
         maxWidth: 380,
         '&:hover': {
           boxShadow: paymentType === 'cod' ? 'none' : theme.vars.customShadows.primary,

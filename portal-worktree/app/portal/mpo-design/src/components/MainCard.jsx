@@ -37,7 +37,7 @@ export default function MainCard({
       elevation={elevation || 0}
       sx={(theme) => ({
         position: 'relative',
-        ...(border && { border: `1px solid ${theme.vars.palette.grey['A800']}` }),
+        ...(border && { border: `1px solid ${theme.vars.palette.divider}` }),
         borderRadius: 1,
         boxShadow: boxShadow && !border ? shadow || theme.vars.customShadows.z1 : 'inherit',
         ':hover': { boxShadow: boxShadow ? shadow || theme.vars.customShadows.z1 : 'inherit' },

@@ -3,12 +3,12 @@ import { styled } from '@mui/material/styles';
 import Drawer from '@mui/material/Drawer';
 
 // project imports
-import { DRAWER_WIDTH } from 'config';
+import { DRAWER_WIDTH, HEADER_HEIGHT } from 'config';
+import frostedSurface from 'utils/frosted';
 
 const openedMixin = (theme) => ({
   width: DRAWER_WIDTH,
-  borderRight: '1px solid',
-  borderRightColor: theme.vars.palette.divider,
+  borderRight: 'none',
 
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
@@ -16,8 +16,7 @@ const openedMixin = (theme) => ({
   }),
 
   overflowX: 'hidden',
-  boxShadow: 'none',
-  ...theme.applyStyles('dark', { boxShadow: theme.vars.customShadows.z1 })
+  boxShadow: 'none'
 });
 
 const closedMixin = (theme) => ({
@@ -29,7 +28,7 @@ const closedMixin = (theme) => ({
   overflowX: 'hidden',
   width: theme.spacing(7.5),
   borderRight: 'none',
-  boxShadow: theme.vars.customShadows.z1
+  boxShadow: 'none'
 });
 
 // ==============================|| DRAWER - MINI STYLED ||============================== //
@@ -39,6 +38,13 @@ const MiniDrawerStyled = styled(Drawer, { shouldForwardProp: (prop) => prop !== 
   flexShrink: 0,
   whiteSpace: 'nowrap',
   boxSizing: 'border-box',
+  '& .MuiDrawer-paper': {
+    top: HEADER_HEIGHT,
+    height: `calc(100% - ${HEADER_HEIGHT - 1}px)`,
+    marginTop: '-1px',
+    pointerEvents: 'auto',
+    ...frostedSurface(theme)
+  },
   variants: [
     {
       props: ({ open }) => open,

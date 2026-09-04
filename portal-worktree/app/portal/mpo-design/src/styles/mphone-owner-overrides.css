@@ -10,33 +10,7 @@
 
 /* Add product-owner CSS overrides below this line. */
 
-
-/* Chỉnh header, Điều chỉnh content gọn hơn */
-.mui-1ivhj2s-MuiToolbar-root {    
-	min-height: 68px;
-}
-.mui-p0x6ve, .mui-1h7j1al {    
-    min-height: 68px;
-}
-@media (min-width: 0) {
-    .mui-3vrbmv-MuiContainer-root {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-@media (min-width: 768px) {
-    .mui-3vrbmv-MuiContainer-root {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-@media (min-width: 0px) {
-    .mui-hem2q5 {
-        padding: 32px 0;
-    }
-}
-@media (min-width: 768px) {
-    .mui-hem2q5 {
-        padding: 40px 32px;
-    }
+/* Lật icon phone */
+.anticon.anticon-phone {
+    transform: scaleX(-1);
 }

@@ -46,7 +46,7 @@ export default function ThemeFont() {
       label: 'Public Sans'
     }
   ];
-  const visibleFonts = fonts.filter(({ id }) => id !== 'public-sans');
+  const visibleFonts = fonts.filter(({ id }) => !['poppins', 'public-sans'].includes(id));
 
   return (
     <RadioGroup row aria-label="theme-font" name="theme-font" value={state.fontFamily} onChange={handleFontChange}>

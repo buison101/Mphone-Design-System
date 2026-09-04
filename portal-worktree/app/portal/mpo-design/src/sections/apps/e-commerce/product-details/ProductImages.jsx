@@ -223,10 +223,10 @@ export default function ProductImages({ product }) {
                 width: { xs: 72, lg: 100 }
               },
               '& .slick-arrow': {
-                '&:hover': { bgcolor: 'grey.A200' },
+                '&:hover': { bgcolor: 'action.hover' },
                 position: 'initial',
                 color: 'text.secondary',
-                bgcolor: 'grey.A200',
+                bgcolor: 'action.hover',
                 p: 0,
                 transform: 'rotate(90deg)',
                 borderRadius: '50%',

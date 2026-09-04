@@ -11,6 +11,7 @@ import Stack from '@mui/material/Stack';
 // project imports
 import Navigation from './DrawerContent/Navigation';
 import useConfig from 'hooks/useConfig';
+import { HEADER_HEIGHT } from 'config';
 
 function ElevationScroll({ children, window }) {
   const theme = useTheme();
@@ -39,7 +40,7 @@ export default function CustomAppBar() {
     <ElevationScroll>
       <AppBar
         sx={{
-          top: 60,
+          top: HEADER_HEIGHT,
           bgcolor: 'background.paper',
           width: '100%',
           height: 62,

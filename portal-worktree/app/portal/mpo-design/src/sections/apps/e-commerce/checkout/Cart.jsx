@@ -62,7 +62,7 @@ function Increment({ itemId, quantity, updateQuantity }) {
       >
         <MinusOutlined style={{ fontSize: 'inherit' }} />
       </Button>
-      <Typography key="two" sx={{ p: '9px 15px', border: '1px solid', borderColor: 'grey.A800' }}>
+      <Typography key="two" sx={{ p: '9px 15px', border: '1px solid', borderColor: 'divider' }}>
         {value}
       </Typography>
       <Button

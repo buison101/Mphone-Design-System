@@ -75,7 +75,7 @@ export default function NavUser() {
   };
 
   return (
-    <Box sx={{ p: 1.25, px: !drawerOpen ? 1.25 : 3, borderTop: '2px solid', borderTopColor: 'divider' }}>
+    <Box sx={{ p: 1.25, px: !drawerOpen ? 1.25 : 3, borderTop: '1px solid', borderTopColor: 'divider' }}>
       <List disablePadding>
         <ListItem
           disablePadding

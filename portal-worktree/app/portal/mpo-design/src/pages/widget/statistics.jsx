@@ -81,7 +81,7 @@ export default function WidgetStatistics() {
         <HoverSocialCard primary="Twitter Users" secondary="780 +" iconPrimary={TwitterOutlined} color="info.main" />
       </Grid>
       <Grid size={{ xs: 12, lg: 3, sm: 6 }}>
-        <HoverSocialCard primary="Linked In Users" secondary="998 +" iconPrimary={LinkedinOutlined} color="secondary.A300" />
+        <HoverSocialCard primary="Linked In Users" secondary="998 +" iconPrimary={LinkedinOutlined} color="grey.A400" />
       </Grid>
       <Grid size={{ xs: 12, lg: 3, sm: 6 }}>
         <HoverSocialCard primary="Youtube Videos" secondary="650 +" iconPrimary={YoutubeFilled} color="error.main" />

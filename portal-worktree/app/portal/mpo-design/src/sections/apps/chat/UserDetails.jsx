@@ -90,8 +90,8 @@ export default function UserDetails({ user, onClose }) {
                     statusBGColor = theme.vars.palette.success.lighter;
                     statusColor = theme.vars.palette.success.main;
                   } else if (user.online_status === 'do_not_disturb') {
-                    statusBGColor = theme.vars.palette.grey.A100;
-                    statusColor = theme.vars.palette.grey.A200;
+                    statusBGColor = theme.vars.palette.background.default;
+                    statusColor = theme.vars.palette.text.secondary;
                   } else {
                     statusBGColor = theme.vars.palette.warning.lighter;
                     statusColor = theme.vars.palette.warning.main;

@@ -33,10 +33,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
   const { colorScheme } = useColorScheme();
   const { state } = useConfig();
 
-  let itemTarget = '_self';
-  if (item.target) {
-    itemTarget = '_blank';
-  }
+  const itemTarget = item.external && item.target ? '_blank' : '_self';
 
   const itemHandler = () => {
     if (downLG) handlerDrawerOpen(false);
@@ -59,7 +56,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
   );
 
   const { pathname } = useLocation();
-  const isSelected = !!matchPath({ path: item?.link ? item.link : item.url, end: false }, pathname);
+  const isSelected = !!matchPath({ path: item?.link ? item.link : item.url, end: item.exact || false }, pathname);
 
   const textColor = colorScheme === ThemeMode.DARK ? 'grey.400' : 'text.primary';
   const iconSelectedColor = colorScheme === ThemeMode.DARK && drawerOpen ? 'text.primary' : 'primary.main';

@@ -85,7 +85,7 @@ export default function Footer({ isFull }) {
         <Box
           sx={(theme) => ({
             position: 'relative',
-            bgcolor: 'grey.A700',
+            bgcolor: 'common.black',
             zIndex: 1,
             mt: { xs: 0, md: 13.75 },
             pt: { xs: 8, sm: 7.5, md: 18.75 },
@@ -100,7 +100,7 @@ export default function Footer({ isFull }) {
               background:
                 theme.direction === ThemeDirection.RTL
                   ? `linear-gradient(transparent 100%, rgb(31, 31, 31) 70%)`
-                  : `linear-gradient(180deg, transparent 0%, ${theme.vars.palette.grey.A700} 70%)`
+                  : `linear-gradient(180deg, transparent 0%, ${theme.vars.palette.common.black} 70%)`
             }
           })}
         >
@@ -153,7 +153,7 @@ export default function Footer({ isFull }) {
           </ContainerWrapper>
         </Box>
       )}
-      <Box sx={{ mt: isFull ? 0 : 10, pt: isFull ? 0 : 10, pb: 10, bgcolor: 'grey.A700' }}>
+      <Box sx={{ mt: isFull ? 0 : 10, pt: isFull ? 0 : 10, pb: 10, bgcolor: 'common.black' }}>
         <ContainerWrapper>
           <Grid container spacing={2}>
             <Grid size={{ xs: 12, md: 4 }}>

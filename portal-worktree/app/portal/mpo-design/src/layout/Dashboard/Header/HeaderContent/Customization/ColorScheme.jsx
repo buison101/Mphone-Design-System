@@ -38,10 +38,17 @@ export default function ColorScheme() {
     },
     {
       id: 'mphone1',
-      primary: colorScheme === ThemeMode.DARK ? '#0A84FF' : '#0071E3',
-      lighter: colorScheme === ThemeMode.DARK ? '#071B2E' : '#EAF5FF',
+      primary: colorScheme === ThemeMode.DARK ? '#0A84FF' : '#007AFF',
+      lighter: colorScheme === ThemeMode.DARK ? '#001F42' : '#F0F7FF',
       label: 'Mphone 1',
-      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#0A84FF' : '#0071E3', 0.2)}`
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#0A84FF' : '#007AFF', 0.2)}`
+    },
+    {
+      id: 'mphone2',
+      primary: colorScheme === ThemeMode.DARK ? '#305bdd' : '#3366FF',
+      lighter: colorScheme === ThemeMode.DARK ? '#1c2134' : '#D6E4FF',
+      label: 'Mphone 2',
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#305bdd' : '#3366FF', 0.2)}`
     },
     {
       id: 'theme1',
@@ -100,7 +107,7 @@ export default function ColorScheme() {
       shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#058478' : '#009688', 0.2)}`
     }
   ];
-  const visibleColorOptions = colorOptions.filter(({ id }) => ['default', 'mphone1', 'theme1', 'theme4'].includes(id));
+  const visibleColorOptions = colorOptions.filter(({ id }) => ['default', 'mphone1', 'mphone2', 'theme1'].includes(id));
 
   const handlePresetColorChange = (event) => {
     setField('presetColor', event.target.value);

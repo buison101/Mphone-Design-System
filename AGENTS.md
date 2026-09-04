@@ -17,14 +17,12 @@ This workspace is now a **local interface experimentation environment**, not a p
 - If a requested concept appears to require backend or native-app work, represent the proposed experience in the Portal with mock data and document the integration boundary; do not implement outside this UI Lab.
 - Instructions elsewhere in this workspace that describe server deployment, Android changes, real authentication, production endpoints, or production verification are historical constraints and do not authorize those actions. This section takes precedence for all new work.
 
-### Local preview workflow
+### Local checks and optional preview
 
-For the legacy reference, from `portal-worktree/app/portal/spa`:
-
-1. Run `npm run preview:build` to refresh the self-contained preview.
-2. Run `npm run preview:open` to serve it at `http://localhost:4321/`.
-3. Verify the affected routes locally in Vietnamese and English, light and dark themes, desktop and 390px layouts.
-4. Run formatting, lint, build, and relevant local quality checks. A production deployment is never part of completion.
+- Run formatting, lint, build, and relevant non-interactive local quality checks in proportion to the change.
+- The local previews at `http://localhost:4321/` and `http://127.0.0.1:4323/` are available for targeted debugging or product-owner review, but opening them is not a completion requirement.
+- Agents are not required to open or control a browser/computer, capture screenshots, or repeat a language/theme/viewport matrix unless the product owner explicitly requests that work.
+- A production deployment is never part of completion.
 
 ## Current position
 
@@ -35,7 +33,7 @@ For the legacy reference, from `portal-worktree/app/portal/spa`:
 - **Legacy Portal reference:** `portal-worktree/app/portal/spa`.
 - **External server and Android app:** reference only; no writes, builds, deployments, or runtime integration.
 - **Shared system:** `D:\Projects\FusionPBX\design-system`.
-- **Last scope update:** 2026-09-02.
+- **Last scope update:** 2026-09-04.
 
 ## Active migration — Mantis 4.2.0 Portal
 
@@ -89,7 +87,7 @@ Localization does not edit vendor source. As of wave L6, `mpo-design` differs fr
 - **Every vendor file that must be edited goes in `docs/vendor-patches.md`** with its reason and how to reapply it. Before editing one, ask whether the change can be made a level higher — a MUI theme override instead of nineteen inline edits, for example.
 - **A locale switch must be one synchronous render, and it must remount.** The catalogs are imported statically and the runtime singleton and date-fns defaults are set during render, not in an effect — otherwise React commits a frame where the locale has flipped but the text has not, and the interface visibly mixes the two languages. `IntlProvider` is keyed on the locale so the subtree remounts, because a component that copied a translated string into state keeps the old language until it unmounts. Do not "optimise" either of these back.
 - **Date, month, weekday and day-period wording is not in the keymap.** Libraries generate it from a locale code, so the decision lives in `src/locales-mphone/date-locale-vi.js` and the table is in `docs/19`. Three consumers, three separate wirings: direct `format()` calls, MUI pickers, and FullCalendar — fixing one does not fix the others.
-- **Verify by reading the rendered text, in DEV mode.** Not by the coverage number, not by `pageerror`, not by a production build alone. Every occurrence kind the extractor knows about was added because the tools reported full coverage while the screen still showed English. §4.7 lists the kinds and the two opt-in files that gate the risky ones, `i18n/array-exceptions.json` and `i18n/call-arguments.json`.
+- **Use the localization checks as the default verification.** Rendered-text or browser checks are optional and should be used only when the product owner requests them or when they are useful for a targeted diagnosis; they do not block completion. §4.7 lists the occurrence kinds and the two opt-in files that gate the risky ones, `i18n/array-exceptions.json` and `i18n/call-arguments.json`.
 - **Not every translatable-looking string is a string.** Some are message ids handed to `<FormattedMessage id={...} />` — a menu `title`, a breadcrumb slug — and translating those in source breaks the lookup and puts a raw id on screen. Others are reference or sample data — a country list, a film catalogue, coordinates — where a wrong translation is a data error, not a wording error. Both are listed with reasons in `i18n/id-files.json` and `i18n/data-files.json`, and the scanner skips them. Read how a string is consumed before translating it.
 - **An exception list must carry a number, not just a path.** `i18n/catalog-exceptions.json` excepts whole trees — the Component Catalog demo payload — so it pins an `expected` position count per tree and `i18n:scan` reports `DRIFT` when the real count moves. Without that, a tree-level exception silently absorbs every new gap that lands in it and the scanner's zero stops meaning anything. Any future tree-level exception follows the same rule.
 - **A display string must never double as a lookup key.** Sorting that compares `sortBy === 'Customer Name'`, or a chart series keyed by its label, breaks the moment that text is translated — sometimes loudly, usually silently. `i18n:check` warns when a string is used both ways; confirm the two uses are independent, or give the lookup a stable key of its own.
@@ -142,16 +140,16 @@ Do not connect Webphone to real SIP/PBX services, use a production database, or 
 1. **Stage 1 — clean baseline (closed; the local-adapter half describes the abandoned `-off` tree):** Create `mpo-design` from clean licensed Mantis 4.2.0 source, preserve every page and route, and remove unsafe vendor configuration. The chosen tree stops there and keeps the vendor mock API rather than replacing external runtime dependencies with local adapters — see `docs/16-mpo-design-stage-1-status.md` for what it actually contains.
 2. **Stage 2 — localization foundation:** Inventory every user-visible string, bring it into shared localization through the keymap described below, and maintain complete matching English and Vietnamese catalogs.
 3. **Stage 3 — Vietnamese content:** Write natural Vietnamese that preserves the exact meaning and purpose of the Mantis English experience. Change text only; do not introduce Mphone product semantics yet.
-4. **Stage 4 — bilingual verification:** Verify every page in Vietnamese and English, light and dark themes, desktop and 390px layouts, including accessibility and interaction states. Gate B1 must pass before product work begins; Gate B2 covers the Component Catalog and runs later.
+4. **Stage 4 — bilingual verification (closed):** Gate B1 was accepted on 2026-09-03. Its historical browser matrix is not a recurring requirement for later work; Gate B2 still covers the Component Catalog and runs separately.
 5. **Stage 5 — route classification:** Classify each Mantis route to retain, adjust, merge, redesign, keep only in the UI Lab, or propose for removal. Do not remove or merge routes without product-owner approval.
 6. **Stage 6 — Mphone branding and content:** Apply Mphone identity and rewrite approved demo scenarios with non-sensitive bilingual sample data while keeping experimental and unconnected behavior honest.
 7. **Stage 7 — Mphone product surfaces:** Reimplement verified Portal behavior from `spa` and add approved Mphone experiences in prioritized vertical slices. Do not import `spa` source files into the `mpo-design` build.
 
-### Per-page acceptance
+### Per-change completion
 
-Every MPO Design page must be verified in Vietnamese and English, light and dark themes, desktop and 390px layouts, without page-level horizontal overflow, clipped or overlapping text, unintended external requests, runtime errors, console errors, leaked credentials, or real customer data. Verify keyboard navigation, visible focus, loading, empty, error, disabled, and interactive states, plus local sample data and simulated actions.
+Preserve bilingual content, responsive behavior, accessibility, interaction states, safe sample data, and the no-live-integration boundary. Validate these with static review and the relevant automated checks available for the files changed.
 
-A change is complete only after formatting, lint, local build, relevant quality checks, and visual inspection of the local preview pass.
+A change is complete after formatting, lint, local build, and relevant non-interactive quality checks pass. Browser/computer control, screenshots, visual inspection, and exhaustive route/theme/viewport sweeps are optional unless the product owner explicitly requests them for that task.
 
 ## Product vision
 
@@ -323,7 +321,7 @@ The catalog must use the same production components and theme. It must not be a 
 5. Do not create or modify PHP endpoints, database schemas, FusionPBX permissions, administration themes, or generated production output. Model required backend behavior with local fixtures and an explicit integration note.
 6. Preserve unrelated dirty files and existing historical copies.
 7. Read narrower `AGENTS.md` files before editing, but this document's **Current operating mode — local UI lab** remains the workspace-wide safety boundary and cannot be relaxed by narrower legacy instructions.
-8. Portal UI changes must pass Prettier, ESLint, a local build, relevant local quality checks, and visual inspection of the local preview where available.
+8. Portal UI changes must pass Prettier, ESLint, a local build, and relevant non-interactive local quality checks. Do not make browser/computer control, screenshots, or visual inspection a completion condition unless the product owner explicitly requests them.
 9. Update Vietnamese and English together for every visible string.
 10. Reuse semantic tokens and approved components. Do not introduce one-off color, spacing, or typography values without documenting the missing semantic role.
 11. Mantis Pro is a visual reference only. Do not copy proprietary source or assets.
@@ -357,3 +355,5 @@ Completed → locally verified → preview route → integration boundaries → 
 | 2026-08-28 | Restrict all web UI/UX development to the customer Portal; do not redesign the FusionPBX PHP administration interface. |
 | 2026-08-29 | Convert this workspace into a local Portal UI Lab at `http://localhost:4321/`; prohibit server, production, and external Android changes. |
 | 2026-08-29 | Treat Webphone, Bảng phân tích, App Phone, Chat, and future product concepts as Portal-hosted prototypes using samples and simulation. |
+| 2026-09-04 | Remove mandatory browser/computer control, screenshots, visual inspection, and exhaustive language/theme/viewport sweeps from routine AI completion checks; use them only on explicit request or for targeted diagnosis. |
+| 2026-09-04 | Keep one shared Portal shell for Mantis UI and Mphone Lab. The header switch changes only which sidebar tree is rendered from the current namespace; upcoming Mphone surfaces live under `/mphone/*`, while all Mantis routes remain intact. |

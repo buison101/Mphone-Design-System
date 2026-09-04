@@ -12,12 +12,12 @@ The parent workspace now uses this Portal as the single canvas for interface exp
 - Do not edit `app/portal/service`, `app/portal/resources`, PHP configuration, permissions, database files, themes, or generated `p/` output.
 - Do not connect to or deploy to a FusionPBX server, and do not change the external Android application.
 - Webphone is a simulated UI experiment; do not register it with a real PBX or place real calls.
-- Bảng phân tích, App Phone, Chat, Webphone, and future concepts must be built and reviewed as routes in this Portal preview.
+- Bảng phân tích, App Phone, Chat, Webphone, and future concepts must be built as routes in this Portal; opening the preview for review is optional unless the product owner explicitly requests it.
 - When production-era instructions below mention endpoints, authentication, deployment, server builds, or real-data checks, retain them only as architectural context. They do not authorize those actions in the current workspace mode.
 
 ### Local completion path
 
-MPO Design has its own local build and preview workflow at `http://127.0.0.1:4322/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, relevant quality checks, and visual inspection locally. Do not deploy afterward.
+MPO Design has its own local build and optional preview at `http://127.0.0.1:4323/` and must not write to generated production `/p/` output. Until cutover, keep the legacy preview at `http://localhost:4321/` available for comparison. Run Prettier, ESLint, the local build, and relevant non-interactive quality checks. Browser/computer control, screenshots, and visual inspection are not completion requirements unless the product owner explicitly requests them. Do not deploy afterward.
 
 ### Product-owner visual override — read only for agents
 

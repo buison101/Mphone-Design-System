@@ -187,22 +187,11 @@ Việc chuyển chuỗi tiếng Anh vào catalog được thực hiện trước
 - Không thay đổi design, route, data model hoặc behavior trong đợt dịch.
 - Mỗi message key phải có cả tiếng Việt và tiếng Anh hoàn chỉnh trong cùng thay đổi.
 
-### Stage 4 — Kiểm thử trải nghiệm song ngữ
+### Stage 4 — Kiểm thử trải nghiệm song ngữ (đã đóng)
 
-Mỗi trang phải được kiểm tra theo đủ tám tổ hợp:
+Gate B1 đã được product owner chấp nhận ngày 2026-09-03. Ma trận trình duyệt tám tổ hợp từng dùng cho Gate B1 là bằng chứng lịch sử, không phải điều kiện hoàn thành lặp lại cho các thay đổi sau này.
 
-| Ngôn ngữ | Theme | Viewport |
-|---|---|---|
-| Tiếng Việt | Light | Desktop |
-| Tiếng Việt | Dark | Desktop |
-| Tiếng Việt | Light | 390px |
-| Tiếng Việt | Dark | 390px |
-| English | Light | Desktop |
-| English | Dark | Desktop |
-| English | Light | 390px |
-| English | Dark | 390px |
-
-Kiểm tra thêm keyboard navigation, visible focus, loading, empty, error, disabled và interactive states; không có text cắt/chồng, raw message ID, lỗi localization, runtime error, console error hoặc page-level horizontal overflow.
+Mặc định, AI dùng kiểm tra localization, static review, formatting, lint, build và các kiểm tra tự động liên quan. AI không bắt buộc mở hoặc điều khiển máy tính/trình duyệt, chụp ảnh, hay rà toàn bộ ngôn ngữ/theme/viewport. Chỉ thực hiện các việc đó khi product owner yêu cầu rõ hoặc khi cần chẩn đoán một lỗi giao diện cụ thể.
 
 ### 4.3. Các đợt triển khai và nghiệm thu
 
@@ -219,7 +208,7 @@ Mỗi đợt là một change set localization độc lập. Không trộn brand
 | L7 | Component Catalog | Tên component, mô tả, ví dụ và trạng thái tương tác đều song ngữ |
 | L8 | Landing, extra pages, Prompt Explorer và rà soát toàn cục | Đóng mọi khoảng trống inventory và chuẩn bị evidence cho Gate B1 |
 
-Sau mỗi đợt phải chạy formatting, ESLint, local build, kiểm tra catalog và visual inspection cho các route thuộc đợt đó ở cả hai ngôn ngữ, hai theme và hai viewport. Không chờ đến L8 mới xử lý lỗi layout hoặc localization phát hiện từ các đợt trước.
+Sau mỗi đợt, chạy formatting, ESLint, local build, kiểm tra catalog và các kiểm tra tự động liên quan. Preview hoặc visual inspection chỉ dùng khi được yêu cầu rõ hoặc hữu ích cho chẩn đoán có mục tiêu; không phải điều kiện đóng đợt.
 
 Bảng trên chia đợt theo miền chức năng, không theo khối lượng. Theo số đo ở §4.1, riêng L7 chiếm khoảng 49% tổng số chuỗi, nhiều hơn L2–L6 cộng lại.
 
@@ -233,7 +222,7 @@ Bảng trên chia đợt theo miền chức năng, không theo khối lượng. 
 - Một thuật ngữ phải nhất quán giữa navigation, page title, field label, validation, tooltip và notification, trừ khi ngữ cảnh ngữ pháp thực sự yêu cầu cách diễn đạt khác.
 - Không đưa thuật ngữ viễn thông, thương hiệu hoặc nội dung Mphone vào bản dịch baseline Mantis.
 - Nếu câu tiếng Anh gốc mơ hồ, ghi lại quyết định trong inventory hoặc glossary; không tự thay đổi use case để làm câu dễ dịch hơn.
-- Ngân sách độ dài: tiếng Việt thường dài hơn tiếng Anh 20–30%. Với header bảng, nút, chip, tab, badge và nhãn biểu đồ, chọn dạng ngắn ngay từ đầu thay vì chờ ma trận kiểm thử ở Stage 4 phát hiện tràn chữ. Nếu bản ngắn làm mất nghĩa, giữ nghĩa và ghi vấn đề layout vào inventory để xử lý riêng.
+- Ngân sách độ dài: tiếng Việt thường dài hơn tiếng Anh 20–30%. Với header bảng, nút, chip, tab, badge và nhãn biểu đồ, chọn dạng ngắn ngay từ đầu. Nếu bản ngắn làm mất nghĩa, giữ nghĩa và ghi vấn đề layout vào inventory để xử lý riêng.
 - Một chuỗi chỉ có một bản dịch trong glossary. Khi hai ngữ cảnh thực sự cần hai cách diễn đạt, tạo hai message key riêng thay vì dùng chung một key.
 
 ### 4.5. Checklist hoàn thành cho mỗi route
@@ -241,11 +230,10 @@ Bảng trên chia đợt theo miền chức năng, không theo khối lượng. 
 - Mọi chuỗi hiển thị đến từ shared localization và có đủ `en`/`vi`.
 - Tiếng Anh giữ nguyên ý nghĩa baseline; tiếng Việt tự nhiên và tương đương ngữ nghĩa.
 - Không có raw message ID, fallback sai ngôn ngữ hoặc chuỗi hardcode ngoài danh sách ngoại lệ kỹ thuật đã được duyệt.
-- Không cắt, chồng hoặc tràn chữ ở desktop và 390px.
-- Light/dark, keyboard, visible focus, loading, empty, error, disabled, destructive và confirmation states hoạt động đúng nơi áp dụng.
-- Không có runtime error, console error, request ngoài dự kiến hoặc thay đổi hành vi Mantis.
+- Responsive behavior, theme, keyboard, focus và các content/interaction state vẫn là mục tiêu thiết kế; dùng static review và kiểm tra tự động hiện có khi chúng liên quan tới thay đổi.
+- Không đưa vào request ngoài dự kiến, lỗi runtime đã biết hoặc thay đổi hành vi Mantis có thể xác định bằng các kiểm tra liên quan.
 - Formatting, ESLint, local build và kiểm tra catalog đều đạt.
-- **Kiểm chứng ở chế độ dev, không chỉ production build.** Nhiều thư viện chỉ ném lỗi bất biến ở dev — MUI X Charts là một ví dụ đã gặp thật. Và khi route error boundary bắt được lỗi thì `pageerror` không bắn, nên phải kiểm tra **nội dung màn hình** (`Unexpected Application Error`), không chỉ nghe sự kiện.
+- Kiểm tra ở chế độ dev hoặc đọc nội dung màn hình chỉ là bước chẩn đoán có mục tiêu khi có dấu hiệu lỗi; không phải lượt kiểm tra trình duyệt bắt buộc cho mọi route.
 - Không còn `textTransform: 'capitalize'` tác động lên chuỗi hiển thị của route. Baseline có ~19 vị trí. Xử lý ở tầng theme MUI trước; chỉ những chỗ đặt inline trong `sx` mới sửa file và phải vào patch manifest. Tiếng Việt bị viết hoa từng từ là lỗi chặn.
 - **Chuỗi hiển thị không được dùng làm định danh.** Nếu một nhãn vừa hiển thị vừa làm khoá object, khoá tra cứu hoặc vế so sánh `===`, thì dịch nó sẽ phá tra cứu một cách âm thầm. Đã xảy ra ở `SalesChart`, `AcquisitionChart` và `IncomeAreaChart`: trạng thái ẩn hiện series khoá theo `label`, nên ở tiếng Việt mọi series bị lọc hết và biểu đồ ném lỗi. `i18n:check` nay tự phát hiện lớp lỗi này; xác nhận rồi thì đặt `identifierChecked: true` trên entry.
 - Mọi filter, sort, search hoặc so sánh chạy trên chuỗi hiển thị phải chạy trên chuỗi **đã được format**, không phải trên hằng số tiếng Anh. **Đính chính 2026-09-02:** bản trước của tài liệu này ghi rằng `Search.jsx:63` lọc theo message id. Sai. Nó lọc `child.title.toLowerCase()` trên `data/search-data.jsx` — một **bản sao tiếng Anh hardcode** của cây điều hướng, 38 nhãn. Hệ quả thật còn tệ hơn: sau khi dịch, sidebar nói tiếng Việt còn tìm kiếm chỉ khớp tiếng Anh. Đã sửa ở L2 bằng cách hoist mảng vào một hàm để nó dựng lại mỗi lần render.
@@ -493,6 +481,8 @@ Mỗi quyết định phải ghi route hiện tại, ý nghĩa Mantis, nghiệp 
 
 ### Stage 7 — Triển khai các bề mặt Mphone
 
+**Quyết định điều hướng 2026-09-04:** giữ nguyên toàn bộ route Mantis hiện có. Các bề mặt Mphone sắp tới nằm trong namespace `/mphone/*` và dùng một cây sidebar riêng. Header dùng bộ chuyển `Mantis UI / Mphone Lab`. Hai bên là cùng một Portal shell — cùng layout, header, theme, localization, component và phiên mô phỏng; bộ chuyển chỉ thay cây sidebar được render theo namespace hiện tại, không tạo một giao diện thứ hai.
+
 Thứ tự ưu tiên:
 
 1. Portal shell và navigation.
@@ -510,15 +500,15 @@ Thứ tự ưu tiên:
 13. App Phone prototype.
 14. Living Design System.
 
-Mỗi nhóm được triển khai thành một vertical slice hoàn chỉnh gồm content song ngữ, sample data, interaction states, responsive behavior, accessibility và visual verification.
+Mỗi nhóm được triển khai thành một vertical slice hoàn chỉnh gồm content song ngữ, sample data, interaction states, responsive behavior, accessibility và các kiểm tra tự động liên quan.
 
 ### Gate C — Trải nghiệm sản phẩm Mphone
 
 - Nội dung `vi` và `en` hoàn chỉnh, không còn vendor identity hoặc dữ liệu demo không phù hợp.
 - Không có dữ liệu khách hàng thật hoặc kết nối backend/PBX/dịch vụ bên ngoài.
 - Sample và simulation được ghi nhãn trung thực.
-- Light/dark, desktop/390px, keyboard, focus và các content state đều đạt.
-- Formatting, lint, build, quality checks và visual inspection đều đạt.
+- Theme, responsive behavior, keyboard, focus và các content state được giữ đúng bằng static review và các kiểm tra tự động liên quan.
+- Formatting, lint, build và các quality check không tương tác đều đạt.
 - Việc hợp nhất, thiết kế lại hoặc xóa route đã được product owner phê duyệt.
 
 ## 6. Quản trị thực thi
@@ -527,4 +517,4 @@ Mỗi nhóm được triển khai thành một vertical slice hoàn chỉnh gồ
 - Mọi inventory, audit và test report phải ghi rõ được tạo từ `mpo-design`.
 - Một change set chỉ thuộc một loại: baseline/security, localization infrastructure, Vietnamese translation, Mphone branding/content hoặc Mphone product implementation.
 - Không triển khai trước công việc của pha sau khi gate hiện tại chưa được chấp nhận.
-- Mỗi handoff phải báo: phần đã hoàn thành, kiểm tra cục bộ, preview route, integration boundary, known issue và bước tiếp theo.
+- Mỗi handoff phải báo ngắn gọn: phần đã hoàn thành, kiểm tra cục bộ, integration boundary và known issue nếu có. Chỉ nêu preview khi đã dùng nó trong tác vụ.

@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Divider from '@mui/material/Divider';
@@ -11,6 +12,7 @@ import NavItem from './NavItem';
 import NavGroup from './NavGroup';
 import menuItem from 'menu-items';
 import { MenuFromAPI } from 'menu-items/dashboard';
+import mphoneLabMenu from 'mphone-lab/menu-items';
 
 import useConfig from 'hooks/useConfig';
 import { HORIZONTAL_MAX_ITEM, MenuOrientation } from 'config';
@@ -28,6 +30,7 @@ function isFound(arr, str) {
 // ==============================|| DRAWER CONTENT - NAVIGATION ||============================== //
 
 export default function Navigation() {
+  const { pathname } = useLocation();
   const { state } = useConfig();
   const { menuLoading } = useGetMenu();
   const { menuMaster } = useGetMenuMaster();
@@ -40,9 +43,12 @@ export default function Navigation() {
   const [menuItems, setMenuItems] = useState({ items: [] });
 
   const dashboardMenu = MenuFromAPI();
+  const isMphoneLab = pathname === '/mphone' || pathname.startsWith('/mphone/');
 
   useLayoutEffect(() => {
-    if (menuLoading && !isFound(menuItem, 'group-dashboard-loading')) {
+    if (isMphoneLab) {
+      setMenuItems(mphoneLabMenu);
+    } else if (menuLoading && !isFound(menuItem, 'group-dashboard-loading')) {
       menuItem.items.splice(0, 0, dashboardMenu);
       setMenuItems({ items: [...menuItem.items] });
     } else if (!menuLoading && dashboardMenu?.id !== undefined && !isFound(menuItem, 'group-dashboard')) {
@@ -52,7 +58,7 @@ export default function Navigation() {
       setMenuItems({ items: [...menuItem.items] });
     }
     // eslint-disable-next-line
-  }, [menuLoading]);
+  }, [isMphoneLab, menuLoading]);
 
   const isHorizontal = state.menuOrientation === MenuOrientation.HORIZONTAL && !downLG;
 

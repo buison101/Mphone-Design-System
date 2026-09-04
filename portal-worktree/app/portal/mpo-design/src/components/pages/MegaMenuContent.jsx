@@ -33,12 +33,12 @@ const getMenuSections = () => [
     title: 'Authentication',
     size: { md: 4.25 },
     items: [
-      { id: 'login', title: 'Login', to: '/auth/login', target: '_blank' },
-      { id: 'register', title: 'Register', to: '/auth/register', target: '_blank' },
-      { id: 'reset-password', title: 'Reset Password', to: '/auth/reset-password', target: '_blank' },
-      { id: 'forgot-password', title: 'Forgot Password', to: '/auth/forgot-password', target: '_blank' },
-      { id: 'check-mail', title: 'Check Mail', to: '/auth/check-mail', target: '_blank' },
-      { id: 'code-verification', title: 'Verify Code', to: '/auth/code-verification', target: '_blank' }
+      { id: 'login', title: 'Login', to: '/auth/login' },
+      { id: 'register', title: 'Register', to: '/auth/register' },
+      { id: 'reset-password', title: 'Reset Password', to: '/auth/reset-password' },
+      { id: 'forgot-password', title: 'Forgot Password', to: '/auth/forgot-password' },
+      { id: 'check-mail', title: 'Check Mail', to: '/auth/check-mail' },
+      { id: 'code-verification', title: 'Verify Code', to: '/auth/code-verification' }
     ]
   },
   {
@@ -46,11 +46,11 @@ const getMenuSections = () => [
     title: 'Maintenance Pages',
     size: { md: 4 },
     items: [
-      { id: 'error-404', title: '404 Error', to: '/maintenance/404', target: '_blank' },
-      { id: 'error-500', title: '500 Error', to: '/maintenance/500', target: '_blank' },
-      { id: 'coming-soon', title: 'Coming Soon', to: '/maintenance/coming-soon', target: '_blank' },
-      { id: 'construction', title: 'Construction', to: '/maintenance/under-construction', target: '_blank' },
-      { id: 'join-waitlist', title: 'Join Waitlist', to: '/maintenance/join-waitlist', target: '_blank' }
+      { id: 'error-404', title: '404 Error', to: '/maintenance/404' },
+      { id: 'error-500', title: '500 Error', to: '/maintenance/500' },
+      { id: 'coming-soon', title: 'Coming Soon', to: '/maintenance/coming-soon' },
+      { id: 'construction', title: 'Construction', to: '/maintenance/under-construction' },
+      { id: 'join-waitlist', title: 'Join Waitlist', to: '/maintenance/join-waitlist' }
     ]
   },
   {
@@ -58,11 +58,11 @@ const getMenuSections = () => [
     title: 'SAAS Pages',
     size: { xs: 12, md: 3.75 },
     items: [
-      { id: 'contact-us', title: 'Contact us', to: '/contact-us', target: '_blank' },
-      { id: 'faq', title: 'FAQ', to: '/faqs', target: '_blank' },
-      { id: 'pricing', title: 'Pricing', to: '/pricing', target: '_blank' },
-      { id: 'change-log', title: 'Change Log', to: '/change-log', target: '_blank' },
-      { id: 'landing', title: 'Landing', to: '/', target: '_blank' }
+      { id: 'contact-us', title: 'Contact us', to: '/contact-us' },
+      { id: 'faq', title: 'FAQ', to: '/faqs' },
+      { id: 'pricing', title: 'Pricing', to: '/pricing' },
+      { id: 'change-log', title: 'Change Log', to: '/change-log' },
+      { id: 'landing', title: 'Landing', to: '/landing' }
     ]
   }
 ];
@@ -109,7 +109,6 @@ export default function MegaMenuContent() {
                     endIcon={<ArrowRightOutlined />}
                     component={Link}
                     to="/prompts-overview"
-                    target="_blank"
                   >
                     Browse Prompts
                   </Button>
@@ -144,13 +143,7 @@ export default function MegaMenuContent() {
                       }
                     >
                       {section.items.map((item) => (
-                        <ListItemButton
-                          key={item.id}
-                          disableRipple
-                          component={Link}
-                          to={item.to}
-                          {...(item.target && { target: item.target })}
-                        >
+                        <ListItemButton key={item.id} disableRipple component={Link} to={item.to}>
                           <ListItemIcon>
                             <Dot size={7} color="secondary" variant="outlined" />
                           </ListItemIcon>

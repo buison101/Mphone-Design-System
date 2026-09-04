@@ -25,9 +25,9 @@ Bằng chứng:
 | Render thật ba route × ba locale | `vi` ra tiếng Việt, `en` ra tiếng Anh, `fr` fallback tiếng Anh, **không lộ raw message id** |
 | Diff `src/` so với cây vendor nguyên bản | 6 file sửa trên 1.113, cộng hai thư mục dự án mới |
 
-**Ảnh chụp baseline đã chạy** — kết quả ở `docs/20-baseline-snapshot.md`: 81 route × 3 lượt (desktop light, desktop dark, 390px light). Không route nào lộ raw message id. Một route rơi error boundary, năm route tràn ngang ở 390px, mười route có console không phải lỗi mạng. Lưu ý: ảnh chụp thực hiện trong cloud container nên **không có mạng tới mock API của vendor** — đó đúng là trường hợp khởi động nguội mà §4.9 yêu cầu, nhưng còn nợ một lượt có mạng, chỉ chạy được trên máy của product owner.
+**Ảnh chụp baseline đã chạy** — kết quả ở `docs/20-baseline-snapshot.md`: 81 route × 3 lượt (desktop light, desktop dark, 390px light). Không route nào lộ raw message id. Một route rơi error boundary, năm route tràn ngang ở 390px, mười route có console không phải lỗi mạng. Ảnh chụp thực hiện trong cloud container nên **không có mạng tới mock API của vendor**. Theo quyết định ngày 2026-09-04, không còn lượt ảnh chụp hoặc kiểm tra trình duyệt nào được tính là việc còn nợ.
 
-Còn lại của L1: **lượt ảnh chụp có mạng**, và **ngoại lệ §2.5** cho ba sửa lỗi nền vẫn chờ product owner duyệt.
+Yêu cầu **lượt ảnh chụp có mạng** đã được rút ngày 2026-09-04. Các kết quả ảnh chụp trong tài liệu này chỉ còn là bằng chứng lịch sử, không phải điều kiện hoàn thành cho AI.
 
 Lưu ý môi trường: `vite build` không chạy được trong VM Linux trên máy (rolldown thiếu binding Linux). Build và render được thực hiện trong cloud container theo đúng quy trình đã ghi.
 
@@ -360,7 +360,7 @@ Keymap **1.173 entry**, 736 key dự án. `i18n:check` 0 lỗi 0 cảnh báo; `i
 
 `/apps/chat` báo lỗi ứng dụng ở **cả tiếng Việt lẫn tiếng Anh**, với đúng thông báo mà ảnh chụp baseline đã ghi: `Cannot read properties of undefined (reading 'filter')` tại `src/pages/apps/chat.jsx:56`. File đó có **0 entry keymap** — chưa hề bị đụng tới. Lỗi có sẵn do thiếu dữ liệu, không phải hồi quy do dịch. Đây đúng là công dụng của ảnh chụp baseline: quy trách nhiệm trong vài giây thay vì đi truy.
 
-**Còn nợ:** một lượt kiểm chứng có mạng trên máy product owner, nơi mock API tới được. Đó là nơi duy nhất xác nhận được nội dung tiếng Việt của L4.
+Giới hạn mạng của lượt kiểm chứng này được giữ lại để truy vết. Từ ngày 2026-09-04, nó không còn là việc phải làm hoặc điều kiện đóng L4.
 
 ## Trạng thái L3 — HOÀN TẤT 2026-09-02
 
@@ -552,14 +552,12 @@ Ba mục này thuộc hạ tầng localization chứ không phải nội dung, n
 - [ ] Ba sửa lỗi ở 2.5 đã xong hoặc đã được product owner hoãn có ghi nhận.
 - [ ] Prettier, ESLint và local build đều đạt.
 - [x] Ảnh chụp baseline ở mục 2.6 đã lưu, có ngày và tên cây.
-- [ ] Smoke test tám tổ hợp ngôn ngữ/theme/viewport trên ít nhất ba route đại diện: một dashboard, một trang apps, một trang auth. Không raw message id, không lỗi runtime, không lỗi console, không tràn ngang ở 390px.
 - [ ] Không có request ra host ngoài phát sinh thêm so với baseline.
 
 ## 5. Bằng chứng phải nộp
 
 - Kết quả ba lệnh kiểm tra, dạng văn bản, kèm ngày và cây target.
 - Bảng inventory và glossary.
-- Ảnh chụp tám tổ hợp của ba route đại diện.
 - Nhật ký thay đổi: change set L1 chỉ chứa hạ tầng localization, công cụ và ba sửa lỗi ở 2.5. Không lẫn nội dung dịch, branding hay nghiệp vụ sản phẩm.
 
 ## 6. Rủi ro đã biết

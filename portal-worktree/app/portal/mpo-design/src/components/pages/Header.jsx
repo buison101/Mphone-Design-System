@@ -96,7 +96,6 @@ export default function Header({
           className="header-link"
           component={RouterLink}
           to={isLoggedIn ? APP_DEFAULT_PATH : '/login'}
-          target="_blank"
           underline="none"
           sx={{ color: 'common.white' }}
         >
@@ -159,7 +158,6 @@ export default function Header({
           color="warning"
           component={RouterLink}
           to={isComponent ? (isLoggedIn ? APP_DEFAULT_PATH : '/login') : '/components-overview'}
-          {...(isComponent && { target: '_blank' })}
           sx={{ height: 28, display: { xs: 'none', sm: 'block' } }}
         >
           {isComponent ? 'Dashboard' : 'All Components'}
@@ -218,7 +216,7 @@ export default function Header({
                 <ListItemText primary="Browse Prompts" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
               </ListItemButton>
             </Link>
-            <Link underline="none" href={isLoggedIn ? APP_DEFAULT_PATH : '/login'} target="_blank">
+            <Link underline="none" component={RouterLink} to={isLoggedIn ? APP_DEFAULT_PATH : '/login'}>
               <ListItemButton>
                 <ListItemIcon>
                   <LineOutlined />
@@ -226,7 +224,7 @@ export default function Header({
                 <ListItemText primary="Dashboard" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
               </ListItemButton>
             </Link>
-            <Link underline="none" href="/components-overview" target="_blank">
+            <Link underline="none" component={RouterLink} to="/components-overview">
               <ListItemButton>
                 <ListItemIcon>
                   <LineOutlined />

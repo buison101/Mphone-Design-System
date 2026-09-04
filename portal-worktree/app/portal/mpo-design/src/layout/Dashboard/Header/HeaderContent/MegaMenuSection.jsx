@@ -130,7 +130,6 @@ export default function MegaMenuSection() {
                                 endIcon={<ArrowRightOutlined />}
                                 component={Link}
                                 to="/components-overview"
-                                target="_blank"
                               >
                                 View All
                               </Button>
@@ -165,31 +164,31 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/login">
+                              <ListItemButton disableRipple component={Link} to="/auth/login">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Login" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/register">
+                              <ListItemButton disableRipple component={Link} to="/auth/register">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Register" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/reset-password">
+                              <ListItemButton disableRipple component={Link} to="/auth/reset-password">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Reset Password" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/forgot-password">
+                              <ListItemButton disableRipple component={Link} to="/auth/forgot-password">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Forgot Password" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/code-verification">
+                              <ListItemButton disableRipple component={Link} to="/auth/code-verification">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
@@ -209,13 +208,13 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/">
+                              <ListItemButton disableRipple component={Link} to="/landing">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="About us" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/contact-us">
+                              <ListItemButton disableRipple component={Link} to="/contact-us">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
@@ -233,13 +232,13 @@ export default function MegaMenuSection() {
                                 </ListItemIcon>
                                 <ListItemText primary="Payment" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/under-construction">
+                              <ListItemButton disableRipple component={Link} to="/maintenance/under-construction">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Construction" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/coming-soon">
+                              <ListItemButton disableRipple component={Link} to="/maintenance/coming-soon">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
@@ -259,13 +258,13 @@ export default function MegaMenuSection() {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/maintenance/404">
+                              <ListItemButton disableRipple component={Link} to="/maintenance/404">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="404 Error" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/">
+                              <ListItemButton disableRipple component={Link} to="/landing">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
