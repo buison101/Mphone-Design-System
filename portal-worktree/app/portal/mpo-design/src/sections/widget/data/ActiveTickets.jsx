@@ -70,6 +70,7 @@ export default function ActiveTickets() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Active Tickets"
       content={false}
       secondary={

@@ -117,7 +117,7 @@ export default function DashboardAnalytics() {
             </Menu>
           </Grid>
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <OrdersList />
         </MainCard>
       </Grid>
@@ -145,7 +145,7 @@ export default function DashboardAnalytics() {
             </Menu>
           </Grid>
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <List sx={{ p: 0, '& .MuiListItemButton-root': { py: 2 } }}>
             <ListItemButton divider>
               <ListItemText primary="Company Finance Growth" />

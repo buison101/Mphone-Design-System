@@ -21,6 +21,7 @@ import UserOutlined from '@ant-design/icons/UserOutlined';
 export default function LatestMessages() {
   return (
     <MainCard
+      border={false}
       title="Latest Messages"
       content={false}
       secondary={

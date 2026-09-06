@@ -47,6 +47,7 @@ export default function LatestCustomers() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Latest Customers"
       content={false}
       secondary={

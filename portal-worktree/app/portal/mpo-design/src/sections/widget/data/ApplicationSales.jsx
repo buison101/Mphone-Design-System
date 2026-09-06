@@ -34,6 +34,7 @@ export default function ApplicationSales() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Application Sales"
       content={false}
       secondary={

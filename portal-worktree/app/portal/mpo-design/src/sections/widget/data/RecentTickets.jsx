@@ -42,6 +42,7 @@ export default function RecentTickets() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Recent Tickets"
       content={false}
       secondary={

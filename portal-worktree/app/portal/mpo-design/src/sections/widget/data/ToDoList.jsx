@@ -33,6 +33,7 @@ export default function ToDoList() {
 
   return (
     <MainCard
+      border={false}
       title="To Do List"
       content={false}
       secondary={

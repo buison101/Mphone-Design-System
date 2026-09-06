@@ -197,9 +197,9 @@ export default function NavCollapse({ menu, level, parentId, setSelectedItems, s
   });
 
   const isSelected = selected === menu.id;
-  const borderIcon = level === 1 ? <BorderOutlined style={{ fontSize: '1rem' }} /> : false;
+  const borderIcon = level === 1 ? <BorderOutlined style={{ fontSize: '1.25rem' }} /> : false;
   const Icon = menu.icon;
-  const menuIcon = menu.icon ? <Icon style={{ fontSize: drawerOpen ? '1rem' : '1.25rem' }} /> : borderIcon;
+  const menuIcon = menu.icon ? <Icon style={{ fontSize: '1.25rem' }} /> : borderIcon;
   const textColor = colorScheme === ThemeMode.DARK ? 'grey.400' : 'text.primary';
   const iconSelectedColor = colorScheme === ThemeMode.DARK && drawerOpen ? 'text.primary' : 'primary.main';
   const popperId = miniMenuOpened ? `collapse-pop-${menu.id}` : undefined;
@@ -219,9 +219,12 @@ export default function NavCollapse({ menu, level, parentId, setSelectedItems, s
             className={anchorEl ? 'Mui-selected' : ''}
             onClick={(e) => handleClick(e, true)}
             sx={(theme) => ({
-              pl: drawerOpen ? `${level * 28}px` : 1.5,
-              py: !drawerOpen && level === 1 ? 1.25 : 1,
+              pl: drawerOpen && level > 1 ? level * 3.5 - 0.5 : 1.5,
+              py: drawerOpen ? 0.5 : level === 1 ? 1.25 : 1,
               ...(drawerOpen && {
+                mx: 1.5,
+                my: 0.5,
+                borderRadius: 2,
                 '&:hover': { bgcolor: 'primary.lighter', ...theme.applyStyles('dark', { bgcolor: 'divider' }) },
                 '&.Mui-selected': {
                   bgcolor: 'transparent',
@@ -246,7 +249,7 @@ export default function NavCollapse({ menu, level, parentId, setSelectedItems, s
               <ListItemIcon
                 onClick={handlerIconLink}
                 sx={(theme) => ({
-                  minWidth: 28,
+                  minWidth: drawerOpen ? theme.spacing(5) : 28,
                   color: selected === menu.id ? 'primary.main' : textColor,
                   ...(!drawerOpen && {
                     borderRadius: 1.5,

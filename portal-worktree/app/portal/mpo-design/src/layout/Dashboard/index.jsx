@@ -17,7 +17,7 @@ import Breadcrumbs from 'components/@extended/Breadcrumbs';
 import AddCustomer from 'sections/apps/customer/AddCustomer';
 import AuthGuard from 'utils/route-guard/AuthGuard';
 
-import { MenuOrientation } from 'config';
+import { DRAWER_WIDTH, MenuOrientation } from 'config';
 import useConfig from 'hooks/useConfig';
 import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
 
@@ -50,7 +50,7 @@ export default function DashboardLayout() {
         <Header />
         {!isHorizontal ? <Drawer /> : <HorizontalBar />}
 
-        <Box component="main" sx={{ width: 'calc(100% - 260px)', flexGrow: 1, py: 4, px: { xs: 2, sm: 4 } }}>
+        <Box component="main" sx={{ width: `calc(100% - ${DRAWER_WIDTH}px)`, flexGrow: 1, py: 4, px: { xs: 2, sm: 4 } }}>
           <Toolbar sx={{ mt: isHorizontal ? 8 : 'inherit' }} />
           <Container
             maxWidth={isContainer ? 'xl' : false}

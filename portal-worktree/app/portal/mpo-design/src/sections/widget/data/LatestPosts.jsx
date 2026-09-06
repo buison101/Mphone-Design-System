@@ -25,6 +25,7 @@ const mediaSX = {
 export default function LatestPosts() {
   return (
     <MainCard
+      border={false}
       title="Latest Posts"
       content={false}
       secondary={

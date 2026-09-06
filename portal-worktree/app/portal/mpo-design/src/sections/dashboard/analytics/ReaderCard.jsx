@@ -71,7 +71,7 @@ export default function ReaderCard() {
           </Stack>
         </Grid>
         <Grid size={{ xs: 12, sm: 5 }}>
-          <MainCard sx={{ borderRadius: { xs: 2, sm: '0px 8px 8px 0px' }, height: '100%', mt: { xs: 2.5, sm: 0 } }}>
+          <MainCard border={false} sx={{ borderRadius: { xs: 2, sm: '0px 8px 8px 0px' }, height: '100%', mt: { xs: 2.5, sm: 0 } }}>
             <Grid container spacing={3}>
               <Grid size={12}>
                 <Stack>

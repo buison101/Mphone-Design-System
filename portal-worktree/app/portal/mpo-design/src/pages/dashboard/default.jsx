@@ -104,7 +104,7 @@ export default function DashboardDefault() {
           </Grid>
           <Grid />
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <Box sx={{ p: 3, pb: 0 }}>
             <Stack sx={{ gap: 2 }}>
               <Typography variant="h6" sx={{ color: 'text.secondary' }}>
@@ -141,7 +141,7 @@ export default function DashboardDefault() {
             </Menu>
           </Grid>
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <OrdersTable />
         </MainCard>
       </Grid>
@@ -169,7 +169,7 @@ export default function DashboardDefault() {
             </Menu>
           </Grid>
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <List sx={{ p: 0, '& .MuiListItemButton-root': { py: 2 } }}>
             <ListItemButton divider>
               <ListItemText primary="Company Finance Growth" />
@@ -198,7 +198,7 @@ export default function DashboardDefault() {
           </Grid>
           <Grid />
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <List
             component="nav"
             sx={{
@@ -276,7 +276,7 @@ export default function DashboardDefault() {
             </ListItem>
           </List>
         </MainCard>
-        <MainCard sx={{ mt: 2 }}>
+        <MainCard border={false} sx={{ mt: 2 }}>
           <Stack sx={{ gap: 3 }}>
             <Grid container sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
               <Grid>

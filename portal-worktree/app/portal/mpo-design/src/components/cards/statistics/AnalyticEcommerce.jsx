@@ -16,7 +16,7 @@ const iconSX = { fontSize: '0.75rem', color: 'inherit', marginLeft: 0, marginRig
 
 export default function AnalyticEcommerce({ color = 'primary', title, count, percentage, isLoss, extra }) {
   return (
-    <MainCard contentSX={{ p: 2.25 }}>
+    <MainCard border={false} contentSX={{ p: 2.25 }}>
       <Stack sx={{ gap: 0.5 }}>
         <Typography variant="h6" sx={{ color: 'text.secondary' }}>
           {title}

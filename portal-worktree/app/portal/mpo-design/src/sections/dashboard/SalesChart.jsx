@@ -100,7 +100,7 @@ export default function SalesChart({ filter = 'today' }) {
   const initialSeriesCopy = [...initialSeries.slice(0, 1), ...initialSeries.slice(2, 3)];
 
   return (
-    <MainCard sx={{ mt: 1 }} content={false}>
+    <MainCard border={false} sx={{ mt: 1 }} content={false}>
       <Box sx={{ p: 2.5, pb: 0 }}>
         <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
           <Box>

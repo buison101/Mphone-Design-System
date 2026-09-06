@@ -21,6 +21,7 @@ import FileTextFilled from '@ant-design/icons/FileTextFilled';
 export default function FeedsCard() {
   return (
     <MainCard
+      border={false}
       title="Feeds"
       content={false}
       secondary={

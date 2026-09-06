@@ -17,7 +17,7 @@ const iconSX = { fontSize: '0.75rem', color: 'inherit', marginLeft: 0, marginRig
 
 export default function AnalyticsDataCard({ color = 'primary', title, count, percentage, isLoss = false, children }) {
   return (
-    <MainCard content={false}>
+    <MainCard border={false} content={false}>
       <Stack sx={{ gap: 0.5, p: 2.25 }}>
         <Typography variant="h6" sx={{ color: 'text.secondary' }}>
           {title}

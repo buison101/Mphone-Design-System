@@ -53,7 +53,7 @@ export default function MphoneLabPage({ surface }) {
           UI Lab prototype using local sample data only. No live Mphone, PBX, or customer-data connection is active.
         </Alert>
 
-        <MainCard>
+        <MainCard border={false}>
           <Stack sx={{ gap: 1.5 }}>
             <Box>
               <Chip size="small" color="primary" variant="outlined" label="Upcoming" />

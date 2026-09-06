@@ -38,7 +38,7 @@ const actionSX = {
 
 export default function AcquisitionChannels() {
   return (
-    <MainCard content={false}>
+    <MainCard border={false} content={false}>
       <Stack>
         <List sx={{ p: 0, '& .MuiListItemButton-root': { pt: 2, pb: 0 } }}>
           <ListItemButton sx={{ '&:hover': { bgcolor: 'transparent' }, cursor: 'text' }}>

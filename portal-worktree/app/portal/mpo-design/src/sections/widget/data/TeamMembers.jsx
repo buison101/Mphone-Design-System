@@ -21,6 +21,7 @@ import Avatar4 from 'assets/images/users/avatar-4.png';
 export default function TeamMembers() {
   return (
     <MainCard
+      border={false}
       title="Team Members"
       content={false}
       secondary={

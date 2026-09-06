@@ -22,7 +22,7 @@ export default function TotalRevenue() {
   const errorSX = { color: 'error.main' };
 
   return (
-    <MainCard title="Total Revenue" content={false}>
+    <MainCard border={false} title="Total Revenue" content={false}>
       <SimpleBar sx={{ height: 334 }}>
         <List
           component="nav"

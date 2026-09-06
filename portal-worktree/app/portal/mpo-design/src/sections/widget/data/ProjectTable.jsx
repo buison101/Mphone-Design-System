@@ -51,6 +51,7 @@ export default function ProjectTable() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Projects"
       content={false}
       secondary={

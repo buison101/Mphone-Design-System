@@ -25,7 +25,7 @@ const iconSX = { fontSize: '0.64rem', width: 10, height: 10 };
 
 export default function NewCustomers() {
   return (
-    <MainCard title="New Customers" content={false}>
+    <MainCard border={false} title="New Customers" content={false}>
       <SimpleBar sx={{ height: 334 }}>
         <CardContent>
           <Grid container spacing={3} sx={{ alignItems: 'center' }}>

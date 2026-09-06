@@ -47,14 +47,14 @@ export default function Mphone1(_, mode) {
   };
   const contrastText = '#fff';
 
-  let primaryColors = ['#F0F7FF', '#E0EFFF', '#B8DAFF', '#80BDFF', '#409CFF', '#278BFF', '#0068D9', '#0056B3', '#00438C', '#003166'];
+  let primaryColors = ['#EAF4FF', '#E0EFFF', '#B8DAFF', '#80BDFF', '#409CFF', '#278BFF', '#0068D9', '#0056B3', '#00438C', '#003166'];
   let errorColors = ['#FFF2F1', '#FFB4AE', '#FF6254', '#D70015', '#7A0010'];
   let warningColors = ['#FFF8E6', '#FFD28A', '#FFA53C', '#C93400', '#7A2E00'];
   let infoColors = ['#E6F9FC', '#7DDDE8', '#35B4C2', '#007A85', '#004A51'];
   let successColors = ['#EDFAF0', '#A4E8B2', '#58D071', '#248A3D', '#0D4F20'];
 
   if (mode === ThemeMode.DARK) {
-    primaryColors = ['#001F42', '#003166', '#00438C', '#0056B3', '#007AFF', '#1E8AFF', '#409CFF', '#80BDFF', '#B8DAFF', '#E0EFFF'];
+    primaryColors = ['#002650', '#003166', '#00438C', '#0056B3', '#007AFF', '#1E8AFF', '#409CFF', '#80BDFF', '#B8DAFF', '#E0EFFF'];
     errorColors = ['#2C1212', '#5C1A17', '#D43A31', '#FF6961', '#FFB4AE'];
     warningColors = ['#2B200D', '#6B4700', '#D88806', '#FFB340', '#FFD28A'];
     infoColors = ['#0D2529', '#155E66', '#48ACBA', '#7ADBE5', '#B8EEF3'];

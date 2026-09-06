@@ -84,6 +84,7 @@ export default function InvoiceNotificationList() {
 
   return (
     <MainCard
+      border={false}
       content={false}
       title="Notification"
       secondary={

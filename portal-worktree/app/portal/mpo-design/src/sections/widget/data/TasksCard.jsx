@@ -22,6 +22,7 @@ import WarningFilled from '@ant-design/icons/WarningFilled';
 export default function TasksCard() {
   return (
     <MainCard
+      border={false}
       title="Tasks"
       content={false}
       secondary={

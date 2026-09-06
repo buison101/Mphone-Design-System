@@ -15,7 +15,7 @@ export default function PageViews() {
     <>
       <Typography variant="h5">Page Views by Page Title</Typography>
 
-      <MainCard sx={{ mt: 2 }} content={false}>
+      <MainCard border={false} sx={{ mt: 2 }} content={false}>
         <List sx={{ p: 0, '& .MuiListItemButton-root': { py: 2 } }}>
           <ListItemButton divider>
             <ListItemText

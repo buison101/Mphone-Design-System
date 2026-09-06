@@ -47,7 +47,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
   const itemIcon = item.icon ? (
     <Icon
       style={{
-        fontSize: drawerOpen ? '1rem' : '1.25rem',
+        fontSize: '1.25rem',
         ...(state.menuOrientation === MenuOrientation.HORIZONTAL && isParents && { fontSize: 20, stroke: '1.5' })
       }}
     />
@@ -73,14 +73,18 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
             selected={isSelected}
             sx={(theme) => ({
               zIndex: 1201,
-              pl: drawerOpen ? `${level * 28}px` : 1.5,
-              py: !drawerOpen && level === 1 ? 1.25 : 1,
+              pl: drawerOpen && level > 1 ? level * 3.5 - 0.5 : 1.5,
+              pr: drawerOpen ? 1.5 : 2,
+              py: drawerOpen ? 0.5 : level === 1 ? 1.25 : 1,
               ...(drawerOpen && {
+                mx: 1.5,
+                my: 0.5,
+                borderRadius: 2,
                 '&:hover': { bgcolor: 'primary.lighter', ...theme.applyStyles('dark', { bgcolor: 'divider' }) },
                 '&.Mui-selected': {
                   bgcolor: 'primary.lighter',
                   ...theme.applyStyles('dark', { bgcolor: 'divider' }),
-                  borderRight: '2px solid',
+                  borderRight: 'none',
                   borderColor: 'primary.main',
                   color: iconSelectedColor,
                   '&:hover': { color: iconSelectedColor, bgcolor: 'primary.lighter', ...theme.applyStyles('dark', { bgcolor: 'divider' }) }
@@ -96,7 +100,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
             {itemIcon && (
               <ListItemIcon
                 sx={(theme) => ({
-                  minWidth: 28,
+                  minWidth: drawerOpen ? theme.spacing(5) : 28,
                   color: isSelected ? iconSelectedColor : textColor,
                   ...(!drawerOpen && {
                     borderRadius: 1.5,
@@ -160,7 +164,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
                   sx={{
                     position: 'absolute',
                     top: 12,
-                    right: 20,
+                    right: drawerOpen ? 32 : 20,
                     zIndex: 1202,
                     width: 20,
                     height: 20,

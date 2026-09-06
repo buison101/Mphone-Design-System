@@ -46,7 +46,7 @@ export default function TransactionHistory() {
   return (
     <>
       <Typography variant="h5">Transaction History</Typography>
-      <MainCard sx={{ mt: 2 }} content={false}>
+      <MainCard border={false} sx={{ mt: 2 }} content={false}>
         <List
           component="nav"
           sx={{
@@ -124,7 +124,7 @@ export default function TransactionHistory() {
           </ListItem>
         </List>
       </MainCard>
-      <MainCard sx={{ mt: 2 }}>
+      <MainCard border={false} sx={{ mt: 2 }}>
         <Stack sx={{ gap: 3 }}>
           <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
             <Stack>

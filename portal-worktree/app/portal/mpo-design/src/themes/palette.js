@@ -59,12 +59,12 @@ export function buildPalette(presetColor = 'default') {
       ...extendedCommon,
       ...extendedLight,
       text: {
-        primary: useMphoneGreyA ? withAlpha(extendedLight.grey.A800, 0.97) : extendedLight.grey[700],
-        secondary: useMphoneGreyA ? withAlpha(extendedLight.grey.A700, 0.63) : extendedLight.grey[500],
-        disabled: useMphoneGreyA ? withAlpha(extendedLight.grey.A400, 0.3) : extendedLight.grey[400]
+        primary: useMphoneGreyA ? withAlpha(extendedLight.grey.A800, 1) : extendedLight.grey[700],
+        secondary: useMphoneGreyA ? withAlpha(extendedLight.grey.A800, 0.63) : extendedLight.grey[500],
+        disabled: useMphoneGreyA ? withAlpha(extendedLight.grey.A800, 0.3) : extendedLight.grey[400]
       },
       action: { disabled: extendedLight.grey[300] },
-      divider: useMphoneGreyA ? withAlpha(extendedLight.grey.A200, 0.09) : extendedLight.grey[200],
+      divider: useMphoneGreyA ? withAlpha(extendedLight.grey.A200, 0.1) : extendedLight.grey[200],
       background: {
         paper: useMphoneGreyA ? extendedLight.grey.A100 : extendedLight.grey[0],
         default: extendedLight.grey.A50
@@ -75,12 +75,12 @@ export function buildPalette(presetColor = 'default') {
       ...extendedCommon,
       ...extendedDark,
       text: {
-        primary: useMphoneGreyA ? withAlpha(extendedDark.grey.A800, 0.97) : withAlpha(extendedDark.grey[900], 0.87),
-        secondary: useMphoneGreyA ? withAlpha(extendedDark.grey.A700, 0.63) : withAlpha(extendedDark.grey[900], 0.45),
-        disabled: useMphoneGreyA ? withAlpha(extendedDark.grey.A400, 0.3) : withAlpha(extendedDark.grey[900], 0.1)
+        primary: useMphoneGreyA ? withAlpha(extendedDark.grey.A800, 1) : withAlpha(extendedDark.grey[900], 0.87),
+        secondary: useMphoneGreyA ? withAlpha(extendedDark.grey.A800, 0.63) : withAlpha(extendedDark.grey[900], 0.45),
+        disabled: useMphoneGreyA ? withAlpha(extendedDark.grey.A800, 0.3) : withAlpha(extendedDark.grey[900], 0.1)
       },
       action: { disabled: extendedDark.grey[300] },
-      divider: useMphoneGreyA ? withAlpha(extendedDark.grey.A200, 0.23) : withAlpha(extendedDark.grey[900], 0.05),
+      divider: useMphoneGreyA ? withAlpha(extendedDark.grey.A200, 0.2) : withAlpha(extendedDark.grey[900], 0.05),
       background: {
         paper: useMphoneGreyA ? extendedDark.grey.A100 : extendedDark.grey[100],
         default: extendedDark.grey.A50

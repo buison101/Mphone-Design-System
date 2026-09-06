@@ -21,7 +21,7 @@ import Target from 'assets/images/analytics/target.svg';
 export default function LabelledTasks() {
   return (
     <Grid size={12}>
-      <MainCard sx={{ width: '100%' }}>
+      <MainCard border={false} sx={{ width: '100%' }}>
         <Grid container spacing={1.25}>
           <Grid size={6}>
             <Typography>Published Project</Typography>

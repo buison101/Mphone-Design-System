@@ -11,6 +11,7 @@ import MainCard from 'components/MainCard';
 export default function TrafficSources() {
   return (
     <MainCard
+      border={false}
       title="Traffic Sources"
       subheader={
         <Typography variant="caption" sx={{ color: 'secondary.main' }}>

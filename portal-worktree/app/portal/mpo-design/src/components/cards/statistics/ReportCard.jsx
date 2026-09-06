@@ -13,7 +13,7 @@ export default function ReportCard({ primary, secondary, iconPrimary, color }) {
   const primaryIcon = iconPrimary ? <IconPrimary fontSize="large" /> : null;
 
   return (
-    <MainCard>
+    <MainCard border={false}>
       <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
         <Stack sx={{ gap: 1 }}>
           <Typography variant="h4">{primary}</Typography>

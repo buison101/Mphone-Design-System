@@ -46,6 +46,7 @@ export default function LatestOrder() {
   const rows = getRows();
   return (
     <MainCard
+      border={false}
       title="Latest Order"
       content={false}
       secondary={

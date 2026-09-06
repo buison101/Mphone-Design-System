@@ -12,7 +12,7 @@ export default function RoundIconCard({ primary, secondary, content, iconPrimary
   const primaryIcon = iconPrimary ? <IconPrimary fontSize="large" /> : null;
 
   return (
-    <MainCard>
+    <MainCard border={false}>
       <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
         <Stack sx={{ gap: 1 }}>
           <Typography variant="h5" sx={{ color: 'inherit' }}>

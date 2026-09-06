@@ -29,6 +29,7 @@ export default function UserActivity() {
 
   return (
     <MainCard
+      border={false}
       title="Team Members"
       content={false}
       secondary={

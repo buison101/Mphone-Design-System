@@ -118,7 +118,7 @@ export default function InvoiceChartCard() {
   };
 
   return (
-    <MainCard>
+    <MainCard border={false}>
       <Grid container spacing={2}>
         {widgetData.map((data, index) => (
           <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }}>

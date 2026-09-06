@@ -15,6 +15,7 @@ export default function EcommerceMetrix({ primary, secondary, content, iconPrima
 
   return (
     <MainCard
+      border={false}
       content={false}
       sx={{
         bgcolor: color,

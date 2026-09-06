@@ -46,6 +46,7 @@ export default function InvoicePieChart() {
 
   return (
     <MainCard
+      border={false}
       title="Total Expenses"
       secondary={
         <>

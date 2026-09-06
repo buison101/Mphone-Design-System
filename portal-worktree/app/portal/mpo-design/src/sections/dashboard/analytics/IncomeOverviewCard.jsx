@@ -32,7 +32,7 @@ export default function IncomeOverviewCard() {
   };
 
   return (
-    <MainCard content={false} sx={{ mt: 1.5 }}>
+    <MainCard border={false} content={false} sx={{ mt: 1.5 }}>
       <Grid>
         <Grid container>
           <Grid size={{ xs: 12, sm: 6 }}>

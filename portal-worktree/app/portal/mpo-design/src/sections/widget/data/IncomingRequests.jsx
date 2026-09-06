@@ -18,6 +18,7 @@ import Dot from 'components/@extended/Dot';
 export default function IncomingRequests() {
   return (
     <MainCard
+      border={false}
       title="Incoming Requests"
       content={false}
       secondary={

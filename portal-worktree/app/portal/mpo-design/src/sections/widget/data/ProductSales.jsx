@@ -34,7 +34,7 @@ const getRows = () => [
 export default function ProductSales() {
   const rows = getRows();
   return (
-    <MainCard title="Product Sales" content={false}>
+    <MainCard border={false} title="Product Sales" content={false}>
       <Stack direction="row" sx={{ justifyContent: 'space-around', alignItems: 'center', p: 2.5 }}>
         <Stack sx={{ gap: 1, alignItems: 'center' }}>
           <Typography variant="subtitle2" sx={{ color: 'secondary.main' }}>

@@ -36,6 +36,7 @@ export default function InvoiceUserList() {
 
   return (
     <MainCard
+      border={false}
       title="Recent Invoice"
       secondary={
         <>

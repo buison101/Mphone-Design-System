@@ -31,7 +31,7 @@ const getInvoiceItems = () => [
 
 export default function InvoiceCard() {
   return (
-    <MainCard sx={{ height: 1 }}>
+    <MainCard border={false} sx={{ height: 1 }}>
       <Grid container spacing={3}>
         {getInvoiceItems().map((item, index) => (
           <Grid key={index} size={{ xs: 4, sm: 2, lg: 6 }}>

@@ -55,7 +55,7 @@ export default function WidgetChart() {
       </Grid>
       <Grid size={{ xs: 12, md: 5, lg: 4 }}>
         <Typography variant="h5">Income Overview</Typography>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <Box sx={{ p: 3, pb: 0 }}>
             <Stack sx={{ gap: 2 }}>
               <Typography variant="h6" sx={{ color: 'text.secondary' }}>
@@ -70,7 +70,7 @@ export default function WidgetChart() {
       {/* row 3 */}
       <Grid size={{ xs: 12, md: 5, lg: 4 }}>
         <Typography variant="h5">Analytics Report</Typography>
-        <MainCard sx={{ mt: 2 }} content={false}>
+        <MainCard border={false} sx={{ mt: 2 }} content={false}>
           <List sx={{ p: 0, '& .MuiListItemButton-root': { py: 1.25 } }}>
             <ListItemButton divider>
               <ListItemText primary="Company Finance Growth" />

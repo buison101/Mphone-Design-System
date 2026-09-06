@@ -242,8 +242,8 @@ export default function NavGroup({
             <>
               {item.title ? (
                 drawerOpen && (
-                  <Box sx={{ pl: 3, mb: 1.5 }}>
-                    <Typography variant="subtitle2" sx={{ color: 'text.secondary' }}>
+                  <Box sx={{ pl: 3, mb: 1 }}>
+                    <Typography variant="body2" component="h6" sx={{ color: 'text.secondary' }}>
                       <FormattedMessage id={item.title} />
                     </Typography>
                     {item.caption && (
