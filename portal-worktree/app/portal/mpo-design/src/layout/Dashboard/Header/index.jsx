@@ -76,7 +76,7 @@ export default function Header() {
           }}
         >
           {!isHorizontal && drawerToggle}
-          <Logo sx={{ ml: 1.5 }} />
+          <Logo />
         </Box>
       )}
 

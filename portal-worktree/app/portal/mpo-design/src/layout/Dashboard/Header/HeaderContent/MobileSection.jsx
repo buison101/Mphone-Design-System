@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 
 // material-ui
 import AppBar from '@mui/material/AppBar';
@@ -22,7 +23,7 @@ import MoreOutlined from '@ant-design/icons/MoreOutlined';
 
 // ==============================|| HEADER CONTENT - MOBILE ||============================== //
 
-export default function MobileSection() {
+export default function MobileSection({ showSearch = true }) {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
 
@@ -94,8 +95,8 @@ export default function MobileSection() {
                   <Toolbar>
                     <Stack direction="row" sx={{ gap: 2, alignItems: 'center', width: 1 }}>
                       <Workspace />
-                      <Divider orientation="vertical" flexItem sx={{ height: 22, alignSelf: 'center' }} />
-                      <Search />
+                      {showSearch && <Divider orientation="vertical" flexItem sx={{ height: 22, alignSelf: 'center' }} />}
+                      {showSearch && <Search />}
                       <Profile />
                     </Stack>
                   </Toolbar>
@@ -108,3 +109,5 @@ export default function MobileSection() {
     </>
   );
 }
+
+MobileSection.propTypes = { showSearch: PropTypes.bool };

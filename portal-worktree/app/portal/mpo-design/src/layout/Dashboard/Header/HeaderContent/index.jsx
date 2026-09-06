@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Divider from '@mui/material/Divider';
@@ -19,7 +20,9 @@ import PortalAreaSwitcher from 'mphone-lab/PortalAreaSwitcher';
 // ==============================|| HEADER - CONTENT ||============================== //
 
 export default function HeaderContent() {
+  const { pathname } = useLocation();
   const downLG = useMediaQuery((theme) => theme.breakpoints.down('lg'));
+  const isMphoneLab = pathname === '/mphone' || pathname.startsWith('/mphone/');
 
   const localization = useMemo(() => <Localization />, []);
 
@@ -27,25 +30,25 @@ export default function HeaderContent() {
 
   return (
     <>
-      <Stack direction="row" sx={{ gap: { xs: 1, lg: 2 }, ml: 1, alignItems: 'center' }}>
-        {!downLG && (
+      <Stack direction="row" sx={{ gap: { xs: 1, lg: 2 }, alignItems: 'center' }}>
+        <PortalAreaSwitcher compact={downLG} />
+        {!downLG && !isMphoneLab && (
           <>
-            <Search />
             <Divider orientation="vertical" flexItem sx={{ height: 22, alignSelf: 'center' }} />
+            <Search />
           </>
         )}
-        <PortalAreaSwitcher compact={downLG} />
       </Stack>
       <Box sx={{ width: 1, ml: 1 }} />
 
       <Stack direction="row" sx={{ alignItems: 'center', gap: 0.75 }}>
-        {!downLG && megaMenu}
+        {!downLG && !isMphoneLab && megaMenu}
         {localization}
         <Notification />
         <Chat />
         <Customization />
         {!downLG && <Profile />}
-        {downLG && <MobileSection />}
+        {downLG && <MobileSection showSearch={!isMphoneLab} />}
       </Stack>
     </>
   );
