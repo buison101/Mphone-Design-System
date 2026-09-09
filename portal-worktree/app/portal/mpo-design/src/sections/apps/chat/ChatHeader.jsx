@@ -65,6 +65,7 @@ export default function ChatHeader({ loading, user, openChatDrawer, emailDetails
           ) : (
             <>
               <UserAvatar
+                size={48}
                 user={{
                   online_status: user.online_status,
                   avatar: user.avatar,
@@ -72,7 +73,7 @@ export default function ChatHeader({ loading, user, openChatDrawer, emailDetails
                 }}
               />
               <Stack>
-                <Typography variant="subtitle1">{user.name}</Typography>
+                <Typography variant="h5">{user.name}</Typography>
                 <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                   Active {user.lastMessage} ago
                 </Typography>

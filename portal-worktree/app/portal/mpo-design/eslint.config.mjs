@@ -85,5 +85,20 @@ export default [
   {
     ignores: ['node_modules/**'],
     files: ['src/**/*.{js,jsx}']
+  },
+  {
+    files: ['src/mphone-ui/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: {
+        document: 'readonly',
+        fetch: 'readonly',
+        URLSearchParams: 'readonly',
+        WebSocket: 'readonly',
+        window: 'readonly'
+      }
+    },
+    rules: {
+      'no-undef': 'error'
+    }
   }
 ];

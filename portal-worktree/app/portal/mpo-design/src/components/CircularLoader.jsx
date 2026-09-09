@@ -9,7 +9,7 @@ import CircularWithPath from './@extended/progress/CircularWithPath';
 export default function CircularLoader() {
   return (
     <Stack sx={{ alignItems: 'center', justifyContent: 'center', height: 1 }}>
-      <CircularWithPath />
+      <CircularWithPath color="inherit" sx={{ color: 'text.secondary' }} />
     </Stack>
   );
 }

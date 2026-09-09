@@ -55,8 +55,8 @@ export default function UserList({ setUser, search, selectedUser }) {
     return (
       <List>
         {[1, 2, 3, 4, 5].map((index) => (
-          <ListItem key={index} divider>
-            <ListItemAvatar>
+          <ListItem key={index}>
+            <ListItemAvatar sx={{ '& .MuiAvatar-root': { width: 48, height: 48 } }}>
               <Skeleton variant="circular" width={40} height={40} />
             </ListItemAvatar>
             <ListItemText
@@ -73,20 +73,27 @@ export default function UserList({ setUser, search, selectedUser }) {
       {data.map((user) => (
         <ListItemButton
           key={user.id}
-          sx={{ pl: 1 }}
           onClick={() => {
             setUser(user);
           }}
-          divider
           selected={user.id === selectedUser}
         >
-          <ListItemAvatar>
-            <UserAvatar user={user} />
+          <ListItemAvatar sx={{ minWidth: 64 }}>
+            <UserAvatar size={48} user={user} />
           </ListItemAvatar>
           <ListItemText
             primary={
               <Stack direction="row" sx={{ gap: 1, alignItems: 'center', justifyContent: 'space-between' }}>
-                <Typography variant="h5" sx={{ color: 'text.primary', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: 'text.primary',
+                    fontWeight: 'fontWeightRegular',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap'
+                  }}
+                >
                   {user.name}
                 </Typography>
                 <Typography variant="caption" sx={{ color: 'text.secondary' }}>
@@ -99,6 +106,7 @@ export default function UserList({ setUser, search, selectedUser }) {
                 variant="caption"
                 sx={{
                   color: 'text.secondary',
+                  fontWeight: 'fontWeightLight',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',

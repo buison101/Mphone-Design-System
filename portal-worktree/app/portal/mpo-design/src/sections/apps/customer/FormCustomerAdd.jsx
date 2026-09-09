@@ -224,7 +224,7 @@ export default function FormCustomerAdd({ customer, closeModal }) {
     return (
       <Box sx={{ p: 5 }}>
         <Stack direction="row" sx={{ justifyContent: 'center' }}>
-          <CircularWithPath />
+          <CircularWithPath color="inherit" sx={{ color: 'text.secondary' }} />
         </Stack>
       </Box>
     );

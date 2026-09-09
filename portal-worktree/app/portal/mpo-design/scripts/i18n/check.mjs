@@ -52,13 +52,20 @@ const vendorEn = fs.existsSync(vendorEnPath) ? JSON.parse(fs.readFileSync(vendor
 const vendorKeys = new Set(Object.keys(vendorEn));
 const keepPath = path.join(path.dirname(VENDOR_CATALOG_DIR), '..', '..', 'i18n', 'keep-english.json');
 const keepEnglish = fs.existsSync(keepPath) ? new Set(Object.keys(JSON.parse(fs.readFileSync(keepPath, 'utf8')).keys ?? {})) : new Set();
-const known = (key) => byKey.has(key) || vendorKeys.has(key);
+const directPath = path.join(path.dirname(VENDOR_CATALOG_DIR), '..', '..', 'i18n', 'direct-message-ids.json');
+const directKeys = fs.existsSync(directPath) ? new Set(JSON.parse(fs.readFileSync(directPath, 'utf8')).keys ?? []) : new Set();
+for (const key of directKeys) {
+  if (!(key in en)) errors.push('missing en direct message id: ' + key);
+  if (!(key in vi)) errors.push('missing vi direct message id: ' + key);
+}
+const known = (key) => byKey.has(key) || vendorKeys.has(key) || directKeys.has(key);
 for (const key of Object.keys(en)) if (!known(key)) warnings.push('orphan in en catalog: ' + key);
 for (const key of Object.keys(vi)) if (!known(key)) warnings.push('orphan in vi catalog: ' + key);
 console.log(
   'vendor overrides  ' + Object.keys(vi).filter((k) => vendorKeys.has(k)).length + ' vendor key ids translated in the project vi catalog'
 );
 console.log('keep-english      ' + keepEnglish.size + ' keys where the approved Vietnamese is the English term');
+console.log('direct ids        ' + directKeys.size + ' project message ids referenced without source-literal substitution');
 
 // 3. vi identical to en, across the whole vi catalog. The English side is the
 // project catalog where it defines the key, otherwise the vendor catalog.

@@ -20,7 +20,7 @@ import ChatMessageSend from 'sections/apps/chat/ChatMessageSend';
 
 import { useGetUsers } from 'api/chat';
 
-export const drawerWidth = 280;
+export const drawerWidth = 344;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme }) => ({
   flexGrow: 1,
@@ -99,6 +99,7 @@ export default function Chat() {
             size={{ xs: 12, ...(emailDetails && { md: 8, xl: 8.5 }) }}
           >
             <MainCard
+              border={false}
               content={false}
               sx={(theme) => ({
                 bgcolor: 'grey.50',
@@ -126,13 +127,13 @@ export default function Chat() {
               })}
             >
               <Grid container spacing={3}>
-                <Grid sx={{ bgcolor: 'background.paper', p: 2, borderBottom: '1px solid', borderBottomColor: 'divider' }} size={12}>
+                <Grid sx={{ bgcolor: 'background.paper', p: 2 }} size={12}>
                   <ChatHeader {...{ loading: usersLoading, user, openChatDrawer, emailDetails, handleDrawerOpen, handleUserChange }} />
                 </Grid>
                 <Grid size={12} sx={{ my: -0.75 }}>
                   <ChatHistory user={user} />
                 </Grid>
-                <Grid sx={{ bgcolor: 'background.paper', borderTop: '1px solid', borderTopColor: 'divider' }} size={12}>
+                <Grid sx={{ bgcolor: 'background.paper' }} size={12}>
                   <ChatMessageSend {...{ user }} />
                 </Grid>
               </Grid>

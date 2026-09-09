@@ -10,6 +10,10 @@ import Theme7 from './theme7';
 import Theme8 from './theme8';
 import Mphone1 from './mphone1';
 import Mphone2 from './mphone2';
+import Mphone3 from './mphone3';
+import Mphone4 from './mphone4';
+import Mphone5 from './mphone5';
+import Mphone6 from './mphone6';
 
 // ==============================|| PRESET THEME - THEME SELECTOR ||============================== //
 
@@ -35,6 +39,14 @@ export default function Theme(colors, presetColor, mode) {
       return Mphone1(colors, mode);
     case 'mphone2':
       return Mphone2(colors, mode);
+    case 'mphone3':
+      return Mphone3(colors, mode);
+    case 'mphone4':
+      return Mphone4(colors, mode);
+    case 'mphone5':
+      return Mphone5(colors, mode);
+    case 'mphone6':
+      return Mphone6(colors, mode);
     default:
       return Default(colors);
   }

@@ -19,7 +19,7 @@ npm run preview:build
 
 ## Sidebar đi được tới đâu
 
-Mọi route trong `MainRoutes.jsx` đều có mục trong sidebar khi chạy preview — kể cả `/design-system`, vốn bị giấu khỏi điều hướng sản phẩm theo `docs/08-living-design-system.md`.
+Mọi route trong `MainRoutes.jsx` đều có mục trong sidebar khi chạy preview, kể cả `/design-system`.
 
 Mục "Thiết kế → Design System" chỉ xuất hiện khi `import.meta.env.VITE_PORTAL_PREVIEW === '1'`, và cờ đó chỉ được đặt trong `preview/vite.config.mjs`. Bản `npm run build` cho sản phẩm không định nghĩa cờ này, nên khách hàng không bao giờ thấy mục đó.
 

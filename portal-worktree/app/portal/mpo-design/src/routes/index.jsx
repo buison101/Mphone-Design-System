@@ -7,6 +7,7 @@ import LoginRoutes from './LoginRoutes';
 import ComponentsRoutes from './ComponentsRoutes';
 import PromptsRoutes from './PromptsRoutes';
 import MphoneRoutes from './MphoneRoutes';
+import MphoneUiRoutes from './MphoneUiRoutes';
 import Loadable from 'components/Loadable';
 
 import { SimpleLayoutType } from 'config';
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
     ComponentsRoutes,
     PromptsRoutes,
     MphoneRoutes,
+    MphoneUiRoutes,
     MainRoutes
   ],
   { basename: import.meta.env.VITE_APP_BASE_NAME }

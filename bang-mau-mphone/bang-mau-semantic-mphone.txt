@@ -1,0 +1,23 @@
+﻿Token	Light	Dark	Primitive
+background.canvas	#FFFFFF	#050505	grey.0 / grey.25
+background.surface	#FFFFFF	#1C1C1D	grey.0 / grey.50
+background.subtle	#F1F3F5	#242425	grey.50 / grey.75
+text.primary	#101112	#E2E3E4	grey.900
+text.secondary	#6A6D70	#ACAFB2	grey.700
+text.disabled	#8A8F95	#8B8F94	grey.500
+border.subtle	#DADCDE	#323335	grey.150
+border.default	#CACDD0	#404144	grey.250
+action.primary	#0071EC	#1E8AFF	blue.500
+action.primary.hover	#0069E0	#379EFF	blue.600
+action.primary.pressed	#0F60D5	#59B3FF	blue.700
+action.primary.foreground	#FFFFFF	#000000	contrast-selected
+focus.ring	#0071EC	#1E8AFF	blue.500
+status.danger	#FB4041	#FB4849	red.500
+status.warning	#FC8F33	#FC9439	orange.500
+status.success	#3EC65D	#3CD05D	green.500
+status.caution	#FDCD25	#FDD627	yellow.500
+status.foreground	#000000	#000000	contrast-selected
+call.ringing	#0071EC	#1E8AFF	blue.500
+call.connected	#3EC65D	#3CD05D	green.500
+call.hold	#FC8F33	#FC9439	orange.500
+call.ended	#FB4041	#FB4849	red.500

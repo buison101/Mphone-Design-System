@@ -79,11 +79,11 @@ export const DEFAULT_THEME_MODE = ThemeMode.SYSTEM;
 // ==============================|| THEME CONFIG ||============================== //
 
 const config = {
-  fontFamily: `'Public Sans', sans-serif`,
+  fontFamily: `'Inter', sans-serif`,
   i18n: 'vi',
   menuOrientation: MenuOrientation.VERTICAL,
-  container: true,
-  presetColor: 'default',
+  container: false,
+  presetColor: 'mphone1',
   themeDirection: ThemeDirection.LTR
 };
 

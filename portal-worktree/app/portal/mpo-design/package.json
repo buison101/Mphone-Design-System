@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "vite --host 127.0.0.1 --port 4323 --strictPort",
+    "start:mphone:debian": "vite --mode portal-dev --host 0.0.0.0 --port 4324 --strictPort",
+    "start:portal": "VITE_APP_TARGET=portal VITE_DATA_PROVIDER=fusionpbx VITE_APP_BASE_NAME=/p-next/ vite --host 127.0.0.1 --port 4324 --strictPort",
     "build": "vite build",
+    "build:portal": "VITE_APP_TARGET=portal VITE_DATA_PROVIDER=fusionpbx vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4323 --strictPort",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/i18n/**/*.{js,jsx}\" \"scripts/i18n/*.mjs\" \"src/components/Locales.jsx\" \"src/config.js\"",

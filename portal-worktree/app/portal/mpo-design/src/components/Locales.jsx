@@ -41,7 +41,7 @@ const buildMessages = (locale) => Object.assign({}, projectEn, vendorEn, VENDOR_
 
 // ==============================|| LOCALIZATION ||============================== //
 
-export default function Locales({ children }) {
+export default function Locales({ children, remountOnLocaleChange = true }) {
   const { state } = useConfig();
   const locale = state.i18n;
 
@@ -64,10 +64,10 @@ export default function Locales({ children }) {
   // whole class of staleness impossible instead of chasing it one component at
   // a time. The router holds its own state, so the current route survives.
   return (
-    <IntlProvider key={locale} locale={locale} defaultLocale="en" messages={messages}>
+    <IntlProvider key={remountOnLocaleChange ? locale : undefined} locale={locale} defaultLocale="en" messages={messages}>
       {children}
     </IntlProvider>
   );
 }
 
-Locales.propTypes = { children: PropTypes.node };
+Locales.propTypes = { children: PropTypes.node, remountOnLocaleChange: PropTypes.bool };

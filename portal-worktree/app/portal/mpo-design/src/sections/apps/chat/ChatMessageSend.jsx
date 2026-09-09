@@ -96,7 +96,7 @@ export default function ChatMessageSend({ user }) {
         onChange={(e) => setMessage(e.target.value.length <= 1 ? e.target.value.trim() : e.target.value)}
         onKeyDown={handleEnter}
         variant="standard"
-        slotProps={{ input: { sx: { '&:before': { borderBottomColor: 'divider' } } } }}
+        slotProps={{ input: { disableUnderline: true } }}
       />
       <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
         <Stack direction="row" sx={{ py: 2, ml: -1 }}>

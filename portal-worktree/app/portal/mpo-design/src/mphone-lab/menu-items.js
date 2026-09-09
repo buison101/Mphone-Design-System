@@ -1,10 +1,7 @@
 import AppstoreOutlined from '@ant-design/icons/AppstoreOutlined';
-import BarChartOutlined from '@ant-design/icons/BarChartOutlined';
-import ContactsOutlined from '@ant-design/icons/ContactsOutlined';
-import CustomerServiceOutlined from '@ant-design/icons/CustomerServiceOutlined';
-import MobileOutlined from '@ant-design/icons/MobileOutlined';
-import PhoneOutlined from '@ant-design/icons/PhoneOutlined';
-import SkinOutlined from '@ant-design/icons/SkinOutlined';
+import DatabaseOutlined from '@ant-design/icons/DatabaseOutlined';
+import LineChartOutlined from '@ant-design/icons/LineChartOutlined';
+import SettingOutlined from '@ant-design/icons/SettingOutlined';
 
 const mphoneLabMenu = {
   items: [
@@ -15,7 +12,7 @@ const mphoneLabMenu = {
       children: [
         {
           id: 'mphone-lab-overview',
-          title: 'mphoneLab.surface.overview.title',
+          title: 'mphoneLab.dashboard.title',
           type: 'item',
           url: '/mphone',
           exact: true,
@@ -23,51 +20,35 @@ const mphoneLabMenu = {
           breadcrumbs: false
         },
         {
-          id: 'mphone-lab-calls',
-          title: 'mphoneLab.surface.calls.title',
-          type: 'item',
-          url: '/mphone/calls',
-          icon: PhoneOutlined,
-          breadcrumbs: false
-        },
-        {
-          id: 'mphone-lab-contacts',
-          title: 'mphoneLab.surface.contacts.title',
-          type: 'item',
-          url: '/mphone/contacts',
-          icon: ContactsOutlined,
-          breadcrumbs: false
-        },
-        {
-          id: 'mphone-lab-webphone',
-          title: 'mphoneLab.surface.webphone.title',
-          type: 'item',
-          url: '/mphone/webphone',
-          icon: CustomerServiceOutlined,
-          breadcrumbs: false
-        },
-        {
-          id: 'mphone-lab-app-phone',
-          title: 'mphoneLab.surface.appPhone.title',
-          type: 'item',
-          url: '/mphone/app-phone',
-          icon: MobileOutlined,
-          breadcrumbs: false
-        },
-        {
           id: 'mphone-lab-analytics',
-          title: 'mphoneLab.surface.analytics.title',
+          title: 'mphoneLab.analytics.title',
           type: 'item',
           url: '/mphone/analytics',
-          icon: BarChartOutlined,
+          icon: LineChartOutlined,
           breadcrumbs: false
         },
         {
-          id: 'mphone-lab-design-system',
-          title: 'mphoneLab.surface.designSystem.title',
+          id: 'mphone-lab-data',
+          title: 'mphoneLab.data.title',
           type: 'item',
-          url: '/mphone/design-system',
-          icon: SkinOutlined,
+          url: '/mphone/data',
+          icon: DatabaseOutlined,
+          breadcrumbs: true
+        },
+        {
+          id: 'mphone-lab-components',
+          title: 'mphoneLab.components.title',
+          type: 'item',
+          url: '/mphone/components',
+          icon: AppstoreOutlined,
+          breadcrumbs: false
+        },
+        {
+          id: 'mphone-lab-settings',
+          title: 'mphoneLab.settings.menuTitle',
+          type: 'item',
+          url: '/mphone/settings',
+          icon: SettingOutlined,
           breadcrumbs: false
         }
       ]

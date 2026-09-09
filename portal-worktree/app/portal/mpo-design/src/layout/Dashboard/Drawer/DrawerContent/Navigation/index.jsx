@@ -13,6 +13,8 @@ import NavGroup from './NavGroup';
 import menuItem from 'menu-items';
 import { MenuFromAPI } from 'menu-items/dashboard';
 import mphoneLabMenu from 'mphone-lab/menu-items';
+import mphoneUiMenu from 'mphone-ui/menu-items';
+import { isMphoneUiWorkspace } from 'mphone-ui/workspace';
 
 import useConfig from 'hooks/useConfig';
 import { HORIZONTAL_MAX_ITEM, MenuOrientation } from 'config';
@@ -44,9 +46,12 @@ export default function Navigation() {
 
   const dashboardMenu = MenuFromAPI();
   const isMphoneLab = pathname === '/mphone' || pathname.startsWith('/mphone/');
+  const isMphoneUi = isMphoneUiWorkspace(pathname);
 
   useLayoutEffect(() => {
-    if (isMphoneLab) {
+    if (isMphoneUi) {
+      setMenuItems(mphoneUiMenu);
+    } else if (isMphoneLab) {
       setMenuItems(mphoneLabMenu);
     } else if (menuLoading && !isFound(menuItem, 'group-dashboard-loading')) {
       menuItem.items.splice(0, 0, dashboardMenu);
@@ -58,7 +63,7 @@ export default function Navigation() {
       setMenuItems({ items: [...menuItem.items] });
     }
     // eslint-disable-next-line
-  }, [isMphoneLab, menuLoading]);
+  }, [isMphoneLab, isMphoneUi, menuLoading]);
 
   const isHorizontal = state.menuOrientation === MenuOrientation.HORIZONTAL && !downLG;
 

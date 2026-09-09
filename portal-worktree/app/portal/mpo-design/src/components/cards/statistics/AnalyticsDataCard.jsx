@@ -26,7 +26,7 @@ export default function AnalyticsDataCard({ color = 'primary', title, count, per
           <Typography variant="h4" sx={{ color: 'inherit' }}>
             {count}
           </Typography>
-          {percentage && (
+          {percentage !== null && percentage !== undefined && (
             <Chip
               variant="combined"
               color={color}

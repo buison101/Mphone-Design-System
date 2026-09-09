@@ -11,6 +11,8 @@
 
 import { createIntl, createIntlCache } from 'react-intl';
 
+import routeMessageAliases from './route-message-aliases.json';
+
 const cache = createIntlCache();
 
 let intl = null;
@@ -44,7 +46,9 @@ export function setRuntimeIntl(locale, messages) {
 export function __t(id, defaultMessage, values) {
   if (!intl) return defaultMessage;
   try {
-    return intl.formatMessage({ id, defaultMessage }, values);
+    const pathname = typeof window === 'undefined' ? '' : window.location.pathname;
+    const resolvedId = routeMessageAliases[pathname]?.[id] ?? id;
+    return intl.formatMessage({ id: resolvedId, defaultMessage }, values);
   } catch {
     return defaultMessage;
   }

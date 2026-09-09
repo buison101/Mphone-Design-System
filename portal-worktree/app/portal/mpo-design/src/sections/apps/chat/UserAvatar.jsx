@@ -7,7 +7,7 @@ import AvatarStatus from './AvatarStatus';
 import Avatar from 'components/@extended/Avatar';
 import { getImageUrl, ImagePath } from 'utils/getImageUrl';
 
-export default function UserAvatar({ user }) {
+export default function UserAvatar({ user, size }) {
   return (
     <Badge
       overlap="circular"
@@ -20,9 +20,13 @@ export default function UserAvatar({ user }) {
         '& svg': { bgcolor: 'common.white', borderRadius: '50%' }
       }}
     >
-      <Avatar alt={user.name} src={user.avatar && getImageUrl(`${user.avatar}`, ImagePath.USERS)} />
+      <Avatar
+        alt={user.name}
+        src={user.avatar && getImageUrl(`${user.avatar}`, ImagePath.USERS)}
+        sx={size ? { width: size, height: size } : undefined}
+      />
     </Badge>
   );
 }
 
-UserAvatar.propTypes = { user: PropTypes.any };
+UserAvatar.propTypes = { user: PropTypes.any, size: PropTypes.number };

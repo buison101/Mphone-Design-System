@@ -4,6 +4,11 @@ import getColors from 'utils/getColors';
 
 const ALERT_COLORS = ['primary', 'secondary', 'error', 'info', 'success', 'warning'];
 
+function resolvePaletteColor(theme, ownerState) {
+  const color = ownerState.color || ownerState.severity || 'primary';
+  return { color, paletteColor: theme.palette[color] || theme.palette.primary };
+}
+
 // ==============================|| ALERT - COLORS ||============================== //
 
 function getColorStyle({ color, theme }) {
@@ -47,7 +52,7 @@ export default function Alert(theme) {
             {
               props: { variant: 'standard' },
               style: ({ ownerState }) => {
-                const paletteColor = theme.palette[ownerState.color];
+                const { paletteColor } = resolvePaletteColor(theme, ownerState);
                 return {
                   position: 'relative',
                   backgroundColor: paletteColor.lighter,
@@ -73,13 +78,13 @@ export default function Alert(theme) {
             {
               props: { variant: 'filled' },
               style: ({ ownerState }) => {
-                const paletteColor = theme.palette[ownerState.color];
+                const { color, paletteColor } = resolvePaletteColor(theme, ownerState);
                 return {
                   color: theme.vars.palette.grey[0],
                   backgroundColor: paletteColor.main,
                   ...theme.applyStyles('dark', {
                     backgroundColor: paletteColor.dark,
-                    ...(ownerState.color === 'secondary' && { backgroundColor: paletteColor.main })
+                    ...(color === 'secondary' && { backgroundColor: paletteColor.main })
                   })
                 };
               }

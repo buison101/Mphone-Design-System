@@ -1,0 +1,26 @@
+﻿Mphone Color DNA
+
+Brand Blue 500 (Light): #0071EC
+Brand Blue 500 (Dark): #1E8AFF
+Brand hue: cool blue derived from the Mphone logo.
+Grey: subtle blue undertone around OKLCH hue 255.
+Status colors: hue preserved; chroma reduced mainly in surface ranges.
+Decorative colors: restrained chroma and small hue shifts toward a cooler technical character.
+
+Contrast checks:
+action.primary Light: 4.59:1 against #FFFFFF
+action.primary Dark: 6.13:1 against #000000
+red.500 Light: 5.91:1 against #000000
+red.500 Dark: 6.12:1 against #000000
+orange.500 Light: 9.12:1 against #000000
+orange.500 Dark: 9.43:1 against #000000
+green.500 Light: 9.44:1 against #000000
+green.500 Dark: 10.37:1 against #000000
+yellow.500 Light: 13.94:1 against #000000
+yellow.500 Dark: 14.82:1 against #000000
+
+Generation rules:
+0-200: low chroma for tinted surfaces.
+225-700: strongest family identity for controls and data visualization.
+725-1000: reduced chroma for dark text and surfaces.
+All components should consume semantic tokens rather than primitive levels directly.

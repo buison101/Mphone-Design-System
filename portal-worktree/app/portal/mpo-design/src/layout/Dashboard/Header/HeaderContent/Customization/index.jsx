@@ -64,14 +64,7 @@ export default function Customization() {
             sx={(theme) => ({
               color: 'text.primary',
               bgcolor: open ? 'grey.100' : 'transparent',
-              ...theme.applyStyles('dark', { bgcolor: open ? 'background.default' : 'transparent' }),
-              '& svg': {
-                animation: 'spin 2s linear infinite',
-                '@keyframes spin': {
-                  from: { transform: 'rotate(0deg)' },
-                  to: { transform: 'rotate(360deg)' }
-                }
-              }
+              ...theme.applyStyles('dark', { bgcolor: open ? 'background.default' : 'transparent' })
             })}
             onClick={handleToggle}
             aria-label="settings toggler"

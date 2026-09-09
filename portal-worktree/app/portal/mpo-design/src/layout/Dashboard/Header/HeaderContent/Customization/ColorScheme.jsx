@@ -51,6 +51,34 @@ export default function ColorScheme() {
       shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#305bdd' : '#3366FF', 0.2)}`
     },
     {
+      id: 'mphone3',
+      primary: colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC',
+      lighter: colorScheme === ThemeMode.DARK ? '#000102' : '#F0F5FB',
+      label: 'Mphone 3',
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC', 0.2)}`
+    },
+    {
+      id: 'mphone4',
+      primary: colorScheme === ThemeMode.DARK ? '#0064C8' : '#0071EC',
+      lighter: colorScheme === ThemeMode.DARK ? '#0B2137' : '#D8E5F4',
+      label: 'Mphone 4',
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#0064C8' : '#0071EC', 0.2)}`
+    },
+    {
+      id: 'mphone5',
+      primary: colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC',
+      lighter: colorScheme === ThemeMode.DARK ? '#000102' : '#F0F5FB',
+      label: 'Mphone 5',
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC', 0.2)}`
+    },
+    {
+      id: 'mphone6',
+      primary: colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC',
+      lighter: colorScheme === ThemeMode.DARK ? '#0D243C' : '#F0F5FB',
+      label: 'Mphone 6',
+      shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#1E8AFF' : '#0071EC', 0.2)}`
+    },
+    {
       id: 'theme1',
       primary: colorScheme === ThemeMode.DARK ? '#305bdd' : '#3366FF',
       lighter: colorScheme === ThemeMode.DARK ? '#1c2134' : '#D6E4FF',
@@ -107,7 +135,9 @@ export default function ColorScheme() {
       shadow: `0 0 0 2px ${withAlpha(colorScheme === ThemeMode.DARK ? '#058478' : '#009688', 0.2)}`
     }
   ];
-  const visibleColorOptions = colorOptions.filter(({ id }) => ['default', 'mphone1', 'mphone2', 'theme1'].includes(id));
+  const visibleColorOptions = colorOptions.filter(({ id }) =>
+    ['mphone1', 'mphone2', 'mphone3', 'mphone4', 'mphone5', 'mphone6'].includes(id)
+  );
 
   const handlePresetColorChange = (event) => {
     setField('presetColor', event.target.value);

@@ -4,34 +4,40 @@ import { Link, useLocation } from 'react-router-dom';
 import ButtonBase from '@mui/material/ButtonBase';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 import SwapOutlined from '@ant-design/icons/SwapOutlined';
 
-const areas = [
-  { id: 'mantis', to: '/dashboard/analytics' },
-  { id: 'mphone', to: '/mphone' }
-];
-
 function AreaLabel({ area }) {
-  return area === 'mantis' ? <>Mantis UI</> : <>Mphone Lab</>;
+  return <FormattedMessage id={`mphoneLab.switcher.${area}`} />;
 }
 
 export default function PortalAreaSwitcher({ compact = false }) {
+  const intl = useIntl();
   const { pathname } = useLocation();
-  const activeArea = pathname === '/mphone' || pathname.startsWith('/mphone/') ? 'mphone' : 'mantis';
+  const isAnalyticsPage = pathname === '/dashboard/analytics' || pathname === '/mphone/analytics';
+  const areas = [
+    { id: 'mantis', to: '/dashboard/analytics' },
+    { id: 'mphone', to: isAnalyticsPage ? '/mphone/analytics' : '/mphone' },
+    { id: 'mphoneUi', to: '/mphone-ui' }
+  ];
+  const activeArea =
+    pathname === '/mphone-ui' || pathname.startsWith('/mphone-ui/')
+      ? 'mphoneUi'
+      : pathname === '/mphone' || pathname.startsWith('/mphone/')
+        ? 'mphone'
+        : 'mantis';
   const visibleAreas = compact ? areas.filter((area) => area.id !== activeArea) : areas;
 
   return (
     <Stack
       component="nav"
       direction="row"
-      aria-label="Switch between Mantis UI and Mphone Lab"
+      aria-label={intl.formatMessage({ id: 'mphoneLab.switcher.aria' })}
       sx={{
         flexShrink: 0,
         gap: 0.25,
         p: 0.25,
-        border: '1px solid',
-        borderColor: 'divider',
         borderRadius: 1,
         bgcolor: 'background.default'
       }}
@@ -67,4 +73,4 @@ export default function PortalAreaSwitcher({ compact = false }) {
 }
 
 PortalAreaSwitcher.propTypes = { compact: PropTypes.bool };
-AreaLabel.propTypes = { area: PropTypes.oneOf(['mantis', 'mphone']).isRequired };
+AreaLabel.propTypes = { area: PropTypes.oneOf(['mantis', 'mphone', 'mphoneUi']).isRequired };

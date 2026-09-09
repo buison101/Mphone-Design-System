@@ -1,0 +1,39 @@
+Mphone 3 - direct primitive level mapping
+
+Theme key	Primitive level
+lighter	50
+100	100
+200	200
+light	300
+400	400
+main	500
+dark	600
+700	700
+darker	800
+900	900
+
+Status key	Primitive level
+lighter	100
+light	300
+main	500
+dark	700
+darker	900
+
+Semantic role	Primitive family	Light main	Dark main
+primary	blue	#0071EC	#1E8AFF
+error	red	#FB4041	#FB4849
+warning	orange	#FC8F33	#FC9439
+info	teal	#2CC1D3	#31D0E3
+success	green	#3EC65D	#3CD05D
+secondary	grey	#8A8F95	#8B8F94
+
+Grey numeric keys map directly to grey levels 0, 50, 100, 200, 300, 400,
+500, 600, 700, 800 and 900 in each appearance mode.
+
+Grey A is role-based:
+A50	page background	Light grey.50	Dark grey.25
+A100	paper background	Light grey.0	Dark grey.50
+A200	translucent divider source	Light grey.800	Dark grey.350
+A400	secondary accent source	Light grey.775	Dark grey.500
+A700	strong accent source	Light grey.800	Dark grey.930
+A800	primary text source	Light grey.1000	Dark grey.1000

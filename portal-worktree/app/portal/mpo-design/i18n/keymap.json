@@ -8,9 +8,7 @@
       "key": "maintenance.notFound.title",
       "kind": "message",
       "context": "Tiêu đề trang lỗi 404",
-      "routes": [
-        "/maintenance/404"
-      ],
+      "routes": ["/maintenance/404"],
       "role": "heading"
     },
     {
@@ -20,9 +18,7 @@
       "key": "maintenance.notFound.description",
       "kind": "message",
       "context": "Câu giải thích dưới tiêu đề 404",
-      "routes": [
-        "/maintenance/404"
-      ],
+      "routes": ["/maintenance/404"],
       "role": "text"
     },
     {
@@ -32,9 +28,7 @@
       "key": "maintenance.actions.backToHome",
       "kind": "message",
       "context": "Nút quay lại trang chủ, dùng chung cho 404, 500 và Under Construction",
-      "routes": [
-        "/maintenance/404"
-      ],
+      "routes": ["/maintenance/404"],
       "role": "button",
       "maxLength": 20
     },
@@ -45,9 +39,7 @@
       "key": "maintenance.serverError.title",
       "kind": "message",
       "context": "Tiêu đề trang lỗi 500",
-      "routes": [
-        "/maintenance/500"
-      ],
+      "routes": ["/maintenance/500"],
       "role": "heading"
     },
     {
@@ -57,9 +49,7 @@
       "key": "maintenance.serverError.description",
       "kind": "message",
       "context": "Câu giải thích dưới tiêu đề 500",
-      "routes": [
-        "/maintenance/500"
-      ],
+      "routes": ["/maintenance/500"],
       "role": "text"
     },
     {
@@ -69,9 +59,7 @@
       "key": "maintenance.actions.backToHome",
       "kind": "message",
       "context": "Nút quay lại trang chủ, dùng chung cho 404, 500 và Under Construction",
-      "routes": [
-        "/maintenance/500"
-      ],
+      "routes": ["/maintenance/500"],
       "role": "button",
       "maxLength": 20
     },
@@ -82,9 +70,7 @@
       "key": "maintenance.comingSoon.title",
       "kind": "message",
       "context": "Tiêu đề trang Coming Soon",
-      "routes": [
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/coming-soon"],
       "role": "heading"
     },
     {
@@ -94,9 +80,7 @@
       "key": "maintenance.comingSoon.subtitle",
       "kind": "message",
       "context": "Câu phụ đề dưới tiêu đề Coming Soon",
-      "routes": [
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/coming-soon"],
       "role": "text"
     },
     {
@@ -106,9 +90,7 @@
       "key": "maintenance.comingSoon.notice",
       "kind": "message",
       "context": "Lời mời đăng ký nhận thông báo. Chứa thương hiệu vendor \"Mantis\" — xử lý ở đợt danh tính mẫu theo §4.8, không sửa trong đợt này",
-      "routes": [
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/coming-soon"],
       "role": "text"
     },
     {
@@ -118,9 +100,7 @@
       "key": "maintenance.comingSoon.emailPlaceholder",
       "kind": "message",
       "context": "Placeholder ô nhập email trên trang Coming Soon",
-      "routes": [
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/coming-soon"],
       "role": "placeholder",
       "maxLength": 24
     },
@@ -131,9 +111,7 @@
       "key": "maintenance.comingSoon.submit",
       "kind": "message",
       "context": "Nút gửi đăng ký trên trang Coming Soon",
-      "routes": [
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/coming-soon"],
       "role": "button",
       "maxLength": 22
     },
@@ -144,10 +122,7 @@
       "key": "maintenance.waitlist.title",
       "kind": "message",
       "context": "Tiêu đề trang Join Waitlist",
-      "routes": [
-        "/maintenance/under-construction",
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/under-construction", "/maintenance/coming-soon"],
       "role": "heading"
     },
     {
@@ -157,10 +132,7 @@
       "key": "maintenance.waitlist.subtitle",
       "kind": "message",
       "context": "Câu phụ đề dưới tiêu đề Join Waitlist",
-      "routes": [
-        "/maintenance/under-construction",
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/under-construction", "/maintenance/coming-soon"],
       "role": "text"
     },
     {
@@ -170,10 +142,7 @@
       "key": "maintenance.waitlist.emailPlaceholder",
       "kind": "message",
       "context": "Placeholder ô nhập email trên trang Join Waitlist",
-      "routes": [
-        "/maintenance/under-construction",
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/under-construction", "/maintenance/coming-soon"],
       "role": "placeholder",
       "maxLength": 24
     },
@@ -184,10 +153,7 @@
       "key": "maintenance.waitlist.submit",
       "kind": "message",
       "context": "Nút gửi đăng ký trên trang Join Waitlist",
-      "routes": [
-        "/maintenance/under-construction",
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/under-construction", "/maintenance/coming-soon"],
       "role": "button",
       "maxLength": 22
     },
@@ -198,10 +164,7 @@
       "key": "maintenance.waitlist.memberCount",
       "kind": "message",
       "context": "Dòng ghi chú số thành viên dưới form Join Waitlist",
-      "routes": [
-        "/maintenance/under-construction",
-        "/maintenance/coming-soon"
-      ],
+      "routes": ["/maintenance/under-construction", "/maintenance/coming-soon"],
       "role": "text"
     },
     {
@@ -211,9 +174,7 @@
       "key": "maintenance.underConstruction.title",
       "kind": "message",
       "context": "Tiêu đề trang Under Construction",
-      "routes": [
-        "/maintenance/under-construction"
-      ],
+      "routes": ["/maintenance/under-construction"],
       "role": "heading"
     },
     {
@@ -223,9 +184,7 @@
       "key": "maintenance.underConstruction.description",
       "kind": "message",
       "context": "Câu giải thích dưới tiêu đề Under Construction",
-      "routes": [
-        "/maintenance/under-construction"
-      ],
+      "routes": ["/maintenance/under-construction"],
       "role": "text"
     },
     {
@@ -235,9 +194,7 @@
       "key": "maintenance.actions.backToHome",
       "kind": "message",
       "context": "Nút quay lại trang chủ, dùng chung cho 404, 500 và Under Construction",
-      "routes": [
-        "/maintenance/under-construction"
-      ],
+      "routes": ["/maintenance/under-construction"],
       "role": "button",
       "maxLength": 20
     },
@@ -248,9 +205,7 @@
       "key": "shell.errors.groupCollapseOrItems",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -260,9 +215,7 @@
       "key": "shell.errors.navigationGroup",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -272,9 +225,7 @@
       "key": "shell.navCard.title",
       "kind": "message",
       "context": "Tiêu đề thẻ hỗ trợ ở cuối sidebar",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -284,9 +235,7 @@
       "key": "shell.navCard.subtitle",
       "kind": "message",
       "context": "Câu phụ trong thẻ hỗ trợ ở sidebar",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -296,9 +245,7 @@
       "key": "common.support",
       "kind": "message",
       "context": "Nhãn hỗ trợ, dùng ở thẻ sidebar và menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -308,9 +255,7 @@
       "key": "shell.nav.showMoreAria",
       "kind": "message",
       "context": "Nhãn trợ năng cho nút mở rộng khối người dùng ở sidebar",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -320,9 +265,7 @@
       "key": "common.avatarAlt",
       "kind": "message",
       "context": "Alt của ảnh đại diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -332,9 +275,7 @@
       "key": "shell.user.sampleRole",
       "kind": "message",
       "context": "Chức danh mẫu của người dùng trong sidebar và menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "secondary"
     },
     {
@@ -344,9 +285,7 @@
       "key": "common.actions.logout",
       "kind": "message",
       "context": "Hành động đăng xuất",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -356,9 +295,7 @@
       "key": "common.profile",
       "kind": "message",
       "context": "Nhãn hồ sơ người dùng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -368,9 +305,7 @@
       "key": "shell.user.myAccount",
       "kind": "message",
       "context": "Mục menu trong khối người dùng ở sidebar",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -380,9 +315,7 @@
       "key": "shell.errors.collapseOrItem",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -392,9 +325,7 @@
       "key": "shell.errors.groupCollapseOrItems",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -404,9 +335,7 @@
       "key": "shell.errors.menuItems",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -416,9 +345,7 @@
       "key": "shell.errors.menuItems",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -428,9 +355,7 @@
       "key": "shell.errors.navigationGroup",
       "kind": "message",
       "context": "Thông báo chẩn đoán khi cấu hình menu sai",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -440,9 +365,7 @@
       "key": "shell.nav.drawerAria",
       "kind": "message",
       "context": "Nhãn trợ năng của drawer điều hướng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -452,9 +375,7 @@
       "key": "shell.footer.rights",
       "kind": "message",
       "context": "Dòng bản quyền ở footer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -464,9 +385,7 @@
       "key": "shell.footer.vendorBrand",
       "kind": "sampleIdentity",
       "context": "Thương hiệu vendor ở footer. Giữ một giá trị cho mọi ngôn ngữ; Stage 6 thay bằng nhận diện Mphone khi branding được duyệt",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -476,9 +395,7 @@
       "key": "shell.footer.hireUs",
       "kind": "message",
       "context": "Liên kết footer của vendor",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -488,9 +405,7 @@
       "key": "shell.footer.license",
       "kind": "message",
       "context": "Liên kết footer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -500,9 +415,7 @@
       "key": "shell.footer.terms",
       "kind": "message",
       "context": "Liên kết footer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -512,9 +425,7 @@
       "key": "shell.footer.figma",
       "kind": "message",
       "context": "Liên kết footer tới bộ design system trên Figma; giữ nguyên vì là tên sản phẩm",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -524,9 +435,7 @@
       "key": "shell.chat.messagePlaceholder",
       "kind": "message",
       "context": "Placeholder ô soạn tin trong chat nhanh ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "placeholder"
     },
     {
@@ -536,9 +445,7 @@
       "key": "shell.chat.title",
       "kind": "message",
       "context": "Tooltip nút chat ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -548,9 +455,7 @@
       "key": "shell.chat.openAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút chat ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -560,9 +465,7 @@
       "key": "common.actions.markAllRead",
       "kind": "message",
       "context": "Hành động đánh dấu đã đọc, dùng ở chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -572,9 +475,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -584,9 +485,7 @@
       "key": "shell.settings.fontPreview",
       "kind": "message",
       "context": "Chữ mẫu xem trước phông; không dịch",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -596,9 +495,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -608,9 +505,7 @@
       "key": "shell.settings.modeLight",
       "kind": "message",
       "context": "Chế độ giao diện sáng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -620,9 +515,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -632,9 +525,7 @@
       "key": "shell.settings.modeDark",
       "kind": "message",
       "context": "Chế độ giao diện tối",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -644,9 +535,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -656,9 +545,7 @@
       "key": "shell.settings.modeSystem",
       "kind": "message",
       "context": "Chế độ giao diện theo hệ điều hành",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -668,9 +555,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -680,9 +565,7 @@
       "key": "shell.settings.widthFluid",
       "kind": "message",
       "context": "Chế độ chiều rộng bố cục tràn viền",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -692,9 +575,7 @@
       "key": "shell.settings.verticalAlt",
       "kind": "message",
       "context": "Alt của ảnh minh họa bố cục dọc trong bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -704,9 +585,7 @@
       "key": "shell.settings.widthContainer",
       "kind": "message",
       "context": "Chế độ chiều rộng bố cục có giới hạn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -716,9 +595,7 @@
       "key": "shell.settings.title",
       "kind": "message",
       "context": "Tiêu đề bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -728,9 +605,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -740,9 +615,7 @@
       "key": "shell.settings.title",
       "kind": "message",
       "context": "Tiêu đề bảng tùy chỉnh giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -752,9 +625,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -764,9 +635,7 @@
       "key": "shell.settings.layout",
       "kind": "message",
       "context": "Nhóm cài đặt bố cục",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -776,9 +645,7 @@
       "key": "shell.settings.layoutHint",
       "kind": "message",
       "context": "Câu mô tả nhóm cài đặt bố cục",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -788,9 +655,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -800,9 +665,7 @@
       "key": "shell.settings.direction",
       "kind": "message",
       "context": "Nhóm cài đặt hướng menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -812,9 +675,7 @@
       "key": "shell.settings.directionHint",
       "kind": "message",
       "context": "Câu mô tả nhóm hướng menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -824,9 +685,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -836,9 +695,7 @@
       "key": "shell.settings.mode",
       "kind": "message",
       "context": "Nhóm cài đặt sáng tối",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -848,9 +705,7 @@
       "key": "shell.settings.modeHint",
       "kind": "message",
       "context": "Câu mô tả nhóm chế độ giao diện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -860,9 +715,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -872,9 +725,7 @@
       "key": "shell.settings.colorScheme",
       "kind": "message",
       "context": "Nhóm cài đặt màu chủ đạo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -884,9 +735,7 @@
       "key": "shell.settings.colorSchemeHint",
       "kind": "message",
       "context": "Câu mô tả nhóm bảng màu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -896,9 +745,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -908,9 +755,7 @@
       "key": "shell.settings.width",
       "kind": "message",
       "context": "Nhóm cài đặt chiều rộng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -920,9 +765,7 @@
       "key": "shell.settings.widthHint",
       "kind": "message",
       "context": "Câu mô tả nhóm chiều rộng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -932,9 +775,7 @@
       "key": "shell.settings.togglerAria",
       "kind": "message",
       "context": "Nhãn trợ năng và alt của nút mở bảng tùy chỉnh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -944,9 +785,7 @@
       "key": "shell.settings.font",
       "kind": "message",
       "context": "Nhóm cài đặt phông",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -956,9 +795,7 @@
       "key": "shell.settings.fontHint",
       "kind": "message",
       "context": "Câu mô tả nhóm phông chữ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -968,9 +805,7 @@
       "key": "shell.header.fullscreenAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút toàn màn hình",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -980,9 +815,7 @@
       "key": "shell.locale.title",
       "kind": "message",
       "context": "Tooltip nút chọn ngôn ngữ ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -992,9 +825,7 @@
       "key": "shell.locale.openAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút chọn ngôn ngữ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1004,9 +835,7 @@
       "key": "shell.locale.english",
       "kind": "message",
       "context": "Tên ngôn ngữ trong danh sách chọn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1016,9 +845,7 @@
       "key": "shell.locale.englishRegion",
       "kind": "message",
       "context": "Ghi chú vùng bên cạnh tên ngôn ngữ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1028,9 +855,7 @@
       "key": "shell.megaMenu.title",
       "kind": "message",
       "context": "Tooltip nút mega menu ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -1040,9 +865,7 @@
       "key": "shell.header.openProfileAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút hồ sơ và nút mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1052,9 +875,7 @@
       "key": "shell.megaMenu.heading",
       "kind": "message",
       "context": "Tiêu đề trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1064,9 +885,7 @@
       "key": "shell.megaMenu.description",
       "kind": "message",
       "context": "Câu giới thiệu trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1076,9 +895,7 @@
       "key": "common.actions.viewAll",
       "kind": "message",
       "context": "Hành động xem toàn bộ danh sách",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1088,9 +905,7 @@
       "key": "shell.megaMenu.chartAlt",
       "kind": "message",
       "context": "Alt ảnh minh họa trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -1100,9 +915,7 @@
       "key": "shell.megaMenu.authGroup",
       "kind": "message",
       "context": "Nhóm liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1112,9 +925,7 @@
       "key": "shell.megaMenu.login",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1124,9 +935,7 @@
       "key": "shell.megaMenu.register",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1136,9 +945,7 @@
       "key": "shell.megaMenu.resetPassword",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1148,9 +955,7 @@
       "key": "shell.megaMenu.forgotPassword",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1160,9 +965,7 @@
       "key": "shell.megaMenu.verificationCode",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1172,9 +975,7 @@
       "key": "shell.megaMenu.otherGroup",
       "kind": "message",
       "context": "Nhóm liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1184,9 +985,7 @@
       "key": "shell.megaMenu.aboutUs",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1196,9 +995,7 @@
       "key": "shell.megaMenu.contactUs",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1208,9 +1005,7 @@
       "key": "shell.megaMenu.pricing",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1220,9 +1015,7 @@
       "key": "shell.megaMenu.payment",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1232,9 +1025,7 @@
       "key": "shell.megaMenu.construction",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1244,9 +1035,7 @@
       "key": "shell.megaMenu.comingSoon",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1256,9 +1045,7 @@
       "key": "shell.megaMenu.saasGroup",
       "kind": "message",
       "context": "Nhóm liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1268,9 +1055,7 @@
       "key": "shell.megaMenu.error404",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1280,9 +1065,7 @@
       "key": "shell.megaMenu.landing",
       "kind": "message",
       "context": "Liên kết trong mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1292,9 +1075,7 @@
       "key": "shell.header.moreMenuAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút menu phụ trên màn hình nhỏ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1304,9 +1085,7 @@
       "key": "common.notification",
       "kind": "message",
       "context": "Nhãn thông báo, dùng ở tiêu đề danh sách và tooltip nút",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1316,9 +1095,7 @@
       "key": "common.actions.markAllRead",
       "kind": "message",
       "context": "Hành động đánh dấu đã đọc, dùng ở chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1328,9 +1105,7 @@
       "key": "shell.notifications.viewAll",
       "kind": "message",
       "context": "Nút cuối danh sách thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1340,9 +1115,7 @@
       "key": "shell.notifications.sampleReply",
       "kind": "message",
       "context": "Nội dung thông báo mẫu; nguyên bản vendor ghi \"Replay\", nhiều khả năng là lỗi chính tả của \"Reply\"",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1352,9 +1125,7 @@
       "key": "common.notification",
       "kind": "message",
       "context": "Nhãn thông báo, dùng ở tiêu đề danh sách và tooltip nút",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -1364,9 +1135,7 @@
       "key": "shell.notifications.openAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1376,9 +1145,7 @@
       "key": "shell.profile.edit",
       "kind": "message",
       "context": "Mục trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1388,9 +1155,7 @@
       "key": "shell.profile.view",
       "kind": "message",
       "context": "Mục trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1400,9 +1165,7 @@
       "key": "shell.profile.social",
       "kind": "message",
       "context": "Mục trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1412,9 +1175,7 @@
       "key": "shell.profile.billing",
       "kind": "message",
       "context": "Mục trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1424,9 +1185,7 @@
       "key": "common.actions.logout",
       "kind": "message",
       "context": "Hành động đăng xuất",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1436,9 +1195,7 @@
       "key": "common.support",
       "kind": "message",
       "context": "Nhãn hỗ trợ, dùng ở thẻ sidebar và menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1448,9 +1205,7 @@
       "key": "shell.profile.accountSettings",
       "kind": "message",
       "context": "Mục trong menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1460,9 +1215,7 @@
       "key": "shell.profile.privacy",
       "kind": "message",
       "context": "Mục trong menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1472,9 +1225,7 @@
       "key": "shell.profile.feedback",
       "kind": "message",
       "context": "Mục trong menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1484,9 +1235,7 @@
       "key": "shell.profile.history",
       "kind": "message",
       "context": "Mục trong menu thiết lập",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "primary"
     },
     {
@@ -1496,9 +1245,7 @@
       "key": "common.profile",
       "kind": "message",
       "context": "Nhãn hồ sơ người dùng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -1508,9 +1255,7 @@
       "key": "shell.header.openProfileAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút hồ sơ và nút mega menu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1520,9 +1265,7 @@
       "key": "shell.profile.avatarAlt",
       "kind": "message",
       "context": "Alt ảnh đại diện ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "alt"
     },
     {
@@ -1532,9 +1275,7 @@
       "key": "shell.user.sampleRole",
       "kind": "message",
       "context": "Chức danh mẫu của người dùng trong sidebar và menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1544,9 +1285,7 @@
       "key": "common.actions.logout",
       "kind": "message",
       "context": "Hành động đăng xuất",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -1556,9 +1295,7 @@
       "key": "shell.profile.tabsAria",
       "kind": "message",
       "context": "Nhãn trợ năng nhóm tab trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1568,9 +1305,7 @@
       "key": "common.profile",
       "kind": "message",
       "context": "Nhãn hồ sơ người dùng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1580,9 +1315,7 @@
       "key": "shell.profile.settingTab",
       "kind": "message",
       "context": "Nhãn tab trong menu hồ sơ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1592,9 +1325,7 @@
       "key": "shell.search.placeholder",
       "kind": "message",
       "context": "Placeholder ô tìm kiếm ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "placeholder"
     },
     {
@@ -1604,9 +1335,7 @@
       "key": "shell.search.escLabel",
       "kind": "message",
       "context": "Phím tắt đóng ô tìm kiếm; giữ nguyên vì là tên phím",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1616,9 +1345,7 @@
       "key": "shell.search.empty",
       "kind": "message",
       "context": "Trạng thái rỗng của ô tìm kiếm",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1628,9 +1355,7 @@
       "key": "shell.search.emptyHint",
       "kind": "message",
       "context": "Gợi ý kèm trạng thái rỗng của tìm kiếm",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1640,9 +1365,7 @@
       "key": "shell.header.openDrawerAria",
       "kind": "message",
       "context": "Nhãn trợ năng nút mở sidebar",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "a11y"
     },
     {
@@ -1652,9 +1375,7 @@
       "key": "shell.prompts.all",
       "kind": "message",
       "context": "Tiêu đề trong ngăn điều hướng Prompt Explorer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text"
     },
     {
@@ -1664,9 +1385,7 @@
       "key": "shell.filters.all",
       "kind": "message",
       "context": "Bộ lọc trong Prompt Explorer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1676,9 +1395,7 @@
       "key": "common.tier.free",
       "kind": "message",
       "context": "Nhãn gói miễn phí, dùng chung cho bộ lọc Prompt Explorer và huy hiệu gói của không gian làm việc",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1688,9 +1405,7 @@
       "key": "common.tier.pro",
       "kind": "message",
       "context": "Nhãn gói Pro, dùng chung cho bộ lọc Prompt Explorer và huy hiệu gói của không gian làm việc; giữ nguyên vì là tên gói",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -1700,9 +1415,7 @@
       "key": "shell.locale.vietnamese",
       "kind": "message",
       "context": "Tên tiếng Việt viết bằng chính tiếng Việt trong danh sách chọn ngôn ngữ; giữ nguyên ở mọi ngôn ngữ, giống Română",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text",
       "origin": "mphone"
     },
@@ -1713,9 +1426,7 @@
       "key": "shell.locale.vietnameseRegion",
       "kind": "message",
       "context": "Ghi chú vùng bên cạnh tên ngôn ngữ",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "text",
       "origin": "mphone"
     },
@@ -4286,9 +3997,7 @@
       "key": "shell.componentDrawer.searchPlaceholder",
       "kind": "message",
       "context": "Placeholder ô tìm trong ngăn Component",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "placeholder"
     },
     {
@@ -4298,9 +4007,7 @@
       "key": "shell.chat.sampleUserLabel",
       "kind": "message",
       "context": "Nhãn người dùng mẫu trong chat nhanh",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4310,9 +4017,7 @@
       "key": "shell.chat.messageRequired",
       "kind": "message",
       "context": "Thông báo kiểm tra khi gửi tin nhắn rỗng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4322,9 +4027,7 @@
       "key": "shell.filters.all",
       "kind": "message",
       "context": "Bộ lọc dùng chung ở chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4334,9 +4037,7 @@
       "key": "shell.filters.unread",
       "kind": "message",
       "context": "Bộ lọc chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4346,9 +4047,7 @@
       "key": "shell.filters.favorites",
       "kind": "message",
       "context": "Bộ lọc danh sách trò chuyện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4358,9 +4057,7 @@
       "key": "shell.filters.group",
       "kind": "message",
       "context": "Bộ lọc danh sách trò chuyện",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4370,9 +4067,7 @@
       "key": "shell.search.default",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4382,9 +4077,7 @@
       "key": "shell.settings.theme1",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4394,9 +4087,7 @@
       "key": "shell.settings.theme2",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4406,9 +4097,7 @@
       "key": "shell.settings.theme3",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4418,9 +4107,7 @@
       "key": "shell.settings.theme4",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4430,9 +4117,7 @@
       "key": "shell.settings.theme5",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4442,9 +4127,7 @@
       "key": "shell.settings.theme6",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4454,9 +4137,7 @@
       "key": "shell.settings.theme7",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4466,9 +4147,7 @@
       "key": "shell.settings.theme8",
       "kind": "message",
       "context": "Bảng màu dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4479,9 +4158,7 @@
       "kind": "message",
       "origin": "mphone",
       "context": "Tên bảng màu Mphone dựng sẵn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4492,9 +4169,7 @@
       "kind": "message",
       "origin": "mphone",
       "context": "Lựa chọn dùng chuỗi phông mặc định của hệ điều hành",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4504,9 +4179,7 @@
       "key": "shell.settings.fontInter",
       "kind": "message",
       "context": "Tên phông chữ, giữ nguyên",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4516,9 +4189,7 @@
       "key": "shell.settings.fontRoboto",
       "kind": "message",
       "context": "Tên phông chữ, giữ nguyên",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4528,9 +4199,7 @@
       "key": "shell.settings.fontPoppins",
       "kind": "message",
       "context": "Tên phông chữ, giữ nguyên",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4540,9 +4209,7 @@
       "key": "shell.settings.fontPublicSans",
       "kind": "message",
       "context": "Tên phông chữ, giữ nguyên",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4552,9 +4219,7 @@
       "key": "shell.search.default",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4564,9 +4229,7 @@
       "key": "shell.settings.layoutHorizontal",
       "kind": "message",
       "context": "Kiểu bố cục menu ngang",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4576,9 +4239,7 @@
       "key": "shell.settings.layoutMini",
       "kind": "message",
       "context": "Kiểu bố cục ngăn điều hướng thu gọn",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4588,9 +4249,7 @@
       "key": "shell.settings.dirLtr",
       "kind": "message",
       "context": "Hướng menu từ trái sang phải",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4600,9 +4259,7 @@
       "key": "shell.settings.dirRtl",
       "kind": "message",
       "context": "Hướng menu từ phải sang trái",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4612,9 +4269,7 @@
       "key": "shell.filters.all",
       "kind": "message",
       "context": "Bộ lọc dùng chung ở chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4624,9 +4279,7 @@
       "key": "shell.filters.unread",
       "kind": "message",
       "context": "Bộ lọc chat và thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4636,9 +4289,7 @@
       "key": "shell.filters.mentions",
       "kind": "message",
       "context": "Bộ lọc danh sách thông báo",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -4648,9 +4299,7 @@
       "key": "shell.sample.person1",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4660,9 +4309,7 @@
       "key": "shell.notifications.msgMentioned",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4672,9 +4319,7 @@
       "key": "shell.sample.person2",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4684,9 +4329,7 @@
       "key": "shell.notifications.msgJoined",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4696,9 +4339,7 @@
       "key": "shell.sample.person3",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4708,9 +4349,7 @@
       "key": "shell.notifications.msgUpgrade",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4720,9 +4359,7 @@
       "key": "shell.sample.person4",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4732,9 +4369,7 @@
       "key": "shell.notifications.msgUpload",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4744,9 +4379,7 @@
       "key": "shell.sample.person5",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu, dạng gọi thân mật",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4756,9 +4389,7 @@
       "key": "shell.notifications.msgReply",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4768,9 +4399,7 @@
       "key": "shell.sample.person6",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4780,9 +4409,7 @@
       "key": "shell.notifications.msgCompleted",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4792,9 +4419,7 @@
       "key": "shell.sample.person7",
       "kind": "sampleIdentity",
       "context": "Tên người dùng mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4804,9 +4429,7 @@
       "key": "shell.notifications.msgInvited",
       "kind": "message",
       "context": "Nội dung thông báo mẫu; nguyên bản vendor sai ngữ pháp",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4816,9 +4439,7 @@
       "key": "shell.sample.group1",
       "kind": "sampleIdentity",
       "context": "Tên nhóm trò chuyện mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "name"
     },
     {
@@ -4828,9 +4449,7 @@
       "key": "shell.notifications.msgFailure",
       "kind": "message",
       "context": "Nội dung thông báo mẫu",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "message"
     },
     {
@@ -4840,9 +4459,7 @@
       "key": "shell.search.groupDashboards",
       "kind": "message",
       "context": "Nhóm trong chỉ mục tìm kiếm ở header",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4852,9 +4469,7 @@
       "key": "shell.search.default",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4864,9 +4479,7 @@
       "key": "shell.search.analytics",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4876,9 +4489,7 @@
       "key": "shell.search.invoice",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4888,9 +4499,7 @@
       "key": "shell.search.widgets",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4900,9 +4509,7 @@
       "key": "shell.search.statistics",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4912,9 +4519,7 @@
       "key": "shell.search.data",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4924,9 +4529,7 @@
       "key": "shell.search.chart",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4936,9 +4539,7 @@
       "key": "shell.search.applications",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4948,9 +4549,7 @@
       "key": "shell.search.chat",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4960,9 +4559,7 @@
       "key": "shell.search.calendar",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4972,9 +4569,7 @@
       "key": "shell.search.kanban",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4984,9 +4579,7 @@
       "key": "shell.search.customer",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -4996,9 +4589,7 @@
       "key": "shell.search.invoice",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5008,9 +4599,7 @@
       "key": "common.profile",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5020,9 +4609,7 @@
       "key": "shell.search.eCommerce",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5032,9 +4619,7 @@
       "key": "shell.search.formsTables",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5044,9 +4629,7 @@
       "key": "shell.search.formsValidation",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5056,9 +4639,7 @@
       "key": "shell.search.formsWizard",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5068,9 +4649,7 @@
       "key": "shell.search.layout",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5080,9 +4659,7 @@
       "key": "shell.search.reactTable",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5092,9 +4669,7 @@
       "key": "shell.search.muiTable",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5104,9 +4679,7 @@
       "key": "shell.search.plugins",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5116,9 +4689,7 @@
       "key": "shell.search.mask",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5128,9 +4699,7 @@
       "key": "shell.search.clipboard",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5140,9 +4709,7 @@
       "key": "shell.search.recaptcha",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5152,9 +4719,7 @@
       "key": "shell.search.editor",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5164,9 +4729,7 @@
       "key": "shell.search.dropzone",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5176,9 +4739,7 @@
       "key": "shell.search.chartsMap",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5188,9 +4749,7 @@
       "key": "shell.search.apexchart",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5200,9 +4759,7 @@
       "key": "shell.search.organizationChart",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5212,9 +4769,7 @@
       "key": "shell.search.map",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5224,9 +4779,7 @@
       "key": "shell.search.pages",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5236,9 +4789,7 @@
       "key": "shell.search.samplePage",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5248,9 +4799,7 @@
       "key": "shell.search.changeLog",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5260,9 +4809,7 @@
       "key": "shell.search.contactUs",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5272,9 +4819,7 @@
       "key": "shell.search.faqs",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5284,9 +4829,7 @@
       "key": "shell.search.pricing",
       "kind": "message",
       "context": "Nhãn trong chỉ mục tìm kiếm ở header; dùng lại đúng cách dịch của nhãn điều hướng tương ứng",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5296,9 +4839,7 @@
       "key": "shell.sample.company1",
       "kind": "sampleIdentity",
       "context": "Tên công ty mẫu trong bộ chọn không gian làm việc",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5308,9 +4849,7 @@
       "key": "common.tier.free",
       "kind": "message",
       "context": "Nhãn gói miễn phí, dùng chung cho bộ lọc Prompt Explorer và huy hiệu gói của không gian làm việc",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -5320,9 +4859,7 @@
       "key": "shell.sample.company2",
       "kind": "sampleIdentity",
       "context": "Tên công ty mẫu trong bộ chọn không gian làm việc",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5332,9 +4869,7 @@
       "key": "common.tier.pro",
       "kind": "message",
       "context": "Nhãn gói Pro, dùng chung cho bộ lọc Prompt Explorer và huy hiệu gói của không gian làm việc; giữ nguyên vì là tên gói",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "label"
     },
     {
@@ -5344,9 +4879,7 @@
       "key": "shell.sample.company3",
       "kind": "sampleIdentity",
       "context": "Tên công ty mẫu trong bộ chọn không gian làm việc",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "title"
     },
     {
@@ -5356,9 +4889,7 @@
       "key": "shell.prompts.searchPlaceholder",
       "kind": "message",
       "context": "Placeholder ô tìm trong Prompt Explorer",
-      "routes": [
-        "*"
-      ],
+      "routes": ["*"],
       "role": "placeholder"
     },
     {
@@ -12199,9 +11730,7 @@
       "key": "calendar.actions.addEvent",
       "kind": "message",
       "context": "Tooltip nút thêm sự kiện mới trên trang Lịch",
-      "routes": [
-        "/apps/calendar"
-      ],
+      "routes": ["/apps/calendar"],
       "role": "title"
     },
     {
@@ -36108,9 +35637,7 @@
       "key": "catalog.accordion.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang accordion trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -36120,9 +35647,7 @@
       "key": "catalog.reused.listsCaption",
       "kind": "message",
       "context": "Mô tả trang reused trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "description"
     },
     {
@@ -36132,9 +35657,7 @@
       "key": "catalog.reused.alert",
       "kind": "message",
       "context": "Tiêu đề trang reused trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36144,9 +35667,7 @@
       "key": "catalog.alert.pageCaption",
       "kind": "message",
       "context": "Mô tả trang alert trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "description"
     },
     {
@@ -36156,9 +35677,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36168,9 +35687,7 @@
       "key": "catalog.alert.actions",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36180,9 +35697,7 @@
       "key": "catalog.alert.filled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36192,9 +35707,7 @@
       "key": "catalog.alert.description",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36204,9 +35717,7 @@
       "key": "catalog.reused.outlined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/alert"
-      ],
+      "routes": ["/components-overview/alert"],
       "role": "heading"
     },
     {
@@ -36216,9 +35727,7 @@
       "key": "catalog.index.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang tổng hợp trong Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -36228,9 +35737,7 @@
       "key": "catalog.index.pageCaption",
       "kind": "message",
       "context": "Mô tả trang tổng hợp trong Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "description"
     },
     {
@@ -36240,9 +35747,7 @@
       "key": "catalog.autocomplete.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang autocomplete trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -36252,9 +35757,7 @@
       "key": "catalog.autocomplete.pageCaption",
       "kind": "message",
       "context": "Mô tả trang autocomplete trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "description"
     },
     {
@@ -36264,9 +35767,7 @@
       "key": "catalog.avatars.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang avatars trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36276,9 +35777,7 @@
       "key": "catalog.avatars.pageCaption",
       "kind": "message",
       "context": "Mô tả trang avatars trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "description"
     },
     {
@@ -36288,9 +35787,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36300,9 +35797,7 @@
       "key": "catalog.avatars.vector",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36312,9 +35807,7 @@
       "key": "catalog.reused.variants",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36324,9 +35817,7 @@
       "key": "catalog.avatars.icon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36336,9 +35827,7 @@
       "key": "catalog.avatars.withBadge",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36348,9 +35837,7 @@
       "key": "catalog.avatars.image",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36360,9 +35847,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36372,9 +35857,7 @@
       "key": "catalog.avatars.letter",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36384,9 +35867,7 @@
       "key": "catalog.reused.outlined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36396,9 +35877,7 @@
       "key": "catalog.avatars.avatarGroup",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36408,9 +35887,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36420,9 +35897,7 @@
       "key": "catalog.avatars.fallbacks",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/avatars"
-      ],
+      "routes": ["/components-overview/avatars"],
       "role": "heading"
     },
     {
@@ -36432,9 +35907,7 @@
       "key": "catalog.badges.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang badges trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36444,9 +35917,7 @@
       "key": "catalog.badges.pageCaption",
       "kind": "message",
       "context": "Mô tả trang badges trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "description"
     },
     {
@@ -36456,9 +35927,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36468,9 +35937,7 @@
       "key": "catalog.badges.light",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36480,9 +35947,7 @@
       "key": "catalog.badges.maximumValue",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36492,9 +35957,7 @@
       "key": "catalog.badges.dotBadges",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36504,9 +35967,7 @@
       "key": "catalog.reused.alignment",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36516,9 +35977,7 @@
       "key": "catalog.badges.overlap",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36528,9 +35987,7 @@
       "key": "catalog.badges.visibility",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/badges"
-      ],
+      "routes": ["/components-overview/badges"],
       "role": "heading"
     },
     {
@@ -36540,9 +35997,7 @@
       "key": "catalog.breadcrumbs.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang breadcrumbs trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36552,9 +36007,7 @@
       "key": "catalog.breadcrumbs.pageCaption",
       "kind": "message",
       "context": "Mô tả trang breadcrumbs trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "description"
     },
     {
@@ -36564,9 +36017,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36576,9 +36027,7 @@
       "key": "catalog.breadcrumbs.customSeparator",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36588,9 +36037,7 @@
       "key": "catalog.breadcrumbs.withTitle",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36600,9 +36047,7 @@
       "key": "catalog.breadcrumbs.titleBottom",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36612,9 +36057,7 @@
       "key": "catalog.reused.withIcons",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36624,9 +36067,7 @@
       "key": "catalog.breadcrumbs.onlyDashboardIcons",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36636,9 +36077,7 @@
       "key": "catalog.breadcrumbs.collapsedBreadcrumbs",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36648,9 +36087,7 @@
       "key": "catalog.breadcrumbs.noCardWithDivider",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36660,9 +36097,7 @@
       "key": "catalog.breadcrumbs.noCardNoDivider",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/breadcrumbs"
-      ],
+      "routes": ["/components-overview/breadcrumbs"],
       "role": "heading"
     },
     {
@@ -36672,9 +36107,7 @@
       "key": "catalog.reused.buttons",
       "kind": "message",
       "context": "Tiêu đề trang reused trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36684,9 +36117,7 @@
       "key": "catalog.buttons.pageCaption",
       "kind": "message",
       "context": "Mô tả trang buttons trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "description"
     },
     {
@@ -36696,9 +36127,7 @@
       "key": "catalog.buttons.basicButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36708,9 +36137,7 @@
       "key": "catalog.buttons.outlinedButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36720,9 +36147,7 @@
       "key": "catalog.buttons.dashedButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36732,9 +36157,7 @@
       "key": "catalog.buttons.textButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36744,9 +36167,7 @@
       "key": "catalog.buttons.shadowButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36756,9 +36177,7 @@
       "key": "catalog.reused.withIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36768,9 +36187,7 @@
       "key": "catalog.buttons.buttonSize",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36780,9 +36197,7 @@
       "key": "catalog.buttons.uploadButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36792,9 +36207,7 @@
       "key": "catalog.buttons.disabledButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36804,9 +36217,7 @@
       "key": "catalog.buttons.blockLevel",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36816,9 +36227,7 @@
       "key": "catalog.buttons.fab",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36828,9 +36237,7 @@
       "key": "catalog.buttons.iconButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36840,9 +36247,7 @@
       "key": "catalog.buttons.loadingButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36852,9 +36257,7 @@
       "key": "catalog.reused.animation",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -36864,9 +36267,7 @@
       "key": "catalog.cards.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang cards trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36876,9 +36277,7 @@
       "key": "catalog.cards.pageCaption",
       "kind": "message",
       "context": "Mô tả trang cards trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "description"
     },
     {
@@ -36888,9 +36287,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36900,9 +36297,7 @@
       "key": "catalog.cards.cardTitle",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36912,9 +36307,7 @@
       "key": "catalog.reused.outlined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36924,9 +36317,7 @@
       "key": "catalog.cards.action",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36936,9 +36327,7 @@
       "key": "catalog.cards.complexInteraction",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36948,9 +36337,7 @@
       "key": "catalog.cards.media",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36960,9 +36347,7 @@
       "key": "catalog.cards.animationCard",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36972,9 +36357,7 @@
       "key": "catalog.cards.fade",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36984,9 +36367,7 @@
       "key": "catalog.cards.slide",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/cards"
-      ],
+      "routes": ["/components-overview/cards"],
       "role": "heading"
     },
     {
@@ -36996,9 +36377,7 @@
       "key": "catalog.checkbox.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang checkbox trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37008,9 +36387,7 @@
       "key": "catalog.checkbox.pageCaption",
       "kind": "message",
       "context": "Mô tả trang checkbox trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "description"
     },
     {
@@ -37020,9 +36397,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37032,9 +36407,7 @@
       "key": "catalog.reused.size",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37044,9 +36417,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37056,9 +36427,7 @@
       "key": "catalog.reused.labelPlacement",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37068,9 +36437,7 @@
       "key": "catalog.checkbox.indeterminate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/checkbox"
-      ],
+      "routes": ["/components-overview/checkbox"],
       "role": "heading"
     },
     {
@@ -37080,9 +36447,7 @@
       "key": "catalog.chips.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang chips trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37092,9 +36457,7 @@
       "key": "catalog.chips.pageCaption",
       "kind": "message",
       "context": "Mô tả trang chips trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "description"
     },
     {
@@ -37104,9 +36467,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37116,9 +36477,7 @@
       "key": "catalog.reused.outlined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37128,9 +36487,7 @@
       "key": "catalog.chips.lighter",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37140,9 +36497,7 @@
       "key": "catalog.chips.combined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37152,9 +36507,7 @@
       "key": "catalog.chips.deletableIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37164,9 +36517,7 @@
       "key": "catalog.chips.avatarIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37176,9 +36527,7 @@
       "key": "catalog.reused.size",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37188,9 +36537,7 @@
       "key": "catalog.chips.array",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37200,9 +36547,7 @@
       "key": "catalog.reused.color",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/chips"
-      ],
+      "routes": ["/components-overview/chips"],
       "role": "heading"
     },
     {
@@ -37212,9 +36557,7 @@
       "key": "catalog.reused.color",
       "kind": "message",
       "context": "Tiêu đề trang reused trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37224,9 +36567,7 @@
       "key": "catalog.color.pageCaption",
       "kind": "message",
       "context": "Mô tả trang color trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "description"
     },
     {
@@ -37236,9 +36577,7 @@
       "key": "catalog.color.primaryColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37248,9 +36587,7 @@
       "key": "catalog.color.secondaryColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37260,9 +36597,7 @@
       "key": "catalog.color.otherColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37272,9 +36607,7 @@
       "key": "catalog.color.successColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37284,9 +36617,7 @@
       "key": "catalog.color.errorColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37296,9 +36627,7 @@
       "key": "catalog.color.warningColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37308,9 +36637,7 @@
       "key": "catalog.color.infoColor",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/color"
-      ],
+      "routes": ["/components-overview/color"],
       "role": "heading"
     },
     {
@@ -37320,9 +36647,7 @@
       "key": "catalog.datetimepicker.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang datetimepicker trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -37332,9 +36657,7 @@
       "key": "catalog.datetimepicker.pageCaption",
       "kind": "message",
       "context": "Mô tả trang datetimepicker trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "description"
     },
     {
@@ -37344,9 +36667,7 @@
       "key": "catalog.dialogs.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang dialogs trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37356,9 +36677,7 @@
       "key": "catalog.dialogs.pageCaption",
       "kind": "message",
       "context": "Mô tả trang dialogs trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "description"
     },
     {
@@ -37368,9 +36687,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37380,9 +36697,7 @@
       "key": "catalog.reused.alert",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37392,9 +36707,7 @@
       "key": "catalog.dialogs.form",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37404,9 +36717,7 @@
       "key": "catalog.reused.transitions",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37416,9 +36727,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37428,9 +36737,7 @@
       "key": "catalog.dialogs.fullScreen",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37440,9 +36747,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37452,9 +36757,7 @@
       "key": "catalog.dialogs.responsive",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37464,9 +36767,7 @@
       "key": "catalog.dialogs.draggable",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37476,9 +36777,7 @@
       "key": "catalog.dialogs.scrolling",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37488,9 +36787,7 @@
       "key": "catalog.dialogs.confirmation",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/dialogs"
-      ],
+      "routes": ["/components-overview/dialogs"],
       "role": "heading"
     },
     {
@@ -37500,9 +36797,7 @@
       "key": "catalog.lists.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang lists trong Component Catalog",
-      "routes": [
-        "/components-overview/lists"
-      ],
+      "routes": ["/components-overview/lists"],
       "role": "heading"
     },
     {
@@ -37512,9 +36807,7 @@
       "key": "catalog.reused.listsCaption",
       "kind": "message",
       "context": "Mô tả trang reused trong Component Catalog",
-      "routes": [
-        "/components-overview/lists"
-      ],
+      "routes": ["/components-overview/lists"],
       "role": "description"
     },
     {
@@ -37524,9 +36817,7 @@
       "key": "catalog.modal.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang modal trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -37536,9 +36827,7 @@
       "key": "catalog.modal.pageCaption",
       "kind": "message",
       "context": "Mô tả trang modal trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "description"
     },
     {
@@ -37548,9 +36837,7 @@
       "key": "catalog.pagination.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang pagination trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37560,9 +36847,7 @@
       "key": "catalog.pagination.pageCaption",
       "kind": "message",
       "context": "Mô tả trang pagination trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "description"
     },
     {
@@ -37572,9 +36857,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37584,9 +36867,7 @@
       "key": "catalog.reused.size",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37596,9 +36877,7 @@
       "key": "catalog.pagination.ranges",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37608,9 +36887,7 @@
       "key": "catalog.pagination.tables",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37620,9 +36897,7 @@
       "key": "catalog.reused.variants",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37632,9 +36907,7 @@
       "key": "catalog.pagination.circular",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37644,9 +36917,7 @@
       "key": "catalog.reused.buttons",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37656,9 +36927,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/pagination"
-      ],
+      "routes": ["/components-overview/pagination"],
       "role": "heading"
     },
     {
@@ -37668,9 +36937,7 @@
       "key": "catalog.progress.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang progress trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37680,9 +36947,7 @@
       "key": "catalog.progress.pageCaption",
       "kind": "message",
       "context": "Mô tả trang progress trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "description"
     },
     {
@@ -37692,9 +36957,7 @@
       "key": "catalog.progress.circularIndeterminate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37704,9 +36967,7 @@
       "key": "catalog.progress.circularIndeterminateWithP",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37716,9 +36977,7 @@
       "key": "catalog.progress.circularDeterminate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37728,9 +36987,7 @@
       "key": "catalog.progress.circularDeterminateWithPat",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37740,9 +36997,7 @@
       "key": "catalog.progress.circularWithLabel",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37752,9 +37007,7 @@
       "key": "catalog.progress.circularWithLabelAndPath",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37764,9 +37017,7 @@
       "key": "catalog.progress.linearIndeterminate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37776,9 +37027,7 @@
       "key": "catalog.progress.linearDeterminate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37788,9 +37037,7 @@
       "key": "catalog.progress.linearWithLabelIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37800,9 +37047,7 @@
       "key": "catalog.progress.linearColorWithHeight",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37812,9 +37057,7 @@
       "key": "catalog.progress.linearBuffer",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37824,9 +37067,7 @@
       "key": "catalog.progress.circularProgressSize",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/progress"
-      ],
+      "routes": ["/components-overview/progress"],
       "role": "heading"
     },
     {
@@ -37836,9 +37077,7 @@
       "key": "catalog.radio.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang radio trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "heading"
     },
     {
@@ -37848,9 +37087,7 @@
       "key": "catalog.radio.pageCaption",
       "kind": "message",
       "context": "Mô tả trang radio trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "description"
     },
     {
@@ -37860,9 +37097,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "heading"
     },
     {
@@ -37872,9 +37107,7 @@
       "key": "catalog.reused.size",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "heading"
     },
     {
@@ -37884,9 +37117,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "heading"
     },
     {
@@ -37896,9 +37127,7 @@
       "key": "catalog.reused.labelPlacement",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/radio"
-      ],
+      "routes": ["/components-overview/radio"],
       "role": "heading"
     },
     {
@@ -37908,9 +37137,7 @@
       "key": "catalog.rating.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang rating trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37920,9 +37147,7 @@
       "key": "catalog.rating.pageCaption",
       "kind": "message",
       "context": "Mô tả trang rating trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "description"
     },
     {
@@ -37932,9 +37157,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37944,9 +37167,7 @@
       "key": "catalog.rating.precision",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37956,9 +37177,7 @@
       "key": "catalog.rating.hoverFeedback",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37968,9 +37187,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37980,9 +37197,7 @@
       "key": "catalog.rating.customization",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -37992,9 +37207,7 @@
       "key": "catalog.rating.half",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/rating"
-      ],
+      "routes": ["/components-overview/rating"],
       "role": "heading"
     },
     {
@@ -38004,9 +37217,7 @@
       "key": "catalog.select.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang select trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -38016,9 +37227,7 @@
       "key": "catalog.select.pageCaption",
       "kind": "message",
       "context": "Mô tả trang select trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "description"
     },
     {
@@ -38028,9 +37237,7 @@
       "key": "catalog.shadows.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang shadows trong Component Catalog",
-      "routes": [
-        "/components-overview/shadows"
-      ],
+      "routes": ["/components-overview/shadows"],
       "role": "heading"
     },
     {
@@ -38040,9 +37247,7 @@
       "key": "catalog.shadows.pageCaption",
       "kind": "message",
       "context": "Mô tả trang shadows trong Component Catalog",
-      "routes": [
-        "/components-overview/shadows"
-      ],
+      "routes": ["/components-overview/shadows"],
       "role": "description"
     },
     {
@@ -38052,9 +37257,7 @@
       "key": "catalog.shadows.basicShadow",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/shadows"
-      ],
+      "routes": ["/components-overview/shadows"],
       "role": "heading"
     },
     {
@@ -38064,9 +37267,7 @@
       "key": "catalog.shadows.customShadow",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/shadows"
-      ],
+      "routes": ["/components-overview/shadows"],
       "role": "heading"
     },
     {
@@ -38076,9 +37277,7 @@
       "key": "catalog.shadows.colorShadow",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/shadows"
-      ],
+      "routes": ["/components-overview/shadows"],
       "role": "heading"
     },
     {
@@ -38088,9 +37287,7 @@
       "key": "catalog.slider.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang slider trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38100,9 +37297,7 @@
       "key": "catalog.slider.pageCaption",
       "kind": "message",
       "context": "Mô tả trang slider trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "description"
     },
     {
@@ -38112,9 +37307,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38124,9 +37317,7 @@
       "key": "catalog.reused.withIcons",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38136,9 +37327,7 @@
       "key": "catalog.slider.range",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38148,9 +37337,7 @@
       "key": "catalog.slider.withLabel",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38160,9 +37347,7 @@
       "key": "catalog.reused.vertical",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38172,9 +37357,7 @@
       "key": "catalog.reused.disabled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38184,9 +37367,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38196,9 +37377,7 @@
       "key": "catalog.slider.discrete",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38208,9 +37387,7 @@
       "key": "catalog.slider.restrictedValues",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38220,9 +37397,7 @@
       "key": "catalog.slider.minimumDistance",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38232,9 +37407,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/slider"
-      ],
+      "routes": ["/components-overview/slider"],
       "role": "heading"
     },
     {
@@ -38244,9 +37417,7 @@
       "key": "catalog.snackbar.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang snackbar trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38256,9 +37427,7 @@
       "key": "catalog.snackbar.pageCaption",
       "kind": "message",
       "context": "Mô tả trang snackbar trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "description"
     },
     {
@@ -38268,9 +37437,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38280,9 +37447,7 @@
       "key": "catalog.reused.outlined",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38292,9 +37457,7 @@
       "key": "catalog.snackbar.withClose",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38304,9 +37467,7 @@
       "key": "catalog.snackbar.withCloseAction",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38316,9 +37477,7 @@
       "key": "catalog.snackbar.position",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38328,9 +37487,7 @@
       "key": "catalog.reused.transitions",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -38340,9 +37497,7 @@
       "key": "catalog.speeddial.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang speeddial trong Component Catalog",
-      "routes": [
-        "/components-overview/speeddial"
-      ],
+      "routes": ["/components-overview/speeddial"],
       "role": "heading"
     },
     {
@@ -38352,9 +37507,7 @@
       "key": "catalog.speeddial.pageCaption",
       "kind": "message",
       "context": "Mô tả trang speeddial trong Component Catalog",
-      "routes": [
-        "/components-overview/speeddial"
-      ],
+      "routes": ["/components-overview/speeddial"],
       "role": "description"
     },
     {
@@ -38364,9 +37517,7 @@
       "key": "catalog.stepper.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang stepper trong Component Catalog",
-      "routes": [
-        "/components-overview/stepper"
-      ],
+      "routes": ["/components-overview/stepper"],
       "role": "heading"
     },
     {
@@ -38376,9 +37527,7 @@
       "key": "catalog.stepper.pageCaption",
       "kind": "message",
       "context": "Mô tả trang stepper trong Component Catalog",
-      "routes": [
-        "/components-overview/stepper"
-      ],
+      "routes": ["/components-overview/stepper"],
       "role": "description"
     },
     {
@@ -38388,9 +37537,7 @@
       "key": "catalog.switch.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang switch trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38400,9 +37547,7 @@
       "key": "catalog.switch.pageCaption",
       "kind": "message",
       "context": "Mô tả trang switch trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "description"
     },
     {
@@ -38412,9 +37557,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38424,9 +37567,7 @@
       "key": "catalog.reused.color",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38436,9 +37577,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38448,9 +37587,7 @@
       "key": "catalog.switch.withFormGroup",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38460,9 +37597,7 @@
       "key": "catalog.reused.labelPlacement",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -38472,9 +37607,7 @@
       "key": "catalog.tabs.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang tabs trong Component Catalog",
-      "routes": [
-        "/components-overview/tabs"
-      ],
+      "routes": ["/components-overview/tabs"],
       "role": "heading"
     },
     {
@@ -38484,9 +37617,7 @@
       "key": "catalog.tabs.pageCaption",
       "kind": "message",
       "context": "Mô tả trang tabs trong Component Catalog",
-      "routes": [
-        "/components-overview/tabs"
-      ],
+      "routes": ["/components-overview/tabs"],
       "role": "description"
     },
     {
@@ -38496,9 +37627,7 @@
       "key": "catalog.textfield.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang textfield trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38508,9 +37637,7 @@
       "key": "catalog.textfield.pageCaption",
       "kind": "message",
       "context": "Mô tả trang textfield trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "description"
     },
     {
@@ -38520,9 +37647,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38532,9 +37657,7 @@
       "key": "catalog.textfield.formProps",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38544,9 +37667,7 @@
       "key": "catalog.reused.withIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38556,9 +37677,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38568,9 +37687,7 @@
       "key": "catalog.textfield.event",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38580,9 +37697,7 @@
       "key": "catalog.textfield.validation",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38592,9 +37707,7 @@
       "key": "catalog.textfield.multiline",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38604,9 +37717,7 @@
       "key": "catalog.textfield.inputAdornments",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38616,9 +37727,7 @@
       "key": "catalog.textfield.fullWidth",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/textfield"
-      ],
+      "routes": ["/components-overview/textfield"],
       "role": "heading"
     },
     {
@@ -38628,9 +37737,7 @@
       "key": "catalog.timeline.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang timeline trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -38640,9 +37747,7 @@
       "key": "catalog.timeline.pageCaption",
       "kind": "message",
       "context": "Mô tả trang timeline trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "description"
     },
     {
@@ -38652,9 +37757,7 @@
       "key": "catalog.tooltip.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang tooltip trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38664,9 +37767,7 @@
       "key": "catalog.tooltip.pageCaption",
       "kind": "message",
       "context": "Mô tả trang tooltip trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "description"
     },
     {
@@ -38676,9 +37777,7 @@
       "key": "catalog.tooltip.simpleTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38688,9 +37787,7 @@
       "key": "catalog.tooltip.customizedTooltip",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38700,9 +37797,7 @@
       "key": "catalog.tooltip.arrowTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38712,9 +37807,7 @@
       "key": "catalog.tooltip.delayTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38724,9 +37817,7 @@
       "key": "catalog.tooltip.disabledTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38736,9 +37827,7 @@
       "key": "catalog.tooltip.disableInteractiveTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38748,9 +37837,7 @@
       "key": "catalog.tooltip.triggersControlledTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38760,9 +37847,7 @@
       "key": "catalog.tooltip.transitionsTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38772,9 +37857,7 @@
       "key": "catalog.tooltip.variableWidthTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38784,9 +37867,7 @@
       "key": "catalog.tooltip.positionedTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38796,9 +37877,7 @@
       "key": "catalog.tooltip.colorVariantTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38808,9 +37887,7 @@
       "key": "catalog.tooltip.customColorTooltips",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/tooltip"
-      ],
+      "routes": ["/components-overview/tooltip"],
       "role": "heading"
     },
     {
@@ -38820,9 +37897,7 @@
       "key": "catalog.treeview.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang treeview trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -38832,9 +37907,7 @@
       "key": "catalog.treeview.pageCaption",
       "kind": "message",
       "context": "Mô tả trang treeview trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "description"
     },
     {
@@ -38844,9 +37917,7 @@
       "key": "catalog.typography.pageTitle",
       "kind": "message",
       "context": "Tiêu đề trang typography trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38856,9 +37927,7 @@
       "key": "catalog.typography.pageCaption",
       "kind": "message",
       "context": "Mô tả trang typography trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "description"
     },
     {
@@ -38868,9 +37937,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38880,9 +37947,7 @@
       "key": "catalog.typography.heading",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38892,9 +37957,7 @@
       "key": "catalog.typography.body1",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38904,9 +37967,7 @@
       "key": "catalog.typography.body2",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38916,9 +37977,7 @@
       "key": "catalog.typography.subtitle1",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38928,9 +37987,7 @@
       "key": "catalog.typography.subtitle2",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38940,9 +37997,7 @@
       "key": "catalog.typography.caption",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38952,9 +38007,7 @@
       "key": "catalog.reused.alignment",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38964,9 +38017,7 @@
       "key": "catalog.typography.gutterBottom",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38976,9 +38027,7 @@
       "key": "catalog.typography.overline",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -38988,9 +38037,7 @@
       "key": "catalog.typography.link",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -39000,9 +38047,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -39012,9 +38057,7 @@
       "key": "catalog.typography.paragraph",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -39024,9 +38067,7 @@
       "key": "catalog.typography.fontStyle",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/typography"
-      ],
+      "routes": ["/components-overview/typography"],
       "role": "heading"
     },
     {
@@ -39036,9 +38077,7 @@
       "key": "catalog.index.inputs",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39048,9 +38087,7 @@
       "key": "catalog.index.dataDisplay",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39060,9 +38097,7 @@
       "key": "catalog.index.feedback",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39072,9 +38107,7 @@
       "key": "catalog.index.navigation",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39084,9 +38117,7 @@
       "key": "catalog.index.surfaces",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39096,9 +38127,7 @@
       "key": "catalog.index.utils",
       "kind": "message",
       "context": "Nhóm thành phần trên trang tổng hợp Component Catalog",
-      "routes": [
-        "/components-overview"
-      ],
+      "routes": ["/components-overview"],
       "role": "heading"
     },
     {
@@ -39108,9 +38137,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39120,9 +38147,7 @@
       "key": "catalog.reused.controlled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39132,9 +38157,7 @@
       "key": "catalog.accordion.customized2",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39144,9 +38167,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39156,9 +38177,7 @@
       "key": "catalog.reused.disabled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39168,9 +38187,7 @@
       "key": "catalog.accordion.fixed",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/accordion"
-      ],
+      "routes": ["/components-overview/accordion"],
       "role": "heading"
     },
     {
@@ -39180,9 +38197,7 @@
       "key": "catalog.autocomplete.asynchronous",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39192,9 +38207,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39204,9 +38217,7 @@
       "key": "catalog.autocomplete.checkboxes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39216,9 +38227,7 @@
       "key": "catalog.autocomplete.withImage",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39228,9 +38237,7 @@
       "key": "catalog.autocomplete.creatable",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39240,9 +38247,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39252,9 +38257,7 @@
       "key": "catalog.autocomplete.disabledOptions",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39264,9 +38267,7 @@
       "key": "catalog.autocomplete.fixedOptions",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39276,9 +38277,7 @@
       "key": "catalog.autocomplete.githubSPicker",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39288,9 +38287,7 @@
       "key": "catalog.autocomplete.grouped",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39300,9 +38297,7 @@
       "key": "catalog.autocomplete.limitTags",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39312,9 +38307,7 @@
       "key": "catalog.autocomplete.multipleTags",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39324,9 +38317,7 @@
       "key": "catalog.reused.sizes",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/autocomplete"
-      ],
+      "routes": ["/components-overview/autocomplete"],
       "role": "heading"
     },
     {
@@ -39336,9 +38327,7 @@
       "key": "catalog.buttons.buttonGroup",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -39348,9 +38337,7 @@
       "key": "catalog.buttons.toggleButton",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/buttons"
-      ],
+      "routes": ["/components-overview/buttons"],
       "role": "heading"
     },
     {
@@ -39360,9 +38347,7 @@
       "key": "catalog.datetimepicker.basicPicker",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39372,9 +38357,7 @@
       "key": "catalog.datetimepicker.disabledPickers",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39384,9 +38367,7 @@
       "key": "catalog.datetimepicker.helperText",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39396,9 +38377,7 @@
       "key": "catalog.datetimepicker.landscape",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39408,9 +38387,7 @@
       "key": "catalog.datetimepicker.localizationPicker",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39420,9 +38397,7 @@
       "key": "catalog.datetimepicker.nativePicker",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39432,9 +38407,7 @@
       "key": "catalog.datetimepicker.staticMode",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39444,9 +38417,7 @@
       "key": "catalog.datetimepicker.subComponent",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/date-time-picker"
-      ],
+      "routes": ["/components-overview/date-time-picker"],
       "role": "heading"
     },
     {
@@ -39456,9 +38427,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39468,9 +38437,7 @@
       "key": "catalog.modal.basicModal",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39480,9 +38447,7 @@
       "key": "catalog.modal.childModal",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39492,9 +38457,7 @@
       "key": "catalog.modal.nested",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39504,9 +38467,7 @@
       "key": "catalog.modal.parentModal",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39516,9 +38477,7 @@
       "key": "catalog.modal.serverSideModal",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39528,9 +38487,7 @@
       "key": "catalog.modal.transitionsModal",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/modal"
-      ],
+      "routes": ["/components-overview/modal"],
       "role": "heading"
     },
     {
@@ -39540,9 +38497,7 @@
       "key": "catalog.snackbar.colorVariants",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39552,9 +38507,7 @@
       "key": "catalog.snackbar.customComponent",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39564,9 +38517,7 @@
       "key": "catalog.snackbar.dense",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39576,9 +38527,7 @@
       "key": "catalog.snackbar.dismissProgrammatically",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39588,9 +38537,7 @@
       "key": "catalog.snackbar.hideDuration",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39600,9 +38547,7 @@
       "key": "catalog.reused.withIcons",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39612,9 +38557,7 @@
       "key": "catalog.snackbar.maximumSnackbars",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39624,9 +38567,7 @@
       "key": "catalog.snackbar.positioning",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39636,9 +38577,7 @@
       "key": "catalog.snackbar.preventDuplicate",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39648,9 +38587,7 @@
       "key": "catalog.snackbar.withAction",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39660,9 +38597,7 @@
       "key": "catalog.reused.animation",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/snackbar"
-      ],
+      "routes": ["/components-overview/snackbar"],
       "role": "heading"
     },
     {
@@ -39672,9 +38607,7 @@
       "key": "catalog.select.autoWidth",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39684,9 +38617,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39696,9 +38627,7 @@
       "key": "catalog.select.withCheckmarks",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39708,9 +38637,7 @@
       "key": "catalog.select.withChip",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39720,9 +38647,7 @@
       "key": "catalog.select.withHelperText",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39732,9 +38657,7 @@
       "key": "catalog.select.multiple",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/select"
-      ],
+      "routes": ["/components-overview/select"],
       "role": "heading"
     },
     {
@@ -39744,9 +38667,7 @@
       "key": "catalog.speeddial.customCloseIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/speeddial"
-      ],
+      "routes": ["/components-overview/speeddial"],
       "role": "heading"
     },
     {
@@ -39756,9 +38677,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/speeddial"
-      ],
+      "routes": ["/components-overview/speeddial"],
       "role": "heading"
     },
     {
@@ -39768,9 +38687,7 @@
       "key": "catalog.speeddial.persistentIcon",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/speeddial"
-      ],
+      "routes": ["/components-overview/speeddial"],
       "role": "heading"
     },
     {
@@ -39780,9 +38697,7 @@
       "key": "catalog.stepper.basicLinear",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/stepper"
-      ],
+      "routes": ["/components-overview/stepper"],
       "role": "heading"
     },
     {
@@ -39792,9 +38707,7 @@
       "key": "catalog.stepper.nonLinear",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/stepper"
-      ],
+      "routes": ["/components-overview/stepper"],
       "role": "heading"
     },
     {
@@ -39804,9 +38717,7 @@
       "key": "catalog.reused.vertical",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/stepper"
-      ],
+      "routes": ["/components-overview/stepper"],
       "role": "heading"
     },
     {
@@ -39816,9 +38727,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/switch"
-      ],
+      "routes": ["/components-overview/switch"],
       "role": "heading"
     },
     {
@@ -39828,9 +38737,7 @@
       "key": "catalog.timeline.alternatingPositioned",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39840,9 +38747,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39852,9 +38757,7 @@
       "key": "catalog.reused.colors",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39864,9 +38767,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39876,9 +38777,7 @@
       "key": "catalog.timeline.leftPositioned",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39888,9 +38787,7 @@
       "key": "catalog.timeline.oppositeContent",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/timeline"
-      ],
+      "routes": ["/components-overview/timeline"],
       "role": "heading"
     },
     {
@@ -39900,9 +38797,7 @@
       "key": "catalog.reused.basic",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39912,9 +38807,7 @@
       "key": "catalog.reused.controlled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39924,9 +38817,7 @@
       "key": "catalog.reused.customized",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39936,9 +38827,7 @@
       "key": "catalog.reused.disabled",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39948,9 +38837,7 @@
       "key": "catalog.treeview.gmailClone",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39960,9 +38847,7 @@
       "key": "catalog.treeview.multiSelect",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39972,9 +38857,7 @@
       "key": "catalog.treeview.richObject",
       "kind": "message",
       "context": "Tiêu đề thẻ demo trong Component Catalog",
-      "routes": [
-        "/components-overview/treeview"
-      ],
+      "routes": ["/components-overview/treeview"],
       "role": "heading"
     },
     {
@@ -39985,9 +38868,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên trang tổng quan và mục điều hướng của Mphone Lab",
-      "routes": [
-        "/mphone"
-      ],
+      "routes": ["/mphone"],
       "role": "heading",
       "maxLength": 24
     },
@@ -39999,9 +38880,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả mục đích của không gian Mphone Lab",
-      "routes": [
-        "/mphone"
-      ],
+      "routes": ["/mphone"],
       "role": "text"
     },
     {
@@ -40012,10 +38891,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên bề mặt cuộc gọi sắp tới của Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/calls"
-      ],
+      "routes": ["/mphone", "/mphone/calls"],
       "role": "heading",
       "maxLength": 24
     },
@@ -40027,10 +38903,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả bề mặt cuộc gọi sắp tới",
-      "routes": [
-        "/mphone",
-        "/mphone/calls"
-      ],
+      "routes": ["/mphone", "/mphone/calls"],
       "role": "text"
     },
     {
@@ -40041,10 +38914,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên bề mặt danh bạ sắp tới của Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/contacts"
-      ],
+      "routes": ["/mphone", "/mphone/contacts"],
       "role": "heading",
       "maxLength": 24
     },
@@ -40056,10 +38926,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả bề mặt danh bạ sắp tới",
-      "routes": [
-        "/mphone",
-        "/mphone/contacts"
-      ],
+      "routes": ["/mphone", "/mphone/contacts"],
       "role": "text"
     },
     {
@@ -40070,10 +38937,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên bề mặt Webphone mô phỏng",
-      "routes": [
-        "/mphone",
-        "/mphone/webphone"
-      ],
+      "routes": ["/mphone", "/mphone/webphone"],
       "role": "heading",
       "maxLength": 24
     },
@@ -40085,10 +38949,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả và ranh giới mô phỏng của Webphone",
-      "routes": [
-        "/mphone",
-        "/mphone/webphone"
-      ],
+      "routes": ["/mphone", "/mphone/webphone"],
       "role": "text"
     },
     {
@@ -40099,10 +38960,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên mẫu thử trải nghiệm ứng dụng Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/app-phone"
-      ],
+      "routes": ["/mphone", "/mphone/app-phone"],
       "role": "heading",
       "maxLength": 24
     },
@@ -40114,10 +38972,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả và ranh giới mô phỏng của App Phone",
-      "routes": [
-        "/mphone",
-        "/mphone/app-phone"
-      ],
+      "routes": ["/mphone", "/mphone/app-phone"],
       "role": "text"
     },
     {
@@ -40128,10 +38983,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên bề mặt phân tích dữ liệu mẫu Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/analytics"
-      ],
+      "routes": ["/mphone", "/mphone/analytics"],
       "role": "heading",
       "maxLength": 24
     },
@@ -40143,10 +38995,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả bề mặt phân tích dữ liệu mẫu Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/analytics"
-      ],
+      "routes": ["/mphone", "/mphone/analytics"],
       "role": "text"
     },
     {
@@ -40157,10 +39006,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên bề mặt hệ thống thiết kế Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/design-system"
-      ],
+      "routes": ["/mphone", "/mphone/design-system"],
       "role": "heading",
       "maxLength": 28
     },
@@ -40172,10 +39018,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Mô tả bề mặt hệ thống thiết kế Mphone",
-      "routes": [
-        "/mphone",
-        "/mphone/design-system"
-      ],
+      "routes": ["/mphone", "/mphone/design-system"],
       "role": "text"
     },
     {
@@ -40186,10 +39029,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Tên không gian thử nghiệm sản phẩm Mphone trong breadcrumb và sidebar",
-      "routes": [
-        "/mphone",
-        "/mphone/*"
-      ],
+      "routes": ["/mphone", "/mphone/*"],
       "role": "navigation",
       "maxLength": 20
     },
@@ -40201,10 +39041,7 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Thông báo ranh giới tích hợp trên mọi trang Mphone Lab",
-      "routes": [
-        "/mphone",
-        "/mphone/*"
-      ],
+      "routes": ["/mphone", "/mphone/*"],
       "role": "alert"
     },
     {
@@ -40215,53 +39052,9 @@
       "origin": "mphone",
       "kind": "message",
       "context": "Nhãn trạng thái cho các bề mặt Mphone chưa triển khai",
-      "routes": [
-        "/mphone",
-        "/mphone/*"
-      ],
+      "routes": ["/mphone", "/mphone/*"],
       "role": "status",
       "maxLength": 16
-    },
-    {
-      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
-      "occurrence": "text",
-      "source": "Mantis UI",
-      "key": "mphoneLab.switcher.mantis",
-      "origin": "mphone",
-      "kind": "message",
-      "context": "Nhãn link chuyển sang thư viện giao diện Mantis",
-      "routes": [
-        "/*"
-      ],
-      "role": "navigation",
-      "maxLength": 16
-    },
-    {
-      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
-      "occurrence": "text",
-      "source": "Mphone Lab",
-      "key": "mphoneLab.title",
-      "origin": "mphone",
-      "kind": "message",
-      "context": "Nhãn link chuyển sang không gian Mphone Lab",
-      "routes": [
-        "/*"
-      ],
-      "role": "navigation",
-      "maxLength": 20
-    },
-    {
-      "file": "src/mphone-lab/PortalAreaSwitcher.jsx",
-      "occurrence": "prop:aria-label",
-      "source": "Switch between Mantis UI and Mphone Lab",
-      "key": "mphoneLab.switcher.aria",
-      "origin": "mphone",
-      "kind": "message",
-      "context": "Nhãn trợ năng cho bộ chuyển hai không gian ở header",
-      "routes": [
-        "/*"
-      ],
-      "role": "a11y"
     }
   ]
 }

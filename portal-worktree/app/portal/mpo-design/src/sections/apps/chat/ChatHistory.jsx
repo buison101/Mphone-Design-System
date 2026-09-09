@@ -40,7 +40,7 @@ export default function ChatHistoryPage({ user }) {
           <IconButton size="small" color="secondary">
             <EditOutlined />
           </IconButton>
-          <MainCard content={false} border={false} sx={{ ml: 0.75, p: 1, bgcolor: 'primary.main' }}>
+          <MainCard content={false} border={false} sx={{ ml: 0.75, p: 1.5, bgcolor: 'primary.main' }}>
             <Typography variant="h6" sx={{ overflowWrap: 'anywhere', color: 'common.white' }}>
               {history.text}
             </Typography>
@@ -51,7 +51,7 @@ export default function ChatHistoryPage({ user }) {
         </Typography>
       </Stack>
       {/* Avatar for the current user/sender */}
-      <UserAvatar user={{ online_status: 'available', avatar: 'avatar-1.png', name: 'User 1' }} />
+      <UserAvatar size={48} user={{ online_status: 'available', avatar: 'avatar-1.png', name: 'User 1' }} />
     </Stack>
   );
 
@@ -59,6 +59,7 @@ export default function ChatHistoryPage({ user }) {
   const ReceivedMessage = ({ history, user }) => (
     <Stack direction="row" sx={{ width: 1, gap: 1.25 }}>
       <UserAvatar
+        size={48}
         user={{
           online_status: user.online_status,
           avatar: user.avatar,
@@ -70,7 +71,7 @@ export default function ChatHistoryPage({ user }) {
         <MainCard
           content={false}
           border={false}
-          sx={(theme) => ({ p: 1, ...theme.applyStyles('dark', { bgcolor: 'background.default' }) })}
+          sx={(theme) => ({ p: 1.5, ...theme.applyStyles('dark', { bgcolor: 'background.default' }) })}
         >
           <Typography variant="h6" sx={{ overflowWrap: 'anywhere' }}>
             {history.text}
@@ -89,14 +90,14 @@ export default function ChatHistoryPage({ user }) {
   if (chatLoading) {
     return (
       <Stack sx={{ alignItems: 'center', justifyContent: 'center', height: 'calc(100vh - 410px)' }}>
-        <CircularWithPath />
+        <CircularWithPath color="inherit" sx={{ color: 'text.secondary' }} />
       </Stack>
     );
   }
 
   return (
     <SimpleBar sx={{ overflowX: 'hidden', height: 'calc(100vh - 410px)', minHeight: 420, '& .simplebar-content': { height: '100%' } }}>
-      <Box sx={{ px: 3, py: 0.75, height: '100%' }}>
+      <Box sx={{ px: 2.5, py: 0.75, height: '100%' }}>
         <Grid container spacing={2.5}>
           {filteredChat.map((history, index) => {
             // Determine if the message was sent by the current user

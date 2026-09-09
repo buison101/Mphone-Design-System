@@ -32,7 +32,7 @@ export default function ChatHistoryPage({ user }) {
   if (chatLoading) {
     return (
       <Stack sx={{ alignItems: 'center', justifyContent: 'center', height: 'calc(100vh - 410px)' }}>
-        <CircularWithPath />
+        <CircularWithPath color="inherit" sx={{ color: 'text.secondary' }} />
       </Stack>
     );
   }
