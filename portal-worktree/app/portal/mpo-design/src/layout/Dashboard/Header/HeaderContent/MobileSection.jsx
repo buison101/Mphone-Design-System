@@ -13,7 +13,7 @@ import Box from '@mui/material/Box';
 
 // project imports
 import Search from './Search';
-import Profile from './HeaderProfile';
+import Profile from './Profile';
 import Workspace from './Workspace';
 import IconButton from 'components/@extended/IconButton';
 import Transitions from 'components/@extended/Transitions';
