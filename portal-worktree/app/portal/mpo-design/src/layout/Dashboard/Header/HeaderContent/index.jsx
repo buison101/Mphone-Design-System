@@ -15,7 +15,7 @@ import { IS_PORTAL_TARGET, isMphoneUiWorkspace } from 'mphone-ui/workspace';
 
 const Search = lazy(() => import('./Search'));
 const Chat = lazy(() => import('./Chat'));
-const Profile = lazy(() => import('./Profile'));
+const Profile = lazy(() => import('./HeaderProfile'));
 const Notification = lazy(() => import('./Notification'));
 const MegaMenuSection = lazy(() => import('./MegaMenuSection'));
 const MobileSection = lazy(() => import('./MobileSection'));
